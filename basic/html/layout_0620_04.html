@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>layout_test_1</title>
+  <style>
+    /* reset */
+    html,body{width: 100%; height: 100%;}
+    html,body,h1,h2,h3,h4,h5,h6,
+    p,div,pre,form,fieldset,hr{margin: 0; padding: 0;}
+
+    header,section,article,aside,figure,footer{display: block; margin: 0; padding: 0;}
+    ul,li,ol{list-style: none;}
+
+    .hidden{display: block; width: 0; height:0; overflow: hidden;}
+
+    #wrap{width: 960px; height: auto; background-color: #f88; margin: 0 auto;}
+    .clearfix:after{content: " "; display: block; width: 0;height: 0; clear: both;}
+    #headBox{width: 100%; height: 60px ; background-color: #f56; padding :10px 20px; box-sizing:border-box; }
+      h1{width:150px; height: 40px; background-color: #fff; text-align:center; padding-bottom:-10px; margin-left:10px;}
+    #contentBox{width:100%; height: 1200px; } 
+    #articleBox{width:150px; height: 1200px; background-color: #f96; float:left; padding :100px 20px; box-sizing:border-box; text-align:center;}
+      .m_1{width:100px; height: 250px; background-color: #f03 ; float:left; margin-bottom: 250px; }
+      .m_2{width:100px; height: 500px; background-color: #f03 ; float:left; }
+    #articleBox2{width: 810px; height: 1200px; background-color: #674; float:left; }
+    #articleBox2>ul{width: 100%; height:100% ; padding: 30px; box-sizing: border-box; }
+    #articleBox2>ul>li{width: 710px; height: 250px; background-color: #f33; float:left; margin:10px; text-align:center;}
+    #footBox{width:100%; height:80px; background-color: #330; padding:10px 10px; box-sizing:border-box; }
+       .L_1{width:150px; height:40px; background-color: #fff; float:left;}
+       .L_2{width:500px; height:40px; background-color: #fff; float:right;}
+  </style>
+</head>
+<body>
+<div id="wrap">
+<!-- // #header ______________________________-->  
+  <header id="headBox">
+    <h1>수진</h1>
+  </header><!-- // #header-->  
+
+<!-- // #section ______________________________-->
+  <section id="contentBox">
+   <h2 class="hidden">contentBox</h2>
+   
+    <article id="articleBox">
+    <h3 class="hidden">articleBox</h3>
+        <div class="m_1">1</div>
+        <div class="m_2">2</div>
+    </article> 
+
+    <article id="articleBox2">
+     <h3 class="hidden">articleBox2</h3>
+      <ul class="clearfix">
+        <li>사</li>
+        <li>랑</li>
+        <li>해</li>
+        <li>요</li>
+      </ul>
+    </article>  
+
+  </section><!-- // #section-->
+
+<!-- // #footer ______________________________-->
+  <footer id="footBox">
+   <h2 class="hidden">footBox</h2>
+    <div class="L_1">링크</div>
+    <div class="L_2">링크2</div>
+  </footer><!-- // #footer-->
+</div>
+</body>
+</html>
