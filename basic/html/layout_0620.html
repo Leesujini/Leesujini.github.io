@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <!--<link rel="stylesheet" type="text/css" href="" />
+  <link rel="stylesheet" type="text/css" href="" />
+  <link rel="stylesheet" type="text/css" href="" / -->
+   <!--[if lte IE 9]>
+     <script src="../ie/html5shiv/dist/html5shiv.min.js"></script>
+   <![endif]-->
+  <title>layout sample3</title>
+  <style> 
+   /* reset: 브라우저 초기화(모든 브라우저 통일처리) */
+   html,body{width: 100% height: 100%;}
+   html,body, h1,h2,h3,h4,h5,h6,
+   ul,ol,li,dl,dt,dd,
+   p,div,pre,form,fieldset,hr{margin: 0; padding: 0;}
+
+   ul,li,ol{list-style: none;}
+
+   /*html5 reset*/
+   header,nav,aside,article,section,footer,main,figure{display: block; margin: 0; padding: 0;}
+   /*normalize :일반적으로 자주 사용하는 기법을 등록해서 필요에 따라 바로 사용할 수 있도록 처리 (단춬키)*/
+   .clearfix:after{content: ""; display: block; width: 0; height: 0; clear: both;}
+   .hidden{display: block; width: 0; height: 0; overflow: hidden;}
+   #wrap .first_li{margin-left: 0;}
+  /* design */
+    #wrap{width: 960px; height: 740px; background-color: #ccc; margin: 0 auto;  }
+    #headBox{width: 100%; height: 140px; background-color: #1af; padding: 20px 30px 0; box-sizing:border-box; }
+      h1{width: 150px; height: 60px; float:left; background-color: #f06; 
+         /* margin-top: 20px; margin-left: 30px; */ margin-bottom: 20px;   
+          text-align:center;}
+      #unb{width: 500px; height: 50px;  float:right; background-color: rgba(250,250,250,0.5);} 
+        #unb>ul{width: 100%; height: 100%;}
+        #unb>ul>li{width: 24%; height: 100%; float:left; background-color: #acd; margin-left:1.3%;}
+      /*margin-top: 20px; margin-right: 30px;}*/
+      /*#unb>h2{width: 100px; height: 0; overflow: hidden;}*/
+    #gnb{width: 960px; height: 40px;  float:left; background-color: #a9a; margin-left:-30px; padding:5px 30px; box-sizing:border-box; }
+    /*#gnb>h2{width: 0; height: 0; overflow: hidden;}*/
+    #gnb>ul{width: 100%; height: 100%; background-color: #0c2;}
+    #gnb>ul>li{width: 12%; height: 100%; float:left; background-color: #fff; margin-left:0.57%;}
+  
+    #contentBox{width: 100%; height: auto; background-color: #2a7; }
+    #sideBox{width:25%; height:250px; background-color: #f44; float:left; }
+      .divbox{width:150px; height:50px; background-color: #233; float:left; margin: 5px; }
+      .divbox2{width:150px; height:50px; background-color: #233; float:left; margin: 5px;}
+      .divbox3{width:150px; height:30px; background-color: #233; float:left; margin: 5px;}
+      .divbox4{width:60px; height:150px; background-color: #233; float:left; margin: 5px; margin-top: -115px;} 
+
+    #articleBox{width: 75%; height: 250px; background-color: #ff9; float:left; }
+      .banner_1{width: 710px; height: 150px; background-color: #f0f; float:left; margin: 5px;}
+      .banner_2{width: 710px; height: 80px; background-color: #f0f; float:left; margin: 5px; margin-top:-0.1px;}
+    #articleBox2{width: 100%; height:270px; background-color: #365; float:left; }
+      #articleBox2>ul>li{width: 230px; height:250px; background-color: #fff; float:left; margin: 5px;}
+     
+    #footBox{width: 100%; height: 80px; background-color: #3a3; }
+
+  </style>
+</head>
+<body>
+  <div id="wrap">
+    <header id="headBox">
+       <h1>logo</h1>
+       <nav id="unb">
+         <h2 class="hidden">utiliy navigation</h2>
+         <ul>
+           <li class="first_li">unb_01</li>
+           <li>unb_02</li>
+           <li>unb_03</li>
+           <li>unb_04</li>
+         </ul>
+       </nav>
+      <nav id="gnb">
+        <h2 class="hidden">global navigation</h2>
+        <ul>
+          <li class="first_li">navi_01</li>
+          <li>navi_02</li>
+          <li>navi_03</li>
+          <li>navi_04</li>
+          <li>navi_05</li>
+          <li>navi_06</li>
+          <li>navi_07</li>
+          <li>navi_08</li>
+        </ul>
+      </nav> 
+
+    </header>
+    <section id="contentBox" class="clearfix"> 
+      <aside id="sideBox">
+        <div class="divbox">div1</div>
+        <div class="divbox2">div2</div>
+        <div class="divbox3">div3</div>
+        <div class="divbox4">div4</div>
+
+      </aside>
+
+      <article id="articleBox">
+        <div class="banner_1"></div>
+        <div class="banner_2"></div>
+      </article>
+      <article id="articleBox2">
+        <ul class="class_1">
+          <li>1</li>
+          <li>2</li>
+          <li>3</li>
+          <li>4</li>
+        </ul>
+      </article>
+        
+      </section>
+    <footer id="footBox">footBox</footer>
+  </div>
+</body>
+</html>
