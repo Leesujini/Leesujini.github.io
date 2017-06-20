@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>layout test</title>
+  <style>
+
+    /*reset*/
+    html,body{margin: 0; padding: 0;}
+    html,body,h1,h2,h3,h4,h5,h6,ol,ul,li,
+    p,div,pre,form,fieldset,hr{margin: 0; padding: 0;}
+
+    header,nav,aside,article,section,footer,main,figure{display: block; margin: 0; padding: 0;}
+    ul,li,ol{list-style: none;}
+  
+  /*normalize*/
+    .hidden{display: block; width: 0; height: 0; overflow: hidden;}
+    #wrap    .first_li{margin-left: 0;}
+     .clearfix:after{content: " "; display: block; width: 0;height: 0; clear: both;}
+
+/*design*/
+    #wrap{ width:700px; height: 745px; background-color: #f99; margin: 0 auto;}
+    #header{width:100%; height:80px; background-color: #19f; padding :15px 20px; box-sizing:border-box;}
+      h1{width: 100px; height: 50px; background-color: #fff; float:left; text-align:center;  margin-left: 30px; margin-bottom:-80px;}
+      
+
+    #unb{width: 400px; height:auto;  float:right; background-color: #fff; } 
+
+       #unb>ul{width: 100%; height: 100%;  }
+       #unb>ul>li{width: 24%; height: 30px; float: left; background-color: #f07; margin-left:1.333333333%; }
+
+
+
+    #gnb{width:100%; height: 30px; background-color: #f0f; }
+    #bannerBox{width:100% ; height: 250px; background-color: #f33; text-align:center; }
+      #asideBox{width: 100%; height: 35px; background-color: #098; text-align:center;}
+      #article{width: 50%; height: 300px; background-color: #f82; float: left; padding: 25px; box-sizing: border-box;}
+         #article>ul{width: 100% height: 100%;  }
+         #article>ul>li{width: 140px; height: 120px; background-color: #fff; float: left; margin-left: 15px;}
+         .article_01{margin-bottom:15px;}
+         .article_02{margin-bottom:15px;}
+      #article2{width: 50%; height: 300px; background-color: #f57; float: left;}
+         #article2>div{width: 330px; height:80px; background-color: #577; float: left; margin:10px; box-sizing:border-box;}
+    #footer{width:100%; height: 80px; background-color: #f88; text-align:center;}
+  </style>
+</head>
+<body>
+  <div id="wrap">
+    <header id="header">
+      <h1>logo</h1>
+       <nav id="unb">
+         <h2 class="hidden">navi1</h2>
+           <ul class="clearfix">
+             <li class="first_li">navl</li>
+             <li>1</li>
+             <li>2</li>
+             <li>3</li>
+          </ul>
+       </nav>
+    </header>
+    <section id="bannerBox">banner</section>
+      <h2 class="hidden">section</h2>
+      <aside id="asideBox">aside</aside>
+      <article id="article">
+        <h2 class="hidden">navi3</h2>
+           <ul class="clearfix">
+             <li class="first_li article_01" >article</li>
+             <li class="article_02">4</li>
+             <li class="first_li">5</li>
+             <li>6</li>
+         </ul>
+      </article>
+       
+      <article id="article2">
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+      </article>
+    <footer id="footer">footer</footer>
+     <h2 class="hedden"></h2> 
+    
+  </div>
+</body>
+</html>
