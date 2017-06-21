@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>layout0621</title>
+  <style>
+    /* reset */
+    html,body{margin: 0; padding: 0;}
+    html,body,h1,h2,h3,h4,h5,h6,ol,ul,li
+    p,div,pre,form,fieldset,hr{margin: 0; padding: 0;}
+    header,nav,aside,article,section,footer,main,figure{display: block; margin: 0; padding: 0;}
+     .hidden{display: block; width: 0; height: 0; overflow: hidden;}
+    ul,li,ol{list-style: none;}
+  
+
+    #wrap{margin-left: 0;}
+    .clearfix:after{content: " "; display: block; width: 0;height: 0; clear: both;}
+
+    #wrap{width:978px; height: 1740px; background-color: #fff; margin: 0 auto; }
+
+    #headerBox{width:100%; height: auto; background-color: #388; padding:20px; box-sizing:border-box; }
+      h1{width: 125px; height: 125px; float: left; background-color: #fff; margin-right: 20px;}
+      #gnb{width: 650px; height:60px; background-color: #f87; float:left; margin-top:30px; }
+      #unb{width:100px; height: 60px; background-color: #fff; float:right; margin-top:30px;}
+      #unb>div{width:40px; height:40px; background-color: #244; float: left;}
+      .icon{margin-right:15px;}
+    #contentBox{width:100%; height: auto; background-color: #fff; }
+    #asideBox{width: 100%; height: 200px; background-color: #f96; margin-top:20px; }
+     .miniBox{width:40px; height: 50px; background-color: #243; float: left; margin-top:80px;}
+     .banner>div{width:150px; height:150px; background-color: #f87; float:left; padding:20px;  box-sizing:border-box; margin-left: 25px; margin-top: 30px;}    
+      .miniBox2{width:40px; height: 50px; background-color: #243; float:right; margin-top:80px;}
+    #articleBox{width:100%; height: 300px; background-color: #f99; margin-top:20px;}
+
+    #articleBox2{width: 100%; height: 140px; background-color: #f3f; margin-top: 20px;}
+
+
+    #articleBox3{width: 100%; height: 700px; background-color: #224; padding:20px; box-sizing:border-box; margin-top: 20px;  }
+
+    #articleBox3>#top{width:100%; height: 55px; background-color: #fff;}
+      #articleBox3>#top>.ct{width: 100px; height: 45px; float:left; background-color: #fff;}
+      #articleBox3>.gs{width:250px; height: 30px ; float:left; background-color: #fff;}
+
+
+     #articleBox3>ul{width: 100%; height: 100%; margin-left: 100px;}
+    #articleBox3>ul>li{width: 150px; height: 150px; background-color: #fff; float:left; margin: 20px;}
+
+     #articleBox3>.cssjhd{width:60px; height:30px; background-color: #fff; float: right; margin-right:-50px; margin-right: 5px;}
+     #articleBox3>.cssjhd2{width:60px; height:30px; background-color: #fff; float: right; margin-right:}
+
+    #footerBox{width: 100%; height: 150px; background-color: #f23;margin-top: 20px; padding: 20px; box-sizing:border-box; }
+      .foot1{width:100px; height: 100px; background-color: #222; float:left; margin-left:120px;}
+      .foot2{width:600px; height: 100px; background-color: #222; float:left; margin-left:10px;}
+     
+  </style>
+
+</head>
+
+<body>
+ <div id="wrap">
+  <header id="headerBox" class="clearfix">
+    <h1>logo</h1>
+    <nav id="gnb">
+     <h2 class="hidden">ff</h2>
+    </nav>
+ 
+  <nav id="unb">
+     <h2 class="hidden">ff</h2>
+     <div class="icon">1</div>
+     <div>2</div>
+  </nav>
+  </header>
+
+  <section id="contentBox">
+    <h2 class="hidden">f</h2>
+ 
+  <aside id="asideBox">
+    <h3 class="hidden"></h3>
+    <div class="miniBox"></div>
+    <div class="banner">
+      <div>a</div>
+      <div>b</div>
+      <div>c</div>
+      <div>d</div>
+      <div>e</div>
+    </div>
+
+    <div class="miniBox2"></div>
+  </aside>
+
+    <article id="articleBox">
+      <h3 class="hidden"></h3>
+    </article> 
+
+    <article id="articleBox2">
+      <h3 class="hidden"></h3>
+    </article> 
+
+    <article id="articleBox3">
+      <h3 class="hidden"></h3>
+      <div id="top">
+        <div class="ct">카테</div>
+        <div class="gs">검색</div>
+        <div class="cssjhd">최신순</div>
+        <div class="cssjhd2">정확도</div>
+      </div>
+       <ul>
+         <li>1</li>
+         <li>2</li>
+         <li>3</li>
+         <li>4</li>
+         <li>5</li>
+         <li>6</li>
+         <li>7</li>
+         <li>8</li>
+       </ul>
+    </article> 
+
+  </section>
+
+    <footer id="footerBox">
+      <h3 class="hidden"></h3>
+      <foot class="foot1"></foot>
+      <foot class="foot2"></foot>
+    </footer>
+ </div>
+</body>
+</html>
