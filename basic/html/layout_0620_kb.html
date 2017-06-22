@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>KB</title>
+  <style>
+     /*reset*/
+    html,body{margin: 0; padding: 0;}
+    html,body,h1,h2,h3,h4,h5,h6,ol,ul,li,
+    p,div,pre,form,fieldset,hr{margin: 0; padding: 0;}
+
+    header,nav,aside,article,section,footer,main,figure{display: block; margin: 0; padding: 0;}
+    ul,li,ol{list-style: none;}
+
+
+    .hidden{display: block; width: 0; height: 0; overflow: hidden;}
+     .clearfix:after{content: " "; display: block; width: 0;height: 0; clear: both;}
+    #wrap .first_li{margin-left: 0;}
+
+    #wrap {width:960px; height: 3000px; background-color: #f88; margin: 0 auto;}
+
+    #headBox{width:100%; height:80px; background-color: #557; padding: 10px 20px; box-sizing:border-box; }
+      h1{width:140px; height:60px; background-color: #ff4; margin-left: 60px; float:left; text-align:center;}
+     #gnb{width: 400px; height: 40px;  float:left; background-color: #788; margin-left: 30px;} 
+        #gnb>ul{width: 100%; height: 100%; }
+        #gnb>ul>li{width: 23%; height: 100%; float:left; background-color: #999; margin-left:1.333333%;}
+        #unb{width: 250px; height: 30px;  float:right; background-color: #988;}
+         #unb>ul{width: 100%; height: 100%;}
+        #unb>ul>li{width:30%; height: 100%; float:left;}
+    #contentBox{width:100%; height:auto; }
+      .articleBox{width:960px; height:250px;background-color: #fff; text-align:center; }
+     #articleBox3{width:960px; height:200px; background-color: #946; padding: 10px; box-sizing:border-box; }
+     #articleBox3>#article3{width: 100%; height:100%; padding-left: 350px; padding-right:200px; box-sizing: border-box; margin: 20px; }
+     #article3>.article3_1{width: 200px; height: 30px; background-color: #f83;float:left; margin-bottom: 20px;}
+      #article3>ul{width: 100%; height: 25px; float:left; background-color: #f93; margin-left: -100px;}
+     #article3>ul>li{width:70px; height: 25px; background-color: #f93;  float:left; margin-left: -30px; margin-left: 40px;}
+     #article3>.article3_2{width:100px; height:20px; background-color: #fff; float:left; margin-left: 50px; }
+
+
+      #articleBox2{width:960px; height:2000px; background-color: #455; }
+      #articleBox2>#article2{width:100%; height: 100%; padding: 30px; box-sizing: border-box; }
+      #article2>ul{ float:left; padding-left: 90px;}
+      #article2>ul>li{width:200px; height: 250px; background-color: #fff; float:left; margin: 20px;text-align:center;}
+      #article2>div{width:680px; height: 50px;  float:left; background-color: #f8f; margin-left: 110px;  text-align:center;}
+      .articleBox4{width:960px; height:350px; background-color: #f66; text-align:center; }
+    #footBox{width:960px; height: 400px; background-color: #991; }
+      #foot1{width: 100%; height: 100%; padding: 20px; box-sizing: border-box;}
+      #foot1>ul{float:left;}
+      #foot1>ul>li{width: 200px; height: 100px; background-color: #f34; float:left; margin-left: 20px;}
+      #foot1>p{width: 700px; height: 20px; background-color: #673; float:left;margin: 20px;}
+      #foot2>ul{width:150px; height:100px; background-color: #f55; float:left; margin-left: -10px;}
+      #foot2>ul>li{width:40px; height: 40px; float:right; background-color: #fff; margin:5px;}
+      #foot2>ul>.foot2_1{width:140px; height:40px; clear:both; margin-top:5px; }
+      #foot3{padding: 10px; box-sizing: border-box;}
+      #foot3>.foot3_1{width: 500px; height: 60px; background-color: #f85; float:left; margin-left:10px; margin-top:-50px;}
+      #foot3>p{width: 300px; height: 20px; background-color: #f89;  clear:both; margin-left:10px;}
+  </style>
+</head>
+<body>
+  <div id="wrap">
+    <header id="headBox">
+      <h1>kb차차차</h1>
+    <nav id=>
+     <nav id="gnb">
+        <h2 class="hidden">kb1</h2>
+        <ul>
+          <li class="clearfix">내차살때</li>
+          <li>내차팔때</li>
+          <li>테마검색</li>
+          <li>이용안내</li>
+        </ul>
+      </nav> 
+      <nav id="unb">
+        <h2 class="hidden">kb2</h2>
+          <ul>
+            <li>로그인</li>
+            <li>회원가입</li>
+            <li>사이트맵</li>
+          </ul>
+    </nav>
+    </header>
+
+
+    <section id="contentBox">
+     <h2 class="hidden">contentBox</h2>
+      <article class="articleBox">
+        <h2 class="articleBox">banner</h2>
+      </article>
+
+    <article id="articleBox3">
+        <h3 class="hidden">article3</h3>
+     <div id="article3">
+       <div class="article3_1">
+         <div>kb차차차 중고차 검색</div>
+       </div>
+       <ul>
+         <li>제조사</li>
+         <li>모델</li>
+         <li>세부모델</li>
+       </ul>
+       <div class="article3_2">
+         <div>검색하기</div>
+       </div>
+     </div>
+    </article>
+
+
+      <article id="articleBox2">
+        <h3 class="hidden">article2</h3>
+       <div id="article2">
+         <ul>
+           <li>차</li>
+           <li>차</li>
+           <li>차</li>
+           <li>차</li>
+           <li>차</li>
+           <li>차</li>
+           <li>차</li>
+           <li>차</li>
+           <li>차</li>
+           <li>차</li>
+           <li>차</li>
+           <li>차</li>
+         </ul>
+         <div>더보기</div>
+       </div>
+      </article> 
+
+
+      <article class="articleBox4">
+         <h3>banner1</h3>
+      </article>
+
+
+     
+
+    </section>
+
+
+    <footer id="footBox">
+      <h3 class="hidden">footBox</h3>
+     <div id="foot1">
+       <ul>
+         <li>대표전화</li>
+         <li>가이드</li>
+         <li>연장보증</li>
+         <li>APP</li>
+       </ul>
+       <p>인터넷서비스 이용약관/심의번호</p>
+       <div id="foot2">
+         <ul>
+           <li>N</li>
+           <li>F</li>
+           <li class="foot2_1">TTT</li>
+         </ul>
+       </div>
+       <div id="foot3">
+         <p class="foot3_1">주소</p>
+         <p>여기는 차차차 입니다.</p>
+       </div>
+     </div>
+    </footer>
+
+  </div>
+</body>
+</html>
