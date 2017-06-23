@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" type="text/css" href="../css/base/reset.css" />
+  <link rel="stylesheet" type="text/css" href="../css/base/normalize.css" />
+  <!--[if lte IE 9]>
+    <script src="../ie/html5shiv/dist/html5shiv.min.js"></script>
+  <![endif]-->
+
+  <title>Position</title>
+  <style>
+    html,body{width: 100%; height: 3000px; background-color:#f88;}
+  
+#wrap{width: 960px; height: 3000px; 
+      margin: 0 auto; background-color: #afc; 
+      background-color: #555;}
+  h1{width: 100%; height: auto; padding:2em; box-sizing:border-box;
+     color:#fff; text-align: center; background-color: #05c; }
+ 
+
+  /* modal _01 ___________________________________*/
+/* 스크롤 위치 관계없이, 브라우저상에 무조건 꽉차게 만들기 */
+
+  .modal_box{width: 120px; height: 3000px; background-color: #fff; position: fixed; top:10%; left:50%; margin-left: -600px; }
+  .modal_box2{width: 120px; height:400px; background-color: #ff2; position: fixed; top:50%; left:50%; margin-top: -400px; margin-left:500px;}
+  </style>
+</head>
+<body>
+  <div id="wrap">
+    <h1>position 03</h1>
+    <div class="modal_box">메뉴</div>
+  </div>
+   <div >
+     <h2></h2>
+     <div class="modal_box2">스크롤</div>
+ </div>
+</body>
+</html>
