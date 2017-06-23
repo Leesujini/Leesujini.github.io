@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" type="text/css" href="../css/base/reset.css" />
+  <link rel="stylesheet" type="text/css" href="../css/base/normalize.css" />
+  <!--[if lte IE 9]>
+    <script src="../ie/html5shiv/dist/html5shiv.min.js"></script>
+  <![endif]-->
+
+  <title>Position</title>
+  <style>
+    html,body{width: 100%; height: 3000px; background-color: rgba(100,100,100,0.3);}
+  
+#wrap{width: 960px; height: 3000px; 
+      margin: 0 auto; background-color: #afc; 
+      background-image:linear-gradient(45deg, #afc, #0cf);}
+  h1{width: 100%; height: auto; padding:2em; box-sizing:border-box;
+     color:#fff; text-align: center; background-color: #05c; }
+ 
+
+  /* modal _01 ___________________________________*/
+/* 스크롤 위치 관계없이, 브라우저상에 무조건 꽉차게 만들기 */
+  .modal_win{width: 100%; height: 100%; 
+    position: fixed; z-index:100; top: 0; left: 0;
+    background-color:rgba(100,100,100,0.3);}
+    
+  .modal_box{width: 700px; height: 400px; background-color: #fff; position: absolute; top:50%; left:50%; margin-top: -200px; margin-left: -350px; }
+   button[type="button"]{width: 50px; height: 50px; border: 0; background-color: #333; color:#fff; font-weight: bold; cursor: pointer; position: absolute; right: 0; top: 0; margin-top: -25px; margin-right:-25px;}
+  </style>
+</head>
+<body>
+  <div id="wrap">
+    <h1>position test_01</h1>
+  </div>
+
+<!--  modal window test_01 -->
+  <div class="modal_win">
+    <div class="modal_box">
+      <h2>modal 창 만들기</h2>
+    <button type="button">X</button>
+    </div>
+  </div>
+</body>
+</html>

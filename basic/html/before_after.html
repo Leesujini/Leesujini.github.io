@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+  <title>Document</title>
+  <style>
+    .before_test{color:#0af; font-size:1.2em; } 
+    .before_test:before{content:"*"; color:#f06;}
+    p>a:before{content:"점심 후라 좀 졸리지만 그래도 화이팅!";}
+    p>span:hover:after{content:"당신의 바람이....뭐지"; color:#fao;} 
+    /* hover: 마우스를 가져다대면 글씨가 뜸 */
+     
+     /* before: 시각적으로만 보여지는 것/ 
+    이미지로 쓰일 수도 있음*/
+    /* 1em = 16px 1.2em = 19.2px */
+  </style>
+</head>
+<body>
+  <h1>가상 선택자</h1>
+  <h2 class="before_test">이전(before)선택자</h2> <!-- h2 다음에 before 가 들어가는 것 -->
+     <p>실제로 존재하지 않는다. css 효과로만 보이게 처리</p>
+     <p><a href="#"></a></p>
+  <h2>이후(after)선택자</h2>
+    <p>before 와 같은 기능을 한다. 이후 (뒤에) 구현</p>
+    <p><span>이후</span>어딘가에 나타나게 하기..</p>
+
+</body>
+</html>

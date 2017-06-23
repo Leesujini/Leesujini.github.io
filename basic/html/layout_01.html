@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Document</title>
+  <style>
+    /* '*'의 뜻은 전체하는 의미: 실제로 많이 사용하는 것은 지양
+       -간단하게 처리 할 수 있는 기능을 모든 곳곳에 사용해서 무거워짐 */
+     *{margin: 0; padding: 0; border: 0;
+       --fontColor:#fff;}
+  
+     body{background-color:#057; margin:0; }
+     #box{width:600px; height:auto; margin:0 auto;}
+     
+     /* margin 에 의미
+     -50px auto; -> 위/아래는 50px 만큼씩 떨어뜨린다. 좌/우는 자동(가운데배치)*/
+
+     .out_box{width:inherit; height:100px;}
+     #headBox{background-color:#f0a; 
+      color:var(--fontColor);}
+     #contentBox{height:auto; }
+     /*
+     -블럭 요소를 옆으로 나열하기 위해 float 기능을 사용한다.
+      -왼쪽을 기준으로 나열하기 위해서는 float:left;
+      -오른쪽을 기준으로 나열하려면 float:right;
+      -문제점1: 부모요소에 높이값을 설정하면-넘어가는 사이즈를 설정 시 매번 변경!
+      -문제점2: 부모요소에 높이값을 auto로 설정-부모의 높이는 0로 처리(float의 의미)
+      -해결하기 위한 방법1: clear속성을 사용
+      -해결하기 위한 방법2: 정의된 이름은 아니지만 보편적으로 .clearfix의 기법
+      -해결하기 위한 방법3:css의 추가기능(선택자의 기능)-::before , ::after 
+      */
+      
+      /*.clearfix ::after 사용 */
+      .clearfix ::after{content:" "; display:block; width:0; height:0; clear:both;}
+       #sideBox{
+        width:-webkit-calc(100% / 4); /*webkit:chrome,safari,swing */
+        width:-moz-calc(100% / 4); /* moz: mozilla(fire fox); */
+        width:-ms-calc(100% / 4); /* ms:microsoft(IE,edge); */
+        width:-o- calc(100% / 4); /* o: opera */
+        width:calc(100% / 4); /* 표준(미래에 표준으로 등재시 사용) */
+        height:300px; float:left; background-color:#ccc;}
+    
+       #dataBox{
+        width:-webkit-calc(100% / 4); /*webkit:chrome,safari,swing */
+        width:-moz-calc(100% / 4); /* moz: mozilla(fire fox); */
+        width:-ms-calc(100% / 4); /* ms:microsoft(IE,edge); */
+        width:-o- calc(100% / 4); /* o: opera */
+        width:calc(100% / 4); /* 표준(미래에 표준으로 등재시 사용) */
+        height:300px; float:left; background-color:#333; }
+
+       #dataBox2{ 
+        width:-webkit-calc(100% / 4); /*webkit:chrome,safari,swing */
+        width:-moz-calc(100% / 4); /* moz: mozilla(fire fox); */
+        width:-ms-calc(100% / 4); /* ms:microsoft(IE,edge); */
+        width:-o- calc(100% / 4); /* o: opera */
+        width:calc(100% / 4); /* 표준(미래에 표준으로 등재시 사용) */
+        height:300px; float:left; background-color:#fff; } 
+       #dataBox3{ 
+        width:-webkit-calc(100% / 4); /*webkit:chrome,safari,swing */
+        width:-moz-calc(100% / 4); /* moz: mozilla(fire fox); */
+        width:-ms-calc(100% / 4); /* ms:microsoft(IE,edge); */
+        width:-o- calc(100% / 4); /* o: opera */
+        width:calc(100% / 4); /* 표준(미래에 표준으로 등재시 사용) */
+        height:300px; float:left; background-color:#ff0; }
+
+       .clearfix{clear: both;}
+       #footBox{background-color: #0af;}
+       /*-크기값 계산하기: 3등분의 경우 소수점의 크기값을 계산해야 하므로
+       소수점 6자리 까지 계산하여 사용합니다.(%, em, rem ...) -px의 수치 제외
+       -css3의 최신기능에는 수치를 자동으로 계산하는 속성값이 있다.
+       -calc() : calc()는 ()안에 원하는 수치와, 사칙연산 그리고 계산내용을 작성
+       -이때 연산기호 (*,/,+,-,%)앞 뒤에는 공백을 만들어 주어야 계산이 된다.
+       -기술은 구현되지만 표준으로 등록되지 않은 경우에는 사용할 수 없다.
+        -이러한 경우에 미래에 사용할 수 있는 기능을 강제로 끌어쓰는 방법
+        -벤더프리픽스: 앞, 뒤에 벤더(-)를 달고, 해당하는 브라우저의 방식 작성하여 구현
+        -차후 표준으로 등재시 밴더프리픽스의 기능은 삭제
+        */
+
+      /* div {}
+      #box{} 두개다 가능 div 안 내용 배경색 #box 이 좋음 */
+
+  </style>
+  <script type="text/javascript">
+    //
+  </script>
+</head>
+<body>
+   <div id="box">
+     <header id="headBox" class="out_box">
+      headBox
+     </header>
+     <section id="contentBox" class="out_box clearfix">
+       <aside id="sideBox">sideBox</aside>
+       <article id="dataBox">dataBox</article>
+       <article id="dataBox2">dataBox2</article>
+       <article id="dataBox3">dataBox3</article>
+
+       <!-- .clearfix의 이해
+       -div코드로 눈에 보이게 만들어서 사용
+       -br코드로 변형시켜 사용
+       -가상선택자(:after)를 사용
+         -->
+         <!-- div.clearfix를 사용
+          이해 <div class="clearfix">clearfix위치</div>
+          이해2 br.clearfix를 사용 
+          이해3 가상선택자 ::after를 사용 (부모에 class="clearfix" 삽입) -->
+
+         <br class="clearfix" />
+
+      </section>
+     <footer id="footBox" class="out_box">
+       
+     footBox
+     </footer>
+   </div> <!-- // #box -->
+</body>
+</html>

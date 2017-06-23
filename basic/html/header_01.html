@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Document</title>
+  <style>
+
+     *{margin: 0px; padding: 0; border: 0;}
+  
+     body{background-color:#fff; margin:0; }
+     #box{width:600px; height:auto; margin:0 auto;
+          }
+
+     .out_box{width:inherit; height:100px;}
+      #headBox{background-color:#f0a;}
+     #contentBox{height:auto; }
+     .clearfix ::after{content:" "; display:block; width:0; height:0; clear:both;}
+     #sideBox{width:inherit; height:200px; float:left; background-color:#ccc;}
+    
+       #dataBox{width:inherit; height:200px; float:left; background-color:#333; }
+
+       #dataBox2{ width:inherit; height:200px; float:left; background-color:#ff0; } 
+      .clearfix{clear: both;}
+      #footBox{background-color: #0af;}
+ 
+  </style>
+
+
+   <script type="text/javascrip"></script>
+
+</head>
+  <body>
+   <div id="box">
+     <header id="headBox" class="out_box">
+      headBox
+     </header>
+     <section id="contentBox" class="out_box clearfix">
+       <aside id="sideBox">sideBox</aside>
+       <article id="dataBox">dataBox</article>
+       <article id="dataBox2">dataBox2</article>
+
+         <br class="clearfix" />
+
+      </section>
+     <footer id="footBox" class="out_box">
+       
+     footBox
+     </footer>
+   </div> <!-- // #box -->
+</body>
+</html>

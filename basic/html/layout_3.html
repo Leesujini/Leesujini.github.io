@@ -40,22 +40,27 @@
     /*#gnb>h2{width: 0; height: 0; overflow: hidden;}*/
     #gnb>ul{width: 100%; height: 100%; background-color: #0c2;}
     #gnb>ul>li{width: 12%; height: 100%; float:left; background-color: #fff; margin-left:0.57%;}
-  
-    #contentBox{width: 100%; height: auto; background-color: #2a7; }
-    #sideBox{width:25%; height:250px; background-color: #f44; float:left; }
-      .divbox{width:150px; height:50px; background-color: #233; float:left; margin: 5px; }
-      .divbox2{width:150px; height:50px; background-color: #233; float:left; margin: 5px;}
-      .divbox3{width:150px; height:30px; background-color: #233; float:left; margin: 5px;}
-      .divbox4{width:60px; height:150px; background-color: #233; float:left; margin: 5px; margin-top: -115px;} 
-
-    #articleBox{width: 75%; height: 250px; background-color: #ff9; float:left; }
-      .banner_1{width: 710px; height: 150px; background-color: #f0f; float:left; margin: 5px;}
-      .banner_2{width: 710px; height: 80px; background-color: #f0f; float:left; margin: 5px; margin-top:-0.1px;}
-    #articleBox2{width: 100%; height:270px; background-color: #365; float:left; }
-      #articleBox2>ul>li{width: 230px; height:250px; background-color: #fff; float:left; margin: 5px;}
-     
+    /*#gnb>ul>li.first_li{margin-left: 0;}*/
+  /*li 의 간격을 조정하기 위해 각각의 li에 margin-left 설정
+  (전체 8개의 리스트 100% / 8 ), 이중에 사이 간격은 7개 만큼 띄어야 함 4% / 7 -> 12*8 =96 이기 때문에 남은 4%에서 7을 나눔 
+  -처음 li에는 margin-left가 적용하지 않으므로 첫 li에 margin-left:0; 처리 (별도의 class이름 할당) */
+    #contentBox{width: 100%; height: 520px; background-color: #2a7; }
     #footBox{width: 100%; height: 80px; background-color: #3a3; }
+/*narr
+-overflow:일정한 크기의 값을 가진 태그에 내용이 넘쳤을 경우 처리하는 속성기법
+-overflow 종류: overflow, overflow-X(가로 영역), overflow-Y (세로로 넘쳤을 경우 ) 
+ overflow 속성: normal, auto, scroll, hidden
 
+ 자식요소에 margin VS 부모요소에 padding
+ -margin 을 사용하는 방법은 직접적으로 하나하나 간격을 설정하는 방법
+ -모든 필요 요소에 매번 사용해야 하는 불편함이 발생한다.
+ -부모 요소에 padding을 사용하면 각각 처리하는 내용중에 공통영역을 한꺼번에 처리하기 때문에 전체코드의 양이 줄고, 통일성을 잡을 수 있다.
+
+  -padding 또는 border 를 사용할 때 해당하는 크기를 조절한다면 (padding-top:20px 을 사용하여 전체 높이를 20만큼 줄여야 한다면 box-sizing:border-box; 속성을 사용하면 전체의 크기를 조정하지 않아도 된다.) 
+
+  box-sizing 은 padding, border 에 대한 선의 위치를 설정하는 속성
+  속성은 3가지: content-box 지정상자의 바깥쪽 | border-box 지정상자의 안쪽 |
+ */
   </style>
 </head>
 <body>
@@ -86,29 +91,7 @@
       </nav> 
 
     </header>
-    <section id="contentBox" class="clearfix"> 
-      <aside id="sideBox">
-        <div class="divbox">div1</div>
-        <div class="divbox2">div2</div>
-        <div class="divbox3">div3</div>
-        <div class="divbox4">div4</div>
-
-      </aside>
-
-      <article id="articleBox">
-        <div class="banner_1"></div>
-        <div class="banner_2"></div>
-      </article>
-      <article id="articleBox2">
-        <ul class="class_1">
-          <li>1</li>
-          <li>2</li>
-          <li>3</li>
-          <li>4</li>
-        </ul>
-      </article>
-        
-      </section>
+    <section id="contentBox">contentBox</section>
     <footer id="footBox">footBox</footer>
   </div>
 </body>

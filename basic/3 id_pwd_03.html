@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" type="text/css" href="../css/base/reset.css" />
+  <link rel="stylesheet" type="text/css" href="../css/base/normalize.css" />
+  <title>Login</title>
+  <style>
+  .hidden{display: block; width:0; height: 0; overflow: hidden;}
+  fieldset{border:0;background-color: #fff;width:300px; height: 300px; margin: 0 auto; margin-top: 100px; }
+  .input_box{width:300px; height: 40px;  border-radius:0.3em; text-indent: 10px; }
+  input[type="submit"]{width: 300px; height: 40px;  border-radius:0.3em; background-color: #58f; margin-top: 20px; }
+  </style>
+</head>
+<body>
+  <div id="wrap">
+    <h1 class="hidden">Please login</h1>
+      <form action="#" method="post">
+        <fieldset>
+        <div>
+          <legend><h2>Please login</h2></legend>
+
+          <div class="user">
+             <label for="userName"></label>
+             <input type="text"
+             id="userName"
+             name="userName"
+            class="input_box"
+             value=""
+             placeholder=""
+         </div>
+         <div class="pwd">
+             <label for="inputPwd"></label>
+             <input type="password"
+             id="inputPwd"
+             name="inputPwd"
+             class="input_box"
+             value=""
+
+             placeholder="Password"/>   
+         </div>
+          
+          <div class="remember">
+          <input type="checkbox" name="userRemember" 
+                 id="userRemember" value="remember">
+          <label for="userRemember">Remember me</label>
+        </div>
+ 
+        <input type="submit" name="ok" value="LOGIN">
+
+        </fieldset>
+      </form>
+      </div>
+    </div> 
+</body>
+</html>
