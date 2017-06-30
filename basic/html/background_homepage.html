@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!--[if IE]>
+  <script src="../ie/html5shiv/dist/html5shiv.min.js"></script>
+  <script src="../ie/ie7/IE9.js"></script> /선택자
+  <script src="../ie/css3pie/PIE_IE9.js"></script>/css
+  <![endif]-->
+  <link rel="stylesheet" type="text/css" href="../css/base/reset.css" />
+  <link rel="stylesheet" type="text/css" href="../css/base/normalize.css" />
+   <link rel="stylesheet" type="text/css" href="../fontawesome/css/font-awesome.min.css" /> 
+   <link rel="stylesheet" type="text/css" href="..">
+   <link rel="stylesheet" type="text/css" href="..">
+
+<script src="js/jquery/jquery-3.2.1.min.js"></script>
+   <script sre="js/jquery/jquery-ui.min.js"></script>
+  <title>homepage_test</title>
+  <style>
+   #wrap {width:960px; height: 2500px; min-height: 150px; background-color: #fff; margin: 0 auto;}
+   #headBox{width:100%; height:120px; background-color:#fff;  padding: 10px 20px; box-sizing:border-box; }
+      h1{width:140px; height:60px; background-color: #fff; margin-left: 10px; float:left;background-image: url("../kwater/img/header/logo.jpg");
+      background-repeat: no-repeat; cursor:pointer; margin-top: 30px;}
+     .clearfix:after{content: " "; display: block; width: 0;height: 0; clear: both;}
+      .hidden{display: block; width: 0; height: 0; overflow: hidden;}
+    #gnb{width: 750px; height: 30px;  float:left; margin-left: 30px;margin-top:25px;} 
+
+     #unb{width: 300px; height: 18px;  float:right; background-color: #fff; } 
+     #unb a{width: 100%; height: 100%; display: block;}
+     #unb>ul{width: 100%; height: 100%; margin-left: 110px; }
+     #unb>ul>li{width: 100%; height: 100%; background-color: #666;float: left;}
+     #unb>ul>li:first-child{width: 39px; height: 18px; background-image: url("../kwater/img/header/unb/unb_1.jpg");  background-repeat:no-repeat; float: left; }
+     #unb>ul>li:nth-child(2){width:49px; height: 18px; background-image: url("../kwater/img/header/unb/unb_2.jpg");  background-repeat:no-repeat; float: left;   }
+     #unb>ul>li:nth-child(3){width: 56px; height: 18px; background-image: url("../kwater/img/header/unb/unb_3.jpg");   background-repeat:no-repeat;float: left;   } 
+     #unb>ul>li:nth-child(4){width: 73px ; height: 18px;background-image: url("../kwater/img/header/unb/unb_4.jpg");   background-repeat:no-repeat;float: left;  }
+
+     #gnb a{width: 100%; height: 100%; display: block;}
+     #gnb>ul{width: 100%; height: 100%; margin-left: 60px; }
+     #gnb>ul>li{width: 12%; height: 100%; float:left; background-color: #fff; margin-left:15px;}
+     #gnb>ul>li:first-child{width:135px; height: 34px; background-image: url("../kwater/img/gnb/gnb_01.jpg");}
+     #gnb>ul>li:nth-child(2){width:78px; height: 34px; background-image: url("../kwater/img/gnb/gnb_02.jpg");}
+     #gnb>ul>li:nth-child(3){width:80px; height: 34px;background-image: url("../kwater/img/gnb/gnb_03.jpg");}
+     #gnb>ul>li:nth-child(4){width:80px;  height: 34px;background-image: url("../kwater/img/gnb/gnb_04.jpg");} 
+     #gnb>ul>li:nth-child(5){width:58px;  height: 34px; background-image: url("../kwater/img/gnb/gnb_05.jpg");} 
+     #gnb>ul>li:nth-child(6){width:78px; height: 34px; background-image: url("../kwater/img/gnb/gnb_06.jpg");} 
+     #gnb>ul>li:nth-child(7){width:109px; height: 34px;background-image: url("../kwater/img/gnb/gnb_07.jpg");}
+
+      #contentBox{width:100%; height:auto; }
+      .articleBox{width:100%; height:496px; background-image: url("../kwater/img/banner.jpg");}
+
+     #articleBox2:{width:100%; height: auto;}
+     #articleBox2 a{width: 100%; height: 100%; display: block;}
+     #articleBox2>ul{width:100%; height: 120px; border-bottom: 1px solid; color: #ccc;}
+
+     #articleBox2>ul>li{width:95px; height: 111px; float: left;background-image: url("../kwater/img/lnb/lnb.png"); }
+     #articleBox2>ul>li:first-child{width: 95px; height: 111px;}
+     #articleBox2>ul>li:nth-child(2){width: 95px; height: 111px; background-position: -108px -111px;}
+     #articleBox2>ul>li:nth-child(3){width: 95px; height: 111px; background-position: -220px -111px;}
+     #articleBox2>ul>li:nth-child(4){width: 95px; height: 111px; background-position: -320px -111px;}
+     #articleBox2>ul>li:nth-child(5){width: 95px; height: 111px; background-position: -415px -111px;}
+     #articleBox2>ul>li:nth-child(6){width: 95px; height: 111px; background-position: -518px -111px;}
+     #articleBox2>ul>li:nth-child(7){width: 95px; height: 111px; background-position: -624px -111px;}
+     #articleBox2>ul>li:nth-child(8){width: 95px; height: 111px; background-position: -730px -111px;}
+     #articleBox2>ul>li:nth-child(9){width: 95px; height: 111px; background-position: -833px -111px;}
+     #articleBox2>ul>li:nth-child(10){width: 95px; height: 111px; background-position: -940px -111px;}
+
+     #article2_2{width:960px; height: 800px; }
+     #article2_2 a{width: 100%; height: 100%; display: block;}
+     #article2_2>ul{width:940px; height: 242px; margin:10px 10px; background-color: #fff;}  
+     #article2_2>ul>li{width: 228px; height: 166px; margin: 3px; background-color: #222; float: left;}
+     #article2_2>ul>li:first-child{width: 228px; height: 166px;background-image: url("../kwater/img/content/con_01.png");}
+     #article2_2>ul>li:nth-child(2){width: 228px; height: 166px;background-image: url("../kwater/img/content/con_02.png");}
+     #article2_2>ul>li:nth-child(3){width: 228px; height: 166px;background-image: url("../kwater/img/content/con_03.png");}
+     #article2_2>ul>li:nth-child(4){width: 228px; height: 166px;background-image: url("../kwater/img/content/con_04.png");}
+
+     #article2_2>ul>li:nth-child(5){margin-right: 12px; width: 220px; height: 75px;background-image: url("../kwater/img/content/content_info_1.png");}
+     #article2_2>ul>li:nth-child(6){margin-right: 12px; width: 220px; height: 75px;background-image: url("../kwater/img/content/content_info_2.png");}
+     #article2_2>ul>li:nth-child(7){margin-right: 12px; width: 220px; height: 75px;background-image: url("../kwater/img/content/content_info_3.png");}
+     #article2_2>ul>li:nth-child(8){margin-right: 12px; width: 220px; height: 75px; background-image: url("../kwater/img/content/content_info_4.png");}
+     
+    #article2_2>dl a{width: 100%; height: 100%; display: block;}
+    #article2_2>dl{padding: 10px; box-sizing: border-box; margin-top: 20px; float: left; font-size: 0.9em;}
+    #article2_2>dl a{width: 100%; height: 100%; display: block;}
+    #article2_2>dl{padding: 9px; box-sizing: border-box; margin-top: 20px; float: left;}
+    #article2_2>.FAMILTSITE a{width: 100%; height: 100%; display: block;}
+    #article2_2>.FAMILTSITE{padding: 10px; box-sizing: border-box; margin-top: 20px; float: left; margin-left: 15px;}
+     #article2_2>.word a{width: 1005; height: 100%; display: block;}
+    #article2_2>.word{padding: 10px; box-sizing: border-box; margin-top: 20px; float: left; margin-left: 15px;}
+     #article2_2>.word_01 a{width: 100%; height: 100%; display: block;}
+    #article2_2>.word_01{padding: 10px; box-sizing: border-box; float: left; margin-left: 15px;}
+    #artcle2_3>ul{width: 100%; height: 200px; margin-top: 10px; }
+    #artcle2_3>ul>li{width: 228px; height: 143px; float: left; margin-right:  10px; background-color: #ff3; margin: 6px;}
+    #artcle2_3>ul>li:first-child{background-image: url("../kwater/img/content/news_01.png");}
+    #artcle2_3>ul>li:nth-child(2){background-image: url("../kwater/img/content/news_02.png");}
+    #artcle2_3>ul>li:nth-child(3){background-image: url("../kwater/img/content/news_03.png");}
+    #artcle2_3>ul>li:nth-child(4){background-image: url("../kwater/img/content/news_04.png");}
+    #artcle2_3>ul>li:nth-child(5){width: 43px; height: 17px; background-image: url("../kwater/img/content/more_01.png"); clear: both; margin-left: 180px;}
+
+     #footerBox{width: 100%; height:210px; background-color: #ccc; border-top: 1px solid color:#f56;}
+    
+    
+  
+    #footerBox>h2{width: 102px; height:65px; float: left; margin: 50px 10px; background-image: url("../kwater/img/footer/h2.jpg");}
+    #footerBox.f11{width:100%; height: 100px;}
+    #footerBox
+    .f11>ul>li:first-child{width: 90px; height: 19px; background-image: url("../kwater/img/footer/f_map.jpg");float: left; margin-top: 70px; }
+    .f11>ul>li:nth-child(2){width: 13px; height: 19px;background-image: url("../kwater/img/footer/f_map-30.jpg");float: left; margin-top: 70px;}
+    .f11>ul>li:nth-child(3){width: 77px; height: 19px; background-image: url("../kwater/img/footer/f_map-31.jpg");float: left; margin-top: 70px;}
+    .f11>ul>li:nth-child(4){width: 13px; height: 19px;background-image: url("../kwater/img/footer/f_map-30.jpg");float: left; margin-top: 70px;}
+    .f11>ul>li:nth-child(5){width: 68px; height: 19px; background-image: url("../kwater/img/footer/f_map-32.jpg");float: left; margin-top: 70px;}
+    .f11>ul>li:nth-child(6){width: 506px; height: 28px; background-image: url("../kwater/img/footer/address.jpg");float: left; margin-top: 89px; margin-left: -261px;}
+
+    .f22{width: 170px; height: 90px; float: right; background-color: #333; margin: 15px; margin-top: 40px; }
+    .f22>ul>li{width:89px; height: 90px; float: left; background-image: url("../kwater/img/footer/mark_01.jpg");}
+    .f22>ul>li:nth-child(2){width:81px; height: 91px; float: left; background-image: url("../kwater/img/footer/mark_02.jpg");}
+
+  </style>
+</head>
+<body>
+<div id="wrap">
+  <h1><a href="#"><span class="hidden">logo</span></a></h1>
+ <header id="headBox">
+
+   <nav id="unb">
+        <h2 class="hiddn"></h2>
+          <ul>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+          </ul>
+
+    </nav>
+
+     <nav id="gnb">
+        <h2 class="hidden">kb1</h2>
+        <ul>
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>    
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+        </ul>
+      </nav> 
+   
+
+    
+    </nav>
+ </header>
+  <section id="contentBox">
+     <h2 class="hidden">contentBox</h2>
+
+      <article class="articleBox">
+        <h2 class="articleBox"></h2>
+      </article> 
+     <article id="articleBox"></article>
+
+     <article id="articleBox2">
+       <ul>
+         <li><a href="#"></a></li>
+         <li><a href="#"></a></li>
+         <li><a href="#"></a></li>
+         <li><a href="#"></a></li>
+         <li><a href="#"></a></li>
+         <li><a href="#"></a></li>
+         <li><a href="#"></a></li>
+         <li><a href="#"></a></li>
+         <li><a href="#"></a></li>
+         <li><a href="#"></a></li>
+       </ul>
+     </article>
+
+     <article id="article2_2">
+       <ul>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li><a href="#"></a></li>
+         <li><a href="#"></a></li>
+         <li><a href="#"></a></li>
+         <li><a href="#"></a></li>   
+       </ul>
+       <article id="artcle2_3">
+         <ul>
+           <li></li>
+           <li></li>
+           <li></li>
+           <li></li>
+           <li></li>
+         </ul>
+
+       </article>
+       <style scope>
+         dl>dt{font-weight: bold;}
+         dl li{list-style:disc; margin-left: 1.5em;}
+       </style>
+      <dl>
+        <dt>고객지원</dt>
+        <dd>
+          <ul>
+            <li><a href="#">전자조달시스템</a></li>
+            <li><a href="#">온라인청약시스템</a></li>
+            <li><a href="#">건설cltls</a></li>
+            <li><a href="#">상수도서비스포털(Water-pos)</a></li>
+          </ul>
+        </dd>
+      </dl> 
+
+      <dl>
+        <dt>정보제공</dt>
+        <dd><a href="#">水백과사전Waterpedia</a></dd>
+        <dd><a href="#">수자원정보센터</a></dd>
+        <dd><a href="#">한국하천정보시스템(K-RIVER)</a></dd>
+        <dd><a href="#">국가지하수정보센터(GIMS)</a></dd>
+      </dl>
+    
+      <dl class="FAMILTSITE"><strong>FAMILT SITE</strong>
+        <dd><a href="#">경인아라뱃길</a></dd>
+        <dd><a href="#">K-water</a></dd>
+        <dd><a href="#">K-water</a></dd>
+
+      </dl>
+
+      <dl class="word">
+        <dd><a href="#">수우회</a></dd>
+        <dd><a href="#">송산그린시티</a></dd>
+        <dd><a href="#">시화호조력발전소</a></dd>
+      </dl>  
+
+      <dl class="word_01">
+        <dd><a href="#">부산에코델타시티</a></dd>
+        <dd><a href="#">시화지구지속가능발전협의회</a></dd>
+      </dl>
+
+     </article>
+     <article id="articleBox3">
+       <h2></h2>
+     </article>
+  </section>
+ 
+ <footer id="footerBox">
+   <h2></h2> 
+  <foot class="f1">
+   <div class="f11" >
+     <ul>
+       <li></li>
+       <li></li>
+       <li></li>
+       <li></li>
+       <li></li>
+       <li></li>
+     </ul> 
+  </div>
+  <foot class="f22">
+    <ul>
+      <li></li>
+      <li></li>
+    </ul>
+ </foot>
+ </footer> 
+ 
+</body>
+</html>
