@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!--[if lte IE 9]>
+    <script src="../ie/html5shiv/dist/html5shiv.min.js"></script>
+    <script src="../ie/ie7/IE9.js"></script>
+    <script src="../ie/css3pie/PIE_IE9.js"></script>
+  <![endif]-->
+
+  <link rel="stylesheet" href="../css/base/reset.css" />
+  <link rel="stylesheet" href="../css/base/normalize.css" />
+  <link rel="stylesheet" href="../fontAwesome/css/font-awesome.min.css" />
+  <!-- css work file link -->
+  <link rel="stylesheet" href="../css/src/k_water_main.css">
+  <link rel="stylesheet" href="../css/src/k_water_footer.css">
+
+  <!-- jquery-->
+  <script src="../js/jquery/jquery-3.2.1.min.js"></script>
+  <script src="../js/jquery/jquery-ui.min.js"></script>
+  <title>my title</title>
+  <style>
+   body{background-color: #fff;}
+
+  .cf:after, .clearfix:after{content:" "; display:block; width:0; height:0; clear:both;}
+
+
+
+h1 a, .hidden_wrap a{width: 100%; height: 100%; display: block; 
+               background-repeat:no-repeat; background-position: 0 0;}
+
+.hidden_wrap a>span, 
+.hidden{display:block; width: 0; height: 0; overflow: hidden;
+        text-indent:-9999em; position: absolute; z-index:-9999; 
+        font-size: 0; color:transparent; opacity: 0;}
+
+.full{width: 100%; height: 100%;}
+#wrap .first_li{margin-left: 0;}
+#wrap{width: 960px; height: auto; min-height:150px; margin: 0 auto;}
+
+#headBox{width:100%; height:90px; padding:18px 5px 20px; box-sizing:border-box; background-color: #fff;}
+  h1{width: 98px; height: 46px; background-color: #afc;float: left; font-size:1em;}
+  h1>a{background-image: url(../../img/header/logo.jpg); background-position:right center;}
+  
+  #mainNav{width: 790px; height: auto; float: right;}
+    #mainNav:after{content:" "; display: block;clear: both;}
+      #mainNav ul>li>a{display: block; width: 100%; height: 100%; background-color: #05f;}
+
+    #unb{width:227px; height: 18px; float: right; background-color: #ccc;}
+      #unb>li{height: 18px; float: left; margin-left: 5px;}
+        #unb>li:nth-child(1){width:40px; margin-left: 0;}
+        #unb>li:nth-child(2){width:50px;}
+        #unb>li:nth-child(3){width:50px;}
+        #unb>li:nth-child(4){width:70px;}
+      /*#unb li>a{display: block; width: 100%; height: 100%; background-color: #05f;}*/
+      
+    #gnb{width:800px; height: 36px; padding:8px 0; box-sizing:border-box; float: right;
+         background-color: #aaa;}
+      #gnb>li{height:20px; margin-left: 30px; float: left;} 
+      #gnb>li:nth-child(1){width:135px; margin-left: 0;}
+      #gnb>li:nth-child(2){width:80px;}
+      #gnb>li:nth-child(3){width:80px;}
+      #gnb>li:nth-child(4){width:80px;}
+      #gnb>li:nth-child(5){width:60px;}
+      #gnb>li:nth-child(6){width:80px;}
+      #gnb>li:nth-child(7){width:100px;}
+      /*#gnb>li>a{display: block; width: 100%; height: 100%; background-color: #05f;}*/
+
+#contentBox{width:100%; height:auto;}
+  #adBox{width: 100%;height:498px; background-image:url("../../img/banner.jpg");
+        background-repeat:no-repeat; background-position:center;}
+
+  #lnb{width: 100%; height:98px; border-bottom:1px solid #eee; background-color: #9ff;}
+  #lnb>ul{width: 100%; height: 100%;}
+    #lnb>ul>li{width: 95px; height: 100%; float: left; padding:1px; box-sizing:border-box;}
+    #lnb>ul>li>a{ background-color: #fff; }
+    
+    #lnb>ul>li:nth-child(1){}
+    #lnb>ul>li:nth-child(2){}
+    #lnb>ul>li:nth-child(3){}
+    #lnb>ul>li:nth-child(4){}
+    #lnb>ul>li:nth-child(5){}
+    #lnb>ul>li:nth-child(6){}
+    #lnb>ul>li:nth-child(7){}
+    #lnb>ul>li:nth-child(8){}
+    #lnb>ul>li:nth-child(9){}
+    #lnb>ul>li:nth-child(10){}
+
+ #mainBox{width: 100%; height:auto; padding:28px 5px 42px; box-sizing: border-box; 
+          background-color: #999;}
+
+      #mainBox ul{width: 100%; height: 100%;}
+      #mainBox ul>li{width:228px; height:100%; float: left; margin-left:12px; background-color: #afc;}
+      #mainBox ul>li:first-child{margin-left: 0;}
+
+    .info_01{width: 100%; height:166px; margin-bottom:45px;background-color: #fff;}
+    .info_02{width: 100%; height:195px; margin-bottom:10px;background-color: #fff;}
+    .info_03{width: 100%; height:74px; margin-bottom:45px;background-color: #fff;}
+      .info_03 li{position: relative;}
+      .info_03 a{display: block; width: 100%; height: 100%; font-size: 1em;
+                 line-height:74px; padding-left:1em; box-sizing:border-box; position:relative; z-index: 200;}
+      .info_03 a:hover{color:#eee;}
+
+      .info_03 li:after{content:" "; display: block; width: 100%; height: 100%; 
+                        position: absolute; z-index: 100; top: 0; left: 0;
+                        background-color:transparent; transition: all 0.3s;}
+      .info_03 li:hover:after{background-color:rgba(50,50,50,0.7);}
+
+    .info_04{width: 100%; height:112px;background-color: #fff;}
+
+
+
+
+#footBox{width:100%; height:155px; border-top:1px solid #e8e8e8; 
+          padding:5px; padding-top: 38px; box-sizing:border-box; background-color: #f7f7f7;}
+
+  #footBox>h2{width: 94px; height: 48px; margin-right: 20px; float:left; 
+              background-image: url("../../img/footer/h2.jpg"); 
+              background-repeat: no-repeat; background-position:center bottom;}
+  #footInfo{width: 510px; height: 48px; float:left;}
+    .fnb{width: 100%; height: auto;}
+
+    /* 링크목록의 가로 나열일경우 중간에 vertical line을 생성시켜야 하는 경우가 있다.! 
+       list의 하나로 추가기는이 아닌, after를 활용해라! */
+    .fnb>li{height: 18px; float:left; margin-right:9px; position: relative;}
+    .fnb>li:after{content:" "; display: block; width: 0; height: 18px; border-right:1px solid #fa0; 
+                position: absolute; right:-4px; top: 0;}
+    .fnb>li:last-child:after{display: none;}
+
+    address{}
+  .mark{width: 170px; height: 95px; margin-top: -15px; float:right; background-color:#580;}
+
+
+
+
+
+</style>
+</head>
+<body>
+  <div id="wrap">
+    <header id="headBox">
+      <h1><a href="#"><span class="hidden">kwater_한국 수자원 공사</span></a></h1>
+      <nav id="mainNav" class="hidden_wrap">
+        <h2 class="hidden">navigation</h2>
+        <ul id="unb">
+          <li><a href=""><span>link_01</span></a></li>
+          <li><a href=""><span>link_02</span></a></li>
+          <li><a href=""><span>link_03</span></a></li>
+          <li><a href=""><span>link_04</span></a></li>
+        </ul>
+        <ul id="gnb">
+          <li><a href=""><span>link_01</span></a></li>
+          <li><a href=""><span>link_02</span></a></li>
+          <li><a href=""><span>link_03</span></a></li>
+          <li><a href=""><span>link_04</span></a></li>
+          <li><a href=""><span>link_05</span></a></li>
+          <li><a href=""><span>link_06</span></a></li>
+          <li><a href=""><span>link_07</span></a></li>
+        </ul>
+      </nav>
+    </header>
+    <section id="contentBox">
+    <h2 class="hidden">main page 내용</h2>
+      <section id="adBox">
+        <h3 class="hidden">k-water 광고배너이미지</h3>
+        <!-- 광고배너 이미지  -->
+      </section>
+      <nav id="lnb">
+        <h3 class="hidden">local navigation</h3>
+        <ul class="hidden_wrap">
+          <li><a href="#"><span>lnb_1</span></a></li>
+          <li><a href="#"><span>lnb_2</span></a></li>
+          <li><a href="#"><span>lnb_3</span></a></li>
+          <li><a href="#"><span>lnb_4</span></a></li>
+          <li><a href="#"><span>lnb_5</span></a></li>
+          <li><a href="#"><span>lnb_6</span></a></li>
+          <li><a href="#"><span>lnb_7</span></a></li>
+          <li><a href="#"><span>lnb_8</span></a></li>
+          <li><a href="#"><span>lnb_9</span></a></li>
+          <li><a href="#"><span>lnb_10</span></a></li>
+        </ul>
+      </nav>
+      <article id="mainBox">
+        <h3>news 및 공지사항</h3>
+        <article class="info_01">
+          <h4 class="hidden">공지 사항</h4>
+          <ul class="hidden_wrap">
+            <li><a href="#"><span>공지사</span></a></li>
+            <li><a href="#"><span>공지사</span></a></li>
+            <li><a href="#"><span>공지사</span></a></li>
+            <li><a href="#"><span>공지사</span></a></li>
+          </ul>
+        </article>
+        <article class="info_02">
+          <h4 class="hidden">주요 뉴스</h4>
+          <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </article>
+        <article class="info_03">
+          <h4 class="hidden">안내</h4>
+          <ul>
+            <li><a href="#"><i class="fa fa-plus-circle" aria-hidden="true"></i> 토지분양안내</a></li>
+            <li><a href="#"><i class="fa fa-plus-circle" aria-hidden="true"></i> 입찰안내</a></li>
+            <li><a href="#"><i class="fa fa-plus-circle" aria-hidden="true"></i> 열린채용</a></li>
+            <li><a href="#"><i class="fa fa-plus-circle" aria-hidden="true"></i> 소셜센터</a></li>
+          </ul>
+        </article>
+        <article class="info_04">
+          <h4 class="hidden">기타 안내사항</h4>
+          <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </article>
+      </article>
+    </section>
+    <footer id="footBox">
+      <h2><span class="hidden">kwater info</span></h2>
+      <div id="footInfo">
+        <h3 class="hidden">infomation 정보</h3>
+        <ul class="fnb">
+          <li><a href="#">개인정보 처리방침</a></li>
+          <li><a href="#">업무추진 비공개</a></li>
+          <li><a href="#">찾아오시는 길</a></li>
+        </ul>
+        <address>
+          <p class="hidden">우편번호....</p>
+          <p class="hidden">copyright...</p>
+        </address>
+      </div>
+      <div class="mark">
+        <h3 class="hidden">인증마크 및 QR코드</h3>
+        <ul>
+          <li><span class="hidden">......mark</span></li>
+          <li><span class="hidden">한국 수자원공사 mark</span></li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
