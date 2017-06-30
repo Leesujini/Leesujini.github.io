@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!--[if IE]>
+  <script src="../ie/html5shiv/dist/html5shiv.min.js"></script>
+  <script src="../ie/ie7/IE9.js"></script> /선택자
+  <script src="../ie/css3pie/PIE_IE9.js"></script>/css
+  <![endif]-->
+  <link rel="stylesheet" type="text/css" href="../css/base/reset.css" />
+  <link rel="stylesheet" type="text/css" href="../css/base/normalize.css" />
+   <link rel="stylesheet" type="text/css" href="../fontawesome/css/font-awesome.min.css" /> 
+   <link rel="stylesheet" type="text/css" href="..">
+   <link rel="stylesheet" type="text/css" href="..">
+
+<script src="js/jquery/jquery-3.2.1.min.js"></script>
+   <script sre="js/jquery/jquery-ui.min.js"></script>
+  <title>fontawesome</title>
+  <style>
+  body{width: 100%; height: 3000px; }
+    #wrap{width: 960px; height: auto; margin: 0 auto;}
+    #header{width: 100%; height: ;}
+    h1{padding: 1em; background-color: #09f; color: #fff; font-size: 1.5em; border-bottom: 2px solid #fa0;}
+    #adBox{width: 100vw; height: 800px; position: relative;left: 50%; top: 0; margin-left: -50vw; background-image: url("../img/background/pink.jpg");
+           background-repeat: no-repeat; background-position: center; background-size: cover;background-attachment: scroll;}
+    #adBox2{width: 100vw; height: 600px; position: relative;left: 50%; top: 0; margin-left: -50vw; background-image: url("../img/sujin/hongsoontoon2.jpg"); background-repeat: no-repeat; background-position: center; background-size:cover; background-attachment: fixed;}
+
+    #adBox3{width: 100vw; height: 1200px; position: relative;left: 50%; top: 0; margin-left: -50vw; background-image: url("../img/background/road_01.jpg"); background-repeat: no-repeat; background-position: center; background-size:cover; background-attachment: scroll;}
+    #imgTag{width: 100%; height: 500px; margin-top: 50px; background-color: #ddd; float: left;}
+      
+
+      #imgTag>div{width: 300px; height: 100%; float: left; margin-right: 30px; background-color: #f99; overflow: hidden;} 
+      #imgTag>div:nth-of-type(2){overflow-x:scroll;} 
+      #imgTag>div:nth-of-type(3){margin-right: 0;}  
+
+      #imgTag>div:nth-of-type(1)>img{width: 100%; height: auto;}
+   
+      #imgTag>div:nth-of-type(2)>img{height: 100%; width: auto;}
+      #imgTag>div:nth-of-type(3)>img{/* width: 100%; */ width: auto; height: 100%; transition: all 1s linear;}      
+      #imgTag>div:nth-of-type(3)>img:hover{margin-left: -170%;}
+    
+
+
+
+
+    #imgSize{width: 100%; height: 500px; margin-top: 50px; background-color: #ddd;}
+     #imgSize>div{width: 23%; height: 100%; margin-right: 2.65%; background-color: #cca; float:  left; background-repeat: no-repeat;}
+    #imgSize>div:nth-of-type(1){background-image: url("../img/background/coffeemini_.jpg");
+    background-size: 100%;  }/*가로 기준 였을 때 100%로 보여주는 것*/
+    #imgSize>div:nth-of-type(2){background-image: url("../img/background/pink.jpg"); background-size: contain; /*전체*/}
+    #imgSize>div:nth-of-type(3){background-image: url("../img/background/coffee_beans.jpg"); background-size: cover; background-position: right;}/*감싸는 것, 배경을 꽉 채우는 것 ,빈 공간 없이 ..오른쪽! */ 
+    #imgSize>div:nth-of-type(4){background-image: url("../img/sujin/hongsoontoon2.jpg");margin-right: 0; -webkit-background-size: ;
+     background-size: auto 100%;
+    /*-webkit-background-size: ;
+    -moz-background-size:;
+    -ms-background-size:;
+    -o-background-size:;*/  background-size: auto 100%; transition: all 1000ms ease-out;}
+    #imgSize>div:nth-of-type(4):hover{background-position: right;}
+  </style>
+</head>
+<body>
+<div id="wrap">
+<div id="header">
+  <h1>background image</h1>
+</div>
+  <section id="adBox">
+  </section> 
+  <section id="adBox2">
+  </section>
+  <section id="adBox3">
+  </section>
+  <article id="imgTag">
+
+    <div class="img_01"><img src="../img/sujin/hongsoontoon1.jpg"></div>
+    <div class="img_02"><img src="../img/sujin/hongsoontoon.jpg"></div>
+    <div class="img_03"><img src="../img/sujin/hongsoontoon2.jpg"></div>
+  </article>
+  <article id="imgSize">
+    <div class= "img_01"></div>
+    <div class= "img_02"></div>
+    <div class= "img_03"></div>
+    <div class= "img_04"></div>
+  </article>
+</div>
+</body>
+</html>
