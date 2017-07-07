@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- meta:vp -->
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="../css/base/reset.css" />
+  <title>responsive Web 01</title>
+  <style>
+    h1{width:80%; min-width:900px; height: 500px; 
+      margin:0 auto; background-color:#0cf; transition: all 3s;}
+
+    @media screen and (max-width:480px) {
+      h1{width: 100%; min-width:auto; height: 100%;
+        color:#fff; text-align:center; 
+        background-color: #fc0; transform:rotate(360deg);}
+      }/* max:480px */ 
+
+    @media screen and (min-width:481px) 
+                  and (max-width:768px) {
+      h1{width: 100%; min-width:auto; height:800px;
+        background-color: #861; color:#0af; font-size:2em;
+        text-align: center; transform:scale(0.7);}
+    }/* min:481px ~ max:768px */
+
+
+  </style>
+</head>
+<body>
+  <h1>responsive Web</h1>
+</body>
+</html>

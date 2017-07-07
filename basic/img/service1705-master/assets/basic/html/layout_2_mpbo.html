@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>mpbo</title>
+  <!--[if lte IE 9]>
+    <script src="../ie/html5shiv/dist/html5shiv.js"></script>
+  <![endif]-->
+  <style>
+    /* reset.css */
+    html,body{width: 100%; height: 100%;}
+    html,body,h1,p,div{margin: 0; padding: 0; border: 0;}
+    ul,li,ol{list-style:none;}
+
+    /* normalize.css */
+    .clearfix:after{content:" ";display:block;width:0;height:0;clear:both;}
+
+    /* design.css */
+    #wrap{width: 960px; height: auto; min-height: 150px; margin: 0 auto;}
+      #headBox{width:100%; height:50px; background-color: #ddf;
+        margin-bottom: 100px; padding-top:50px;}
+        /* 해결1 의 문제점
+        h1{width: 100px; height: 50px; background-color: #555; color:#fff;
+          margin-left: 20px; float: left; margin-top: 20px;}
+        #gnb{width: 300px; height: 20px;float: left; background-color: #851;}
+        */
+
+        h1{width: 100px; height: 50px; background-color: #555; color:#fff;
+          margin-left: 20px; }
+      #adBox{width:100%; height:400px; background-color: #aff;}
+      #footBox{width:100%; height:200px; background-color: #777;
+        margin-top:100px;}
+/* 
+ *1. margin은 겹치는 내용은 중복되지 않는다(일부 예외)
+ * 큰 값을 따른다.
+ *2. margin-top을 사용할 때: 내용상 첫번째 요소에 사용하면, 
+ * 그 부모의 태그또한 같이 내려오는 현상이 발생한다.
+ * 해결1: float:left; 속성을 사용하면 처리가능 - 이후에 오는 요소에따라 적용이 안되는 것들이 있다.
+ * 해결2: 자신의 위치는 그대로 있고, 그 부모의 내용에서 상단(top)의 내용을 두껍게 만드는 방법(공간을 형성- 자신 스스로는 변하지 않으나 다른사람이 보기에 커보이는 효과): padding-top 기능을 사용한다.  
+ * 단, padding의 기능을 사용하면: 
+ * 사용(padding)된 위치(top,right,left,bottom)의 값만큼 그 크기를 빼주어야 한다!
+ * 
+*/
+  </style>
+</head>
+<body>
+  <div id="wrap">
+    <header id="headBox">
+      <h1>logo</h1>
+      <nav id="gnb">navigation</nav>
+    </header><!-- // #headBox -->
+    <section id="adBox">adBox</section><!-- // #adBox -->
+    <footer id="footBox">footBox</footer><!-- // #footBox -->
+  </div><!-- // #wrap -->
+</body>
+</html>

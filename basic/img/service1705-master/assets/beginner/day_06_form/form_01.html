@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="utf-8">
+    <title>form 기초개념이해하기</title>
+    <style>
+      body{margin:0;}
+      h1{color:#fff; background-color:#0af; padding:0.3em; margin:0;}
+      .user{width:70%; height:auto; background-color:#acf;}
+      .pwd{width:70%; height:auto; background-color:#fca;}
+    </style>
+  </head>
+  <body>
+    <h1>form 기초</h1>
+    <form action="#" method="post">
+<!-- 입력 영역 -->
+
+      <fieldset>
+        <legend>입력 영역</legend>
+        <div class="user">
+          <label for="userName">사용자 이름을 입력하세요.</label>
+          <input type="text" id="userName"
+                 name="userName" value="" autocomplete="on"
+                 placeholder="아이디를 입력" />
+        </div>
+        <div class="pwd">
+          <label for="inputPwd">사용자 비밀번호를 입력하세요.</label>
+          <input type="password" id="inputPwd"
+                 name="inputPwd" value=""
+                 placeholder="비밀번호 입력" />
+        </div>
+      </fieldset>
+
+<!-- 선택1 영역  -->
+    <fieldset>
+      <legend>선택1 radio</legend>
+      <p>당신의 성별을 선택하세요.</p>
+      <input type="radio" id="male" name="sex" value="male"     checked="checked" />
+      <label for="male">남자</label>
+
+      <input type="radio" id="female" name="sex" value="female">
+      <label for="female">여자</label>
+
+      <input type="radio" id="hibrid" name="sex" value="hibrid">
+      <label for="hibrid">양성</label>
+      <!-- * 선택사항중 동일한 결과물에 내용을 전송하려면 name값을 같이 사용해라! -->
+    </fieldset>
+<!-- 선택2 영역  -->
+    <fieldset>
+      <legend>선택 2 checkbox</legend>
+      <p>오늘 저녁에 먹고 싶은 음식을 선택하세요.</p>
+      <input type="checkbox" id="food1" name="food" value="치킨"
+        checked="checked" />
+      <label for="food1">치킨</label>
+
+      <input type="checkbox" id="food2" name="food" value="보쌈" />
+      <label for="food2">보쌈</label>
+
+      <input type="checkbox" id="food3" name="food" value="피자" />
+      <label for="food3">피자</label>
+
+      <input type="checkbox" id="food4" name="food" value="족발" />
+      <label for="food4">족발</label>
+
+    </fieldset>
+<!-- 입력, 선택 속성
+* radio, checkbox 구분:
+  * radio는 하나만 선택가능, 완전한 해제는 불가능
+  * checkbox는 여러개(중복) 선택/해제 가능
+* radio, checkbox의 경우 checked="checked"라고하는 속성이 존재
+* 브라우저에서 마우스로 체크전에 미리 선택되어진 형태로 설정
+* radio는 하나만 선택, checkbox는 여러개를 선택
+
+* 암묵적인 형식
+* 원칙: <input type="text" id="box"><label for="box">선택</label>
+* 암묵적1: <label for="box"> <input type="text" id="box"> 선택</label>
+* 암묵적2: <label> <input type="text"> 선택</label>
+* 암묵적 방식중 1번은 id, for를 연결하여 사용하기 때문에 큰문제 없지만.
+* 2번의 방식은 반드시 작성해야하는 id, for를 사용하지 않아 시멘틱(정확한 의미)을 가지지 않으므로 표준과, 유효성의 문제가 됨(권장X)
+ -->
+
+<!-- 버튼 영역  -->
+  <fieldset>
+    <legend>버튼영역설명</legend>
+    <input type="submit" id="ok" name="ok" value="확인">
+    <input type="reset" id="cancle" name="cancle" value="취소">
+    <input type="button" id="btn" name="btn" value="검색">
+    <input type="image" src="#" alt="#" id="img" name="img">
+    <input type="file" id="data" name="data">
+  </fieldset>
+<!-- 버튼 설명
+* type="image"의 경우 src(이미지불러오기), alt(불러온이미지 설명)을 반드시 같이 작성해야한다. value의 경우 특별히 작성할 필요가 없다.(default)
+* type="file의 경우 value를 작성하지 않는다.(default)
+* 참고 페이지:
+* https://html.spec.whatwg.org/#the-input-element (4.10.5 input element 표 참고)
+-->
+
+<!-- 멀티(복합) 영역  -->
+    <fieldset>
+      <legend>multi영역</legend>
+      <!-- 입력 -->
+      <textarea id="multiText" value="" name=""
+        cols="10" rows="5" maxlength="50"></textarea>
+      <textarea id="multiText" value="" name=""
+          cols="10" rows="5" readonly="readonly">
+1. 계약서
+2. 보증서
+3. 시승권
+      </textarea>
+
+        <!-- cols="10글자" rows="5줄" 정도의 크기를 만들어라
+        (임시사이즈, 최소크기일때 적용하는 내용) -->
+      <!-- 선택 -->
+        <label for="selectMenu">selectMenu</label>
+
+        <select name="" id="selectMenu">
+          <option>선택하세요.</option>
+          <option value="coffee">커피(+1,000)</option>
+          <option value="iphone">아이폰(+3,000,000)</option>
+          <option value="tumble">텀블러(+100)</option>
+          <option value="random">랜덤박스(+100,000)</option>
+        </select>
+        <select name="" id="selectMenu">
+          <option>선택하세요.</option>
+          <optgroup label="drink">
+            <option value="coffee">coffee</option>
+            <option value="juice">juice</option>
+            <option value="ade">ade</option>
+          </optgroup>
+          <optgroup label="icecream">
+            <option value="strawberry">strawberry</option>
+            <option value="grape">grape</option>
+            <option value="coffee">coffee</option>
+          </optgroup>
+          <optgroup label="cookie">
+            <option value="javachip">javachip</option>
+            <option value="oreo">oreo</option>
+            <option value="saukkang">saukkang</option>
+          </optgroup>
+        </select>
+      <!-- 버튼 -->
+      <button type="submit" name="#">확인</button>
+      <button type="reset" name="#">취소</button>
+      <button type="button" name="#">검색</button>
+    </fieldset>
+<!-- 추가 설명 -->
+    <fieldset>
+      <legend>html5 추가 기능 및 속성-주석처리</legend>
+      <!-- <input type="text" autocomplete="off" autofocus="autofocus" required="required"> -->
+<!--
+  * autocomplate 속성은 자동 완성 기능
+  * 동일한 컴푸터에서 이전에 방문 또는 작성한 기록이 있다면, 차후 그 내용이 남아 있는 것
+  * 회원가입/로그인 부분/ 개인 기록이 담겨있는 곳에는 사용을 지양함
+
+  * autofocus 속성은 홈페이지가 로딩되었을 경우
+  * 처음부터 활성화 되는 것
+  * 홈페이지에서 한번만 사용이 가능
+  * 정말 중요한 것이 아니면 사용 지양
+
+  * required 속성은 필수 입력사항
+  * 이메일의 경우 @가 필수사항으로 입력되어야합니다.
+
+  * html5로 추가되면서 속성명과, 속성값이 동일한 경우에는 속성명만 작성해도 된다.
+  * required="required"  => required
+ -->
+    </fieldset>
+    </form>
+  </body>
+</html>
+
+
+
+
+
+
+
+<!--  -->

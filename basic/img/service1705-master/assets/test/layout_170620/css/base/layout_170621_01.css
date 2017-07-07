@@ -1,0 +1,18 @@
+#wrap{width: 720px; height:auto; margin:0 auto;}
+
+	#headBox{width: 100%; height:80px; padding:20px 30px; box-sizing:border-box; background-color:#1aa;}
+		h1{width: 100px; height: 50px; float:left; background-color: #fff;}
+		#gnb{width: 430px; height: 30px; float:right; margin-top: 20px;}
+		#gnb>ul>li{ width: 100px; height: 100%; float: left; margin-left: 10px; 
+			background-color: #acf;}
+		
+	#adBanner{width: 100%; height:250px; background-color:#2bb;}
+	#lnb{width: 100%; height:35px; background-color:#3cc;}
+	#content{width: 100%; height:auto;}
+		#news{width:50%; height:300px; float:left; padding:20px; box-sizing:border-box; background-color:#a84;}
+		#news>div{width: 50%; height:130px; float: left; border:5px solid #fff; 
+			box-sizing:border-box; background-color: #ccc;}
+    #moreAd{width:50%; height:300px; float:left; padding:10px 30px; box-sizing:border-box; background-color:#aa4;}
+    #moreAd>div{width:100%; height:80px; background-color: #fff; margin-bottom:20px;}
+
+	#footBox{width: 100%; height:80px; background-color:#5ee;}

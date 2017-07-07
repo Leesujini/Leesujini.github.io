@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="utf-8">
+    <title>table 2</title>
+    <style>
+       table,tr,td,th{border:1px solid #190; border-spacing:0;
+         border-collapse: collapse;}
+         td{padding:0.5em; font-size: 2em;}
+    </style>
+  </head>
+  <body>
+    <h1>표만들기 두번째</h1>
+    <table summery="표만들기 합치기의 이해">
+      <capition>표만들기 합치기의 이해</capition>
+      <tr>
+        <td colspan="2">1-1</td>
+        <!-- <td>1-2</td> -->
+        <td>1-3</td>
+        <td>1-4</td>
+        <td>1-5</td>
+      </tr>
+      <tr>
+        <td>2-1</td>
+        <td colspan="3">2-2</td>
+        <!--
+        <td>2-3</td>
+        <td>2-4</td> -->
+        <td rowspan="3">2-5</td>
+      </tr>
+      <tr>
+        <td>3-1</td>
+        <td rowspan="2">3-2</td>
+        <td colspan="2" rowspan="2">3-3</td>
+        <!-- <td>3-4</td> -->
+        <!-- <td>3-5</td> -->
+      </tr>
+      <tr>
+        <td>4-1</td>
+        <!-- <td>4-2</td> -->
+        <!-- <td>4-3</td> -->
+        <!-- <td>4-4</td> -->
+        <!-- <td>4-5</td> -->
+      </tr>
+    </table>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+<!--  -->

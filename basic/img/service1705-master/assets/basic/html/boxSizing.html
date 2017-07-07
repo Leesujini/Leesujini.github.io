@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+	<meta charset="UTF-8">
+	<title>box-sizing</title>
+	<style>
+		div{width: 300px; height: 400px; background-color: #cfa;
+		 float: left;	margin:50px; padding: 30px;}
+		 .border_box{box-sizing:border-box;}
+		 .content_box{box-sizing:content-box;}
+ /*
+ - box-sizing: 기본이 content-box
+ 								border-box를 사용하면 padding은 개체의 내부로 생성이 된다.(개체의 크기가 작아짐)
+ 								border또한 border-box를 사용하면 내부로 생성이 됨.
+
+ - float 사용시 margin: float을 사용하지 않으면 겹치는 여백은 큰쪽을 따르나.
+ 											float을 사용한다면 둘은 중첩이 되지 않고 둘다 생성이 된다.
+ */
+	</style>
+</head>
+<body>
+	<div class="border_box">border_box</div>
+	<div class="content_box">content_box</div>
+</body>
+</html>

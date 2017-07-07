@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<!--[if lte IE 6]>
+	<script src="../ie/html5shiv/dist/html5shiv.min.js"></script>
+	<![endif]-->
+	<link rel="stylesheet" href="../css/base/reset.css" />
+	<link rel="stylesheet" href="../css/base/normalize.css" />
+	<title>mini layout</title>
+	<style>
+		#wrap{width: 400px; height:auto; margin:3em auto; 
+				 padding: 50px; box-sizing:border-box; background-color: #ccc;}
+		 form{width: 100%; height:auto;}
+		.mini_box{width:100%; height:auto;}
+		.mini_box>div{width: 100%; height:50px; margin-bottom: 20px; background-color: #fff; }
+		.mini_box>div>input{width: 100%; height: 100%;}
+		.mini_box>div.btn_box{margin-bottom: 0; background-color: #3c3;}
+			.btn_box>input{width: 100%; height: 100%; color:#fff; font-size:1.2em;}
+	</style>
+</head>
+<body>
+	<div id="wrap">
+		<form action="">
+		<fieldset class="mini_box">
+			<legend class="hidden">로그인상자</legend>
+			<div class="user">
+				<label for="user" class="hidden">사용자이름</label>
+				<input type="text" name="user" id="user" value="" placeholder="사용자이름"  />
+			</div>
+			<div class="pw">
+				<label for="pwd" class="hidden">비밀번호</label>
+				<input type="password" name="pwd" id="pwd" value="" placeholder="비밀번호" />
+			</div>
+			<div class="btn_box">
+				<input type="submit" value="login" name="login_btn" id="loginBtn" />
+			</div>
+		</fieldset>
+		</form>
+	</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

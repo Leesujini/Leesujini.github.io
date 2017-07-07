@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<!--[if lte IE 9]>
+		<script src="../ie/html5shiv/dist/html5shiv.min.js"></script>
+		<script src="../ie/ie7/IE9.js"></script>
+		<script src="../ie/css3pie/PIE_IE9.js"></script>
+	<![endif]-->
+
+	<link rel="stylesheet" href="../css/base/reset.css" />
+	<link rel="stylesheet" href="../css/base/normalize.css" />
+	<link rel="stylesheet" href="../fontAwesome/css/font-awesome.min.css" />
+	<!-- jquery-->
+	<script src="../js/jquery/jquery-3.2.1.min.js"></script>
+	<script src="../js/jquery/jquery-ui.min.js"></script>
+	<title>my title</title>
+	<style>
+
+		#wrap{width: 960px; height: auto; min-height:9.375rem; margin: 0 auto; background-color:#f1f1f1;}
+		h1{width: 100%; height: auto; padding:1em; box-sizing:border-box; background-color: #0af;}
+		.content{width: 100%; height: auto; border-bottom:2px solid #07c;}
+		.content>li{width: 100%; height: auto; padding:0.2em 1em; box-sizing:border-box;}
+
+		.single_icon{width:100%; height: auto; background-color: #fff;}
+		.first_icon{width: 100%; height: 500px; margin-bottom: 1em; 
+			          background-color: #ccc; 
+			          background-image: url(../img/icon/home.png);
+			        	background-repeat:no-repeat;
+			        	background-position:center;}
+		.second_icon{width:100%; height:135px;}
+		.second_icon>li{width:135px; height:135px; margin:0.3em;/* 4.8px */ float: left; 
+			             background-image: url("../img/icon/colorfulCheck.jpg");
+			             background-repeat:no-repeat;}
+      .second_icon>li:first-child{ }
+      .second_icon>li:nth-child(2){background-position:right top;}
+      .second_icon>li:nth-child(3){background-position:center;}
+      .second_icon>li:nth-child(4){background-position:right bottom;}
+      .second_icon>li:nth-child(5){background-position:center bottom;}
+      .second_icon>li:nth-child(6){background-position:left center;}
+
+     .third_icon{width: 100%; height: auto;}
+	     .third_icon:after{content:" "; display: block; width: 0; height: 0; clear: both;}
+	     .third_icon>li{height:120px; float: left; margin:0.5em; 
+	     								background-image: url("../img/icon/oneIcon.jpg");
+	     							  background-repeat:no-repeat; transition:all 300ms ease-in;}
+
+	     .third_icon>li:nth-child(1){width:120px; background-position: 0 0;}
+	     .third_icon>li:nth-child(1):hover{background-position:left center;}
+	     .third_icon>li:nth-child(1):active{background-position:left bottom;}
+
+	     .third_icon>li:nth-child(2){width:120px; background-position:-250px 0;}
+	     .third_icon>li:nth-child(2):hover{background-position:-250px center;}
+	     .third_icon>li:nth-child(2):active{background-position:-250px bottom;}
+
+	     .third_icon>li:nth-child(3){width:110px; background-position:-640px 0;}
+	     .third_icon>li:nth-child(3):hover{background-position:-640px center;}
+	     .third_icon>li:nth-child(3):active{background-position:-640px bottom;}
+
+	     .third_icon>li:nth-child(4){width:100px; background-position:-1030px 0;}
+	     .third_icon>li:nth-child(4):hover{background-position:-1030px center;}
+	     .third_icon>li:nth-child(4):active{background-position:-1030px bottom;}
+
+	     .third_icon>li:nth-child(5){width:105px; background-position:-1285px 0;}
+	     .third_icon>li:nth-child(5):hover{background-position:-1285px center;}
+	     .third_icon>li:nth-child(5):active{background-position:-1285px bottom;}
+
+		.forth_icon{width: 100%; height: auto;}
+			.forth_icon:after{content:" "; display: block; clear: both;}
+			.forth_icon>li{width: 30px; height: 28px; margin: 0.5em; float: left;}
+			.forth_icon>li>a{width: 100%; height: 100%; display: block; 
+										background-image: url("../img/icon/iconBasic.jpg"); 
+										background-repeat:no-repeat; }
+			
+			.forth_icon>li:nth-child(1)>a{width:30px; height:28px; background-position:-10px -10px;}
+			.forth_icon>li:nth-child(2)>a{width:30px; height:26px; background-position:-86px -50px;}
+
+
+			.forth_icon>li:nth-child(3)>a{}
+			.forth_icon>li:nth-child(4)>a{}
+			.forth_icon>li:nth-child(5)>a{}
+			.forth_icon>li:nth-child(6)>a{}
+			.forth_icon>li:nth-child(7)>a{}
+			.forth_icon>li:nth-child(8)>a{}
+			.forth_icon>li:nth-child(9)>a{}
+			.forth_icon>li:nth-child(10)>a{}
+
+
+
+
+
+
+	</style>
+</head>
+<body>
+	<div id="wrap">
+		<h1>background 이해</h1>
+		<ul class="content">
+			<li>background-color</li>
+			<li>background-image: url( );</li>
+			<li>background-repeat: no-repeat | repeat-x | repeat-y | repeat;</li>
+			<li>background-position</li>
+		</ul>
+
+		<div class="single_icon">
+			<div class="first_icon">
+				<!-- 첫번째 아이콘(home.png) -->
+			</div>
+			<ul class="second_icon">
+				<!-- 두번째 아이콘(colorfulCheck.jpg) -->
+				<li><!-- icon :  1,1 --></li>
+				<li><!-- icon :  3,1 --></li>
+				<li><!-- icon :  2,2 --></li>
+				<li><!-- icon :  3,3 --></li>
+				<li><!-- icon :  2,3 --></li>
+				<li><!-- icon :  1,2 --></li>
+			</ul>
+			<ul class="third_icon">
+				<!-- 세번째 아이콘(oneIcon.jpg) -->
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+			<ul class="forth_icon hidden_wrap">
+				<!-- 네번째 아이콘(iconBasic.jpg) -->
+				<li><a href="#"><span>1</span></a></li>
+				<li><a href="#"><span>2</span></a></li>
+				<li><a href="#"><span>3</span></a></li>
+				<li><a href="#"><span>4</span></a></li>
+				<li><a href="#"><span>5</span></a></li>
+				<li><a href="#"><span>6</span></a></li>
+				<li><a href="#"><span>7</span></a></li>
+				<li><a href="#"><span>8</span></a></li>
+				<li><a href="#"><span>9</span></a></li>
+				<li><a href="#"><span>10</span></a></li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>
+
+
+
+
+
+<!-- .forth_icon:nth-child(1)>li>a{} -->
+<!-- 
+<ul class="forth_icon">
+	<li>
+		<a href=""></a>
+	</li>
+</ul>
+<ul class="forth_icon"></ul>
+<ul class="forth_icon"></ul>
+<ul class="forth_icon"></ul>
+ -->
+
+<!-- .forth_icon>li:nth-child(1)>a{} -->
+<!-- 
+<ul class="forth_icon">
+	<li>
+		<a href=""></a>
+	</li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+</ul> -->
+
+<!-- .forth_icon>li>a:nth-child(1){} -->
+<!-- 
+<div class="forth_icon">
+	<li>
+		<a href=""></a>
+		<a href=""></a>
+		<a href=""></a>
+		<a href=""></a>
+		<a href=""></a>
+	</li>
+	<li></li>
+</div>
+ -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

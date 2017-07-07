@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" type="text/css" href="../css/base/reset.css" />
+  <link rel="stylesheet" type="text/css" href="../css/base/normalize.css" />
+  <title>Login</title>
+  <style>
+   #wrap{width: 100%; height: 700px; margin: 0 auto; background-color: #f89;}
+    .hidden{display: block; width:0; height: 0; overflow: hidden;}
+    fieldset{border:0;background-color: #fff;width:300px; height: 300px; margin: 0 auto; margin-top: 100px; }
+    fieldset>div{width: 100%; height:auto; padding:0.5em; box-sizing: border-box;}
+    form{width: 100%; height: 100%; padding:3em; box-sizing:border-box; }
+    .input_box{width:300px; height:50px; border:0; background-color: #ccc;
+    margin: 8px; text-indent: 10px;}
+   input[type="submit"]{width:300px; height:50px; margin: 8px; border:0; padding:0.5em; background-color:#c96; cursor:pointer; font-size: 1.5em; color: #fff;} 
+   .pp{margin-left: 60px; font-size: 0.8em;}
+   .pp>a{cursor:pointer; text-decoration: none; color:#f42;}
+  </style>
+</head>
+<body>
+  <div id="wrap">
+    <h1 class="hidden">로그인</h1>
+      <form action="#" method="post">
+        <fieldset>
+          <legend class="hidden">Username</legend>
+          <div class="user">
+             <label for="userName"></label>
+             <input type="text"
+             id="userName"
+             name="userName"
+            class="input_box"
+             value=""
+             placeholder="Username"
+         </div>
+         <div class="pwd">
+             <label for="inputPwd"></label>
+             <input type="password"
+             id="inputPwd"
+             name="inputPwd"
+             class="input_box"
+             value=""
+
+             placeholder="Password"/>   
+         </div>
+           <input type="submit" name="ok" value="LOGIN">
+           <div class="pp">Not registered?  <a href="">create an account</a></div>
+        </fieldset>
+      </form>
+    </div> 
+</body>
+</html>

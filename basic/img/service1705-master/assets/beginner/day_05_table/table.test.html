@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="utf-8" />
+    <title>table test</title>
+    <style>
+      table,td,th,thead,tbody,tfoot{
+        border:1px solid #f0a;
+        border-spacing: 0; border-collapse: collapse;}
+      td,th{padding:0.3em; text-align: center;}
+
+/* 글씨 정렬 */
+/*
+ * 글씨 좌우 정렬 ->   text-align:center | left | right | justify
+ * 영역의 일부에 색상을 넣으려면, class
+ * border란 선을 의미한다.
+ * border는 4면의 일부를 삭제할 수 있다.
+ * 동일한 영역에서 명령이 중복되는 경우에는 1. 뒤에오는 명령을 따른다!
+ * 동일한 영역에서 명령이 중복되는 경우에는 2. 우선순위 명령을 따른다!
+*/
+    .color_pink{background-color:rgba(255,0,200,0.2);}
+    .first_cell{border-left-width:0;}
+    .last_cell{border-right-width:0;}
+    table,thead,tbody,tfoot{
+      border-width: 3px;
+      border-left-width:0; border-right-width:0;
+    }
+    </style>
+  </head>
+  <body>
+    <h1>table 만들기 테스트</h1>
+    <table summary="문구 용품 발주서 확인">
+      <caption>발주서</caption>
+      <thead>
+        <tr>
+          <th class="first_cell">NO.</th>
+          <th>이름</th>
+          <th>전화번호</th>
+          <th>주문상품</th>
+          <th>주문수량</th>
+          <th class="last_cell">고객등급</th>
+        </tr><!-- 제목줄 -->
+      </thead>
+      <tbody>
+        <tr class="color_pink">
+          <td class="first_cell">1</td>
+          <td>홍길동</td>
+          <td>010-1234-5678</td>
+          <td>볼펜</td>
+          <td>30</td>
+          <td class="last_cell">실버</td>
+        </tr><!-- 1번째줄 -->
+        <tr>
+          <td class="first_cell">2</td>
+          <td>이영복</td>
+          <td>010-2345-6789</td>
+          <td>A4용지</td>
+          <td>1박스</td>
+          <td class="last_cell">실버</td>
+        </tr><!-- 2번째줄 -->
+        <tr class="color_pink">
+          <td class="first_cell">3</td>
+          <td>강아지</td>
+          <td>010-3456-7890</td>
+          <td>도화지</td>
+          <td>20</td>
+          <td class="last_cell">신규</td>
+        </tr><!-- 3번째줄 -->
+        <tr>
+          <td class="first_cell">4</td>
+          <td>김철수</td>
+          <td>010-4567-8912</td>
+          <td>만년필</td>
+          <td>1</td>
+          <td class="last_cell">vip</td>
+        </tr><!-- 4번째줄 -->
+        <tr class="color_pink">
+          <td class="first_cell">5</td>
+          <td>송태민</td>
+          <td>010-5678-9123</td>
+          <td>제본기</td>
+          <td>1</td>
+          <td class="last_cell">신규</td>
+        </tr><!-- 5번째줄 -->
+    </tbody>
+    </table>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+<!--  -->

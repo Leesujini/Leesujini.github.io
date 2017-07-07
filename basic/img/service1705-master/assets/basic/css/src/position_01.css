@@ -1,0 +1,65 @@
+@charset "utf-8";
+
+/*! position_01.css */
+body{width: 100%; height: 3000px; background-color:rgba(200, 10, 50, 0.1);}
+#wrap{width: 700px; height:500px; background-color: #ccc; margin: 100px auto;
+	    box-shadow:0.2em 0.2em 0.5em #333;}
+	h1{width: 100%; height: auto; color:#fff; background-color: #09f; margin-bottom: 50px;
+		text-align: center; padding:10px; box-sizing:border-box;}
+
+	.position{width: 80%; height:300px; background-color: #f9c; margin: 0 auto;}
+	.position>div{width: 90px; height: 90px; float: left; font-size: 1.3em;
+		            text-align: center; line-height: 90px; color:#fff; 
+		            text-shadow:0.1em 0.1em 0.1em #171717;}
+
+		.none{background-color:#9af;}
+		.static{background-color:#5bc;}
+		.fixed{background-color:#3ca;}
+		.relative{background-color:#179;}
+		.absolute{background-color:#0e7;}
+		.box{background-color:#9f5;}
+
+
+	/* _______________________________________________________ */
+
+
+.position{position: relative; z-index:10;}
+/* position:static; 가장 기본형태: 아무것도 작성하지않아도 되는 상태 */
+	.static{position:static; top:0; right:0; z-index:-500;}
+	
+/* position:fixed; 브라우저자체를 기준위치로 본다. */
+	.fixed{position:fixed; top:0; left:30%; z-index:100;}
+
+/* position:relative; 자기자신을 기준위치로 본다. */
+	.relative{position:relative; top:90px; left:-150px; z-index:500;}
+
+/* position:absolute; static을 제외한 나머지  position 속성을 가진 부모 */
+	.absolute{position: absolute; bottom:0; left:20%; z-index:50;}
+
+	/* z-index는 부모의 기준(z-index)수치를 기준으로 본다. */
+		.som{width: 150px; height: 150px; background-color: #fff; 
+			position: absolute; top: 50%; left: -50%;	z-index:1000;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>> Stashed changes

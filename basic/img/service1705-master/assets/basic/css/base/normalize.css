@@ -1,0 +1,10 @@
+/* ! normalize.css */
+@charset "utf-8";
+
+.cf:after, .clearfix:after{content:" "; display:block; width:0; height:0; clear:both;}
+
+.hidden_wrap a>span{display: block; width: 0; height: 0; overflow: hidden;}
+.hidden{display:inline-block; width: 0; height: 0; overflow: hidden;}
+
+.full{width: 100%; height: 100%;}
+#wrap .first_li{margin-left: 0;}

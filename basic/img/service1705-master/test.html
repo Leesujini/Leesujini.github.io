@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>closure test</title>
+  </head>
+  <body>
+    <script>
+      function Hello(name){
+        this._name = name;
+      }
+      Hello.prototype.say = function(){
+        console.log('Hello, '+ this._name);
+      }
+      var hello1 = new Hello('도형');
+      // var hello2 = new Hello('우유');
+      // var hello3 = new Hello('보람');
+      //
+      hello1.say();
+      // hello2.say();
+      // hello3.say();
+      // hello1._name = 'another';
+      // hello1.say();
+
+      console.log(Hello.prototype.say);
+    </script>
+  </body>
+</html>

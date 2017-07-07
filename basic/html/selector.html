@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!--[if IE]>
+  <script src="../ie/html5shiv/dist/html5shiv.min.js"></script>
+  <![endif]-->
+  <link rel="stylesheet" href="../css/base/reset.css" />
+  <link rel="stylesheet" href="../css/base/normalize.css" />
+  <link rel="stylesheet" href="../fontAwesome/css/font-awesome.min.css" />
+  <title>my title</title>
+  <style>
+    #box{width: 37.5rem; height:auto; margin: 0 auto; }
+    ul{width: 100%; height:auto; background-color: #ddf;}
+    li{padding:0.5em  1em;box-sizing: border-box; 
+      border-bottom: 1px solid  #f08; margin-bottom: 0.5em;}
+    .of_type{width: 100%; height: auto; margin-top:1em; background-color: #faa;}
+    .of_type>*{padding:0.5em  1em;box-sizing: border-box; 
+      border-bottom: 1px solid  #80f; margin-bottom: 0.5em;}
+      li:first-child{color: #fa0;}
+      li:last-child{color: #00a;}
+      li:nth-child(2){color: #f00;}
+      li:nth-child(2n){background-color: #fff;}
+      p:nth-of-type(2n){background-color: #08f;}
+  </style>
+</head>
+<body>
+   <div id="box">
+      <ul>
+        <li>selector_1</li>
+        <li>selector_2</li>
+        <li>selector_3</li>
+        <li>selector_4</li>
+        <li>selector_5</li>
+        <li>selector_6</li>
+        <li>selector_7</li>
+      </ul>
+      <div class="of_type">
+        <h2>selector test</h2>
+        <p>p selector_1</p>
+        <p>p selector_2</p>
+        <pre>pre selector</pre>
+        <p>p selector_3</p>
+        <p>p selector_4</p>
+        <p>p selector_5</p>
+        <span>type code</span>
+      </div>
+   </div>
+</body>
+</html>
+
+

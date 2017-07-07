@@ -1,0 +1,77 @@
+/* ! layout_03.css  layout_3.html 문서 디자인 영역 */
+@charset "utf-8";
+
+#wrap{width: 960px; height: 740px; background-color: #ccc;
+	margin:0 auto;}
+	/* #headBox ________________________________________________ */
+	#headBox{width:100%; height:140px; background-color:#1af; padding:20px 30px 0; 
+		box-sizing: border-box;}
+		h1{width: 150px; height: 60px; float:left; background-color: #f06; margin-bottom: 20px;}
+		#unb{width: 500px; height: 50px; float:right; }
+		/*#unb>h2{width:0; height:0; overflow: hidden;}*/
+			#unb>ul{width:100%; height: 100%;}
+			#unb>ul>li{width: 24%; height: 100%; float: left; margin-left: 1.3%; background-color: #041;}
+		/* #gnb ________________________________________________ */
+    #gnb{width:960px; height: 40px; float: left; background-color: #a9a; 
+    	margin-left:-30px; padding:5px 30px; box-sizing:border-box;}
+      /*#gnb>h2{width: 0; height: 0; overflow: hidden;}*/
+      #gnb>ul{width: 100%; height: 100%;}
+
+/* li의 간격을 조정하기 위해 각각의 li에 margin-left설정
+	* 전체 8개의 리스트 100% / 8, 이중에 사이간격은 7개만큼 띄워야함 4% / 7  ->   12*8 = 96 이기때문에 남은 4%에서 7을 나눔
+	* 처음 li에는 margin-left가 적용하지 않으므로 첫 li에 margin-left:0; 처리(별도의 class이름 할당)
+	*/
+	      #gnb>ul>li{width:12%; height: 100%; float: left; background-color: #fff; margin-left:0.57%;}
+	      /*#gnb>ul>li.first_li{margin-left:0;}*/
+
+  /* #contentBox ________________________________________________ */
+  #contentBox{width: 100%; height:auto;}
+  /*#contentBox:after{content: " "; display: block; width: 0; height: 0; clear: both;}*/
+		.log_in{width:40%; height:200px; float:left; 
+				padding: 10px; box-sizing:border-box; background-color:#1a5;}
+			.log_in>ul{width: 100%; height: 100%; background-color:rgba(255,255,255,0.7);}
+			.log_in>ul>li{width: 70%; height: 60px; margin-bottom:5px; float:left;}
+			.login_1{background-color:#f90;}
+    	.login_2{background-color:#f50;}
+    	.log_in>ul>li.login_3{height: 50px; margin-bottom: 0; background-color:#f30;}
+			.log_in>ul>li.login_vertical{width:25%; height:100%; float: right;
+				background-color: #a0f; margin-top:-130px;}
+
+
+	  .banner_box{width:60%; height:200px; float:left; 
+	  		padding:10px; box-sizing:border-box; background-color:#2af;}
+			.banner_image{widows: 100%; height:150px; margin-bottom:10px; 
+				background-color:#cda;}
+      .indicator{widows: 100%; height:20px; background-color:#693;}
+
+	  .news_box{width:100%; height:400px; float:left; padding: 20px; 
+	  		box-sizing:border-box; background-color:#39a;}
+		  .news_box>ul{width: 100%; height: 100%;}
+		  .news_box>ul>li{width:25%; height: 100%; float:left;border:10px solid #fff; box-sizing:border-box;}
+	  	.news_1{background-color:#f01;}
+      .news_2{background-color:#f61;}
+      .news_3{background-color:#f91;}
+      .news_4{background-color:#fa1;}
+	  	.news_box>ul div{width: 100%; height: 100%; }
+
+  /* #footBox ________________________________________________ */
+  #footBox{width: 100%; height:80px; padding:15px 20px; box-sizing:border-box; background-color:#3a3;}
+  	#footBox>h2{width: 150px; height: 50px; float:left; background-color: #fff;}
+		address{width: 300px; height: 50px; float:left; margin-left: 150px; 
+			background-color: #fff;}
+		.family{width: 100px; height: 50px; float:right; background-color: #fff;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

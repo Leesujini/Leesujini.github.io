@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="utf-8">
+    <!-- 익스플로러 최신버전(설치되어있는 버전중)으로 동작하도록 설정 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>form 회원가입 만들기 테스트</title>
+  </head>
+  <body>
+    <h1><a href="#">naver</a></h1>
+    <h2>네이버 회원가입</h2>
+    <!-- form(join) -->
+<!--
+    * form 내부에 들어가는 대다수의 코드(input, button, label)는
+    * inline속성을 지니고있으며,
+    * 사이즈를 가질수 있다(inline-block)
+-->
+    <div id="join">
+      <h3>가입란</h3>
+      <form action="#" method="post">
+          <fieldset>
+            <legend>회원가입</legend>
+            <div id="member">
+              <!-- 아이디 -->
+              <div class="id_name">
+                <input type="text" id="idName" name="idName" value="">
+                <label for="idName">아이디를 입력하세요.</label>
+                <button type="button" name="idDelete">삭제</button>
+              </div><!-- // .id_name -->
+              <!-- 비밀번호 -->
+              <div class="pw_name">
+                <input type="password" id="pwName" name="pwName" value="">
+                <label for="pwName">비밀번호를 입력하세요.</label>
+                <button type="button" name="pwDelete">삭제</button>
+              </div><!-- // .pw_name -->
+              <!-- 재확인 -->
+              <div class="pw_rename">
+                <input type="password" id="pwReName" name="pwReName" value="">
+                <label for="pwReName">비밀번호를 재확인입니다. 한번더 입력하세요.</label>
+                <button type="button" name="pwReDelete">삭제</button>
+              </div><!-- // .pw_rename -->
+              <!-- 이름 -->
+              <div class="user_name">
+                <input type="text" id="userName" name="userName" value="">
+                <label for="userName">사용자 이름을 작성하세요.</label>
+                <button type="button" name="userNameDelete">삭제</button>
+              </div><!-- // .user_name -->
+              <!-- 성별 -->
+              <div class="sexuality_select">
+                <p><label for="male">성별을 선택하세요.</label></p>
+                <input type="radio" id="male"
+                       name="sexuality" value="남자">
+                <label for="male">남자</label>
+                <input type="radio" id="female"
+                       name="sexuality" value="여자">
+                <label for="female">여자</label>
+              </div><!-- // .sexuality_select -->
+            </div><!-- // #member -->
+            <div id="birthday">
+              <div class="birth_year">
+                <p><label for="birthYear">생년월일을 입력해 주세요.</label></p>
+                <!-- 년 -->
+                <input type="text" name="year" id="birthYear"
+                       maxlength="4" value="">
+                <label for="birthYear">
+                  태어난 해를 입력하세요(숫자 네자리).
+                </label>
+              </div><!-- // .birth_year -->
+              <!-- 월(3차 작업) -->
+              <div class="birth_month">
+                <select name="birthMonth" id="birthMonth">
+                  <script>
+                    var i = 1;
+                    for(; i<=12; i++){
+                      document.write(
+                        '<option value="'+ i +'">'+ i +'</option>'
+                      );
+                    }
+                  </script>
+<!-- 자바스크립트를 활용하면
+     반복 또는 연속 되어지는 내용을 약간의 수식을 통해 간단하게 처리할 수 있다.
+-->
+                </select>
+                <label for="birthMonth">
+                  태어난 월을 선택하세요.
+                </label>
+              </div><!-- // .birth_month -->
+              <!-- 일 -->
+              <div class="birth_day">
+                <input type="number" name="day" id="birthDay"
+                       min="1" max="31" step="1" value="">
+                <label for="birthDay">
+                  태어난 날짜를 선택 또는 입력하세요.
+                </label><!-- // .birth_day -->
+              </div>
+            </div><!-- // #birthday -->
+            <div id="checkMember">
+              이메일
+              국가번호
+              휴대폰
+              인증
+            </div><!-- // #checkMember -->
+          </fieldset>
+          <button type="submit" name="join">
+            가입하기</button>
+      </form>
+    </div><!-- // #join -->
+
+    <!-- 약관 -->
+    <div id="info">
+      <h3>약관 확인</h3>
+      <ul>
+        <li><a href="#">이용약관</a></li>
+        <li><strong><a href="#">개인정보 처리방침</a></strong></li>
+        <li><a href="#">책임의 한계와 법적고지</a></li>
+        <li><a href="#">회원정보 고객센터</a></li>
+      </ul>
+    </div><!-- // #info -->
+
+    <!-- copyright -->
+    <div id="copyright">
+      <address>
+        <a href="#">naver</a>
+        Copyright &copy;
+        <a href="#">NAVER Corp.</a>
+        All Rights Reserved.
+      </address>
+
+    </div><!-- // #copyright -->
+  </body>
+</html>
+
+<!--
+* eitity code : http://entitycode.com/
+* &amp;(&) &lt;(<) &gt;(>) &copy;(©)
+ -->
+
+
+
+
+
+<!--  -->

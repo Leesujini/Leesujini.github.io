@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!--[if IE]>
+  <script src="../ie/html5shiv/dist/html5shiv.min.js"></script>
+  <![endif]-->
+  <link rel="stylesheet" href="../css/base/reset.css" />
+  <link rel="stylesheet" href="../css/base/normalize.css" />
+  <link rel="stylesheet" href="../fontAwesome/css/font-awesome.min.css" />
+  <title>단위 기초이해</title>
+  <style>
+    /*:root{font-size:16px}*/
+    html,body{font-size:100%;}
+    #wrap{width: 600px; margin: 0 auto; font-size:100%; /*1em*/} /* 16px */
+    .box_01{font-size:200%;/* 2em */} /* 32px */
+    .box_02{font-size:50%; /* 0.5em */} /* 16px */
+    .box_03{font-size:100%; /* 1em */} /* 16px */
+    
+  </style>
+</head>
+<body>
+ base font size 처음의 설정값
+  <div id="wrap">
+    첫번째 font size
+    <div class="box_01">
+      두번째 font size
+      <div class="box_02">
+        세번째 font size
+        <div class="box_03">
+          네번째 font size
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>layout_test</title>
+  <style>
+    /* reset.css */
+    *{margin: 0; padding: 0; border: 0;}
+    ul,ol,li{ list-style: none;}
+    /* 
+    *구형브라우저에서는 
+    * header, section, aside, article, footer를
+    * 인지할 수 없다! 
+    * 그래서 강제로 블럭처리한다! */
+    header,section,aside,article,footer{display: block;}
+
+    /* design.css */
+    body{background-color:#036;}
+    #wrap{width: 600px; height:auto;
+      margin:50px auto;}
+/* #headBox ----------------------------------- */
+      #headBox{width: 100%; height:100px; background-color:#061;}
+        h1{width: 100px; height: 100px; float: left; background-color:#fa1;}
+        #subNav{width: 300px; height: 50px; float: right; 
+          visibility: hidden;}
+        #gnb{width: 400px; height: 50px; float: right; background-color:#0a1; }
+        #gnb>h2{width: 0; height: 0; overflow: hidden;}
+        #gnb>ul{width: 100%; height: 100%;}
+        #gnb>ul>li{
+          width:-webkit-calc(100% / 6);
+          width:-moz-calc(100% / 6);
+          width:-ms-calc(100% / 6);
+          width:-o-calc(100% / 6);
+          width:calc(100% / 6);
+          height:inherit;
+          background-color:#adc;
+          border-right:1px solid #888;
+          box-sizing: border-box;/* 외곽선을 안쪽으로 만들기 */ float: left;
+        }
+
+  /* #contentBox ----------------------------------- */
+      #contentBox{width: 100%; height:auto;}
+      #contentBox:after{content:" "; display: block; width: 0; height: 0; clear: both;}
+        #sideBox{width:30%; height:300px; 
+          background-color:#adf; float:right;}
+        #conBox{width:70%; height:150px; 
+          background-color:#fdf; float:left;}
+        #container{width: 70%; height: 150px; float: left; background-color: #ddd;}  
+      
+  /* #footBox ----------------------------------- */
+      #footBox{width: 100%; height:100px; background-color:#f6f;}
+
+      /* clearfix */
+      /*.clearfix::after{content:" "; display: block; 
+        width: 0; height: 0; clear: both;}*/
+
+
+  </style>
+  <script>
+    var hd = document.getElementsByTagName('header');
+
+ 
+
+  </script>
+</head>
+<body>
+  <div id="wrap">
+    <header id="headBox">
+      <h1>logo</h1>
+      <div id="subNav"></div>
+      <nav id="gnb">
+      <h2>navigation</h2>
+        <ul>
+          <li>01</li>
+          <li>02</li>
+          <li>03</li>
+          <li>04</li>
+          <li>05</li>
+          <li>06</li>
+        </ul>
+      </nav>
+    </header><!-- // #headBox -->
+    <section id="contentBox" class="clearfix">
+      <aside id="sideBox">
+        
+      </aside><!-- // #sideBox -->
+      <article id="conBox">
+        
+      </article><!-- // #conBox -->
+      <article id="container">
+        
+      </article><!-- // #container -->
+    </section><!-- // #contentBox -->
+    <footer id="footBox">
+      
+    </footer><!-- // #footBox -->
+  </div><!-- // #wrap -->
+
+  
+</body>
+</html>
