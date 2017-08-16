@@ -1,0 +1,61 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+<script>
+function checknum(num) {
+var val="0123456789";
+var string=num;
+var len=string.length;
+for(i=0;i<len;i++) 
+{
+if(val.indexOf(string.substring(i,i+1))<0) 
+{
+alert("숫자만 허용됩니다.");
+return;
+}
+}
+} 
+
+function check(){
+var str = document.jumin.jumin_1.value.length;
+if(str == 6)
+document.jumin.jumin_2.focus();
+} 
+
+function inputbirth() {
+var temp1,temp2,temp3;
+temp1=document.jumin.jumin_1.value.substring(0,2);
+temp2=document.jumin.jumin_1.value.substring(2,4);
+temp3=document.jumin.jumin_1.value.substring(4,6);
+if( temp1 < 30 ){ document.jumin.birth_date1.value="20"+temp1; }
+else { document.jumin.birth_date1.value="19"+temp1; }
+document.jumin.birth_date2.value=temp2;
+document.jumin.birth_date3.value=temp3;
+} 
+
+</script> 
+ </head>
+
+ <body>
+<form name="jumin" action="/" method="POST"> 
+
+주민등록번호  
+<input name="jumin_1" type="text" size="7" maxlength="6" OnKeyUp="check();" onChange="inputbirth()" onBlur="checknum(document.jumin.jumin_1.value)"> - <input name="jumin_2" type="text" size="7" maxlength="7" onBlur="checknum(document.jumin.jumin_2.value)"> 
+  
+
+<BR> 
+
+생년월일  
+
+<input name="birth_date1" type="text" size="4" maxlength="4" onBlur="checknum(document.jumin.birth_date1.value)"> 년 
+<input name="birth_date2" type="text" size="2" maxlength="2" onBlur="checknum(document.jumin.birth_date2.value)"> 월 
+<input name="birth_date3" type="text" size="2" maxlength="2" onBlur="checknum(document.jumin.birth_date3.value)"> 일 
+
+<BR> 
+
+<input type="submit" value="동의함">  <input type="reset" value="새로쓰기"> 
+
+</form> 
+
+ </body>
+</html>
