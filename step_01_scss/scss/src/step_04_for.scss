@@ -1,0 +1,65 @@
+//step_04_for.scss
+/* step_04_for.css*/
+
+//for : 반복문
+//일정한 간격으로 연속 되어진 증가 또는 감소의 기능을 반복하여 처리할 때 사용하는 기능
+
+/*
+@for $임의변수 시작값 through 마지막 값 {
+
+}
+
+//through  <=(작거나 같다는 뜻)
+              ( 이상(포함) 또는 이하를 의미함) [lte ie 9]
+//to < (초과 미만 )
+*/
+
+
+@for $i from 1 through 10 {
+  li:nth-child(#{$i}){background-image: url("img_" + $i + ".png");}
+  li:nth-child(#{$i}):hover{background-image: url("img_" + $i + "_on.png");}
+}
+
+//each
+//for와 기본적으로 반복한다는 의미로는 같다
+//일정한 간격으로 연속된다는 의미는 아니다.
+
+/*
+@each 임의 변수 in (각각의 값) {
+  내용
+}
+*/
+/*each 1*/
+@each $j in (3, 10, 5, 15){
+  li:nth-child(#{$j}){background-image: url("img_" + $j + ".png");}
+}
+/*each 2*/
+@each $k in (americano, latte, viena, compana, greentea){
+  .coffee_#{$k}{background-image: url($k + ".png");}
+  .coffee_#{$k}:hover{background-image: url($k + "_on.png");}
+}
+/*each 3*/
+$myTea : (americano, latte, viena, compana, greentea);
+
+@each $k in $myTea{
+  .green_#{$k}{background-image: url($k + ".png");}
+   .green_#{$k}:hover{background-image: url($k + "_on.png");}
+}
+
+/* for 2*/
+$myColor:(#333, #f98, #339, #dd3, #302, #0d9, #6e9,#f00 , #a2d);
+//nth (변수명, 변수값의 위치) -- list기능을 사용시
+@for $l from 1 through 7 {
+  li:nth-child(#{$l}){color:nth($myColor, $l);}
+}
+
+
+/* for 3*/
+//length(변수명) -- list의 갯수파악시
+
+@for $l from 1 through length($myColor) { 
+
+  .box_#{$l}{color:nth($myColor, $l);}
+}
+  /* length: 몇개가 들어가는지 알아서 계산해줌 */
+

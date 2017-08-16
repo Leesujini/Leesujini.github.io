@@ -1,0 +1,26 @@
+/* step_03_dataType.css */
+.type1 { content: number; }
+
+.type2 { content: string; }
+
+.type3 { content: string; }
+
+.type4 { content: number; }
+
+.type5 { content: color; }
+
+.type6 { content: color; }
+
+.type7 { content: map; }
+
+.type8 { content: list; }
+
+.type9 { content: map; }
+
+.type10 { content: list; }
+
+.type11 { content: bool; }
+
+.type12 { content: bool; }
+
+.type13 { content: null; }

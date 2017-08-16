@@ -1,0 +1,20 @@
+/* step_01.scss */
+
+@import "_setting/_base.scss";
+
+#wrap{ width: 100%; min-width: 960px; height: auto; min-height: 1000px; margin: 0 auto; }
+#headBox{width: 100%; height: 150px; background-color: darken($primaryColor, 10%);
+
+ h1{color:$primaryColor;}
+ h1:hover{color:darken($primaryColor, 50%);}
+}
+ //#header
+
+#adBox{width: 100%; height: 450px; background-color: darken($basicColor, 20%);
+h2{width: 100%; height: auto; background-color: $blue;
+   &:hover{color:darken($primaryColor, 50%);}
+   }//h2
+  }
+   //#aheadBox
+#content{width: 100%; height: 500px; background-color: darken($primaryColor, 30%);}
+#footBox{width: 100%; height: 50px; background-color: darken($primaryColor, 60%);}

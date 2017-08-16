@@ -1,0 +1,142 @@
+@charset "UTF-8";
+/* step_04_for.css*/
+/*
+@for $임의변수 시작값 through 마지막 값 {
+
+}
+
+//through  <=(작거나 같다는 뜻)
+              ( 이상(포함) 또는 이하를 의미함) [lte ie 9]
+//to < (초과 미만 )
+*/
+li:nth-child(1) { background-image: url("img_1.png"); }
+
+li:nth-child(1):hover { background-image: url("img_1_on.png"); }
+
+li:nth-child(2) { background-image: url("img_2.png"); }
+
+li:nth-child(2):hover { background-image: url("img_2_on.png"); }
+
+li:nth-child(3) { background-image: url("img_3.png"); }
+
+li:nth-child(3):hover { background-image: url("img_3_on.png"); }
+
+li:nth-child(4) { background-image: url("img_4.png"); }
+
+li:nth-child(4):hover { background-image: url("img_4_on.png"); }
+
+li:nth-child(5) { background-image: url("img_5.png"); }
+
+li:nth-child(5):hover { background-image: url("img_5_on.png"); }
+
+li:nth-child(6) { background-image: url("img_6.png"); }
+
+li:nth-child(6):hover { background-image: url("img_6_on.png"); }
+
+li:nth-child(7) { background-image: url("img_7.png"); }
+
+li:nth-child(7):hover { background-image: url("img_7_on.png"); }
+
+li:nth-child(8) { background-image: url("img_8.png"); }
+
+li:nth-child(8):hover { background-image: url("img_8_on.png"); }
+
+li:nth-child(9) { background-image: url("img_9.png"); }
+
+li:nth-child(9):hover { background-image: url("img_9_on.png"); }
+
+li:nth-child(10) { background-image: url("img_10.png"); }
+
+li:nth-child(10):hover { background-image: url("img_10_on.png"); }
+
+/*
+@each 임의 변수 in (각각의 값) {
+  내용
+}
+*/
+/*each 1*/
+li:nth-child(3) { background-image: url("img_3.png"); }
+
+li:nth-child(10) { background-image: url("img_10.png"); }
+
+li:nth-child(5) { background-image: url("img_5.png"); }
+
+li:nth-child(15) { background-image: url("img_15.png"); }
+
+/*each 2*/
+.coffee_americano { background-image: url(americano.png); }
+
+.coffee_americano:hover { background-image: url(americano_on.png); }
+
+.coffee_latte { background-image: url(latte.png); }
+
+.coffee_latte:hover { background-image: url(latte_on.png); }
+
+.coffee_viena { background-image: url(viena.png); }
+
+.coffee_viena:hover { background-image: url(viena_on.png); }
+
+.coffee_compana { background-image: url(compana.png); }
+
+.coffee_compana:hover { background-image: url(compana_on.png); }
+
+.coffee_greentea { background-image: url(greentea.png); }
+
+.coffee_greentea:hover { background-image: url(greentea_on.png); }
+
+/*each 3*/
+.green_americano { background-image: url(americano.png); }
+
+.green_americano:hover { background-image: url(americano_on.png); }
+
+.green_latte { background-image: url(latte.png); }
+
+.green_latte:hover { background-image: url(latte_on.png); }
+
+.green_viena { background-image: url(viena.png); }
+
+.green_viena:hover { background-image: url(viena_on.png); }
+
+.green_compana { background-image: url(compana.png); }
+
+.green_compana:hover { background-image: url(compana_on.png); }
+
+.green_greentea { background-image: url(greentea.png); }
+
+.green_greentea:hover { background-image: url(greentea_on.png); }
+
+/* for 2*/
+li:nth-child(1) { color: #333; }
+
+li:nth-child(2) { color: #f98; }
+
+li:nth-child(3) { color: #339; }
+
+li:nth-child(4) { color: #dd3; }
+
+li:nth-child(5) { color: #302; }
+
+li:nth-child(6) { color: #0d9; }
+
+li:nth-child(7) { color: #6e9; }
+
+/* for 3*/
+.box_1 { color: #333; }
+
+.box_2 { color: #f98; }
+
+.box_3 { color: #339; }
+
+.box_4 { color: #dd3; }
+
+.box_5 { color: #302; }
+
+.box_6 { color: #0d9; }
+
+.box_7 { color: #6e9; }
+
+.box_8 { color: #f00; }
+
+.box_9 { color: #a2d; }
+
+/* length: 몇개가 들어가는지 알아서 계산해줌 */

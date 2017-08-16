@@ -1,0 +1,35 @@
+// step_03_dataType.scss
+/* step_03_dataType.css */
+
+// number : 숫자
+// string : 문자
+// color : 색상
+// list : 목록
+// maps : object
+// boolean : 참(true)/거짓(false)
+// null : 없음 (무)
+
+//-----형타입 (data type)
+// type-of() 
+// data()
+
+// tryhelloworld.co.kr
+
+$type : 10000;
+$aa:(a:#a34); //리스트를 사용한 사용기법
+$aa2:();
+$bb:11, 33, 55;
+$bb2:(a:#aa5);
+.type1{content:type-of(10);}
+.type2{content: type-of("100px");} //""표시는 무조건 문자
+.type3{content:type-of("text");} //인지할 수 없는 문자는 string
+.type4{content:type-of($type);}
+.type5{content:type-of(rgba(100,200,250,0.4));}
+.type6{content:type-of(#a55);}
+.type7{content:type-of( $aa );}
+.type8{content:type-of( $bb);}
+.type9{content:type-of($bb2);}
+.type10{content:type-of($aa2);}
+.type11{content:type-of(false);} //bool
+.type12{content:type-of(true);}  //bool
+.type13{content:type-of(null);}

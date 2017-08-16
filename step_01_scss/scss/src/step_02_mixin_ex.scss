@@ -1,0 +1,27 @@
+/* step_02_mixin_ex.css */
+
+// 기본 설정파일 불러오기 -------------------------------------
+// 변수설정
+@import "../_setting/_step_02_var";
+// mixin 설
+@import "../_setting/step_02_mixin";
+
+//test 
+// layout design -------------------------------------
+#wrap{@include baseLayout($w:960px, $c:transparent); margin: 0 auto;}
+
+#headBox{@include baseLayout($h:100px, $c:lighten($primary,10%));}
+
+  h1{width: 150px; height: 50px; margin: 0 auto;
+     @include link($f:"sujin/hongsoontoon2.jpg");
+ }//h1
+
+
+
+
+  #gnb{width: 100%; height: 50px; margin-top: 10px; border-top: $line;}
+
+
+#adBox{@include baseLayout($h:400px, $c:lighten($primary,15%));}
+#contentBox{@include baseLayout($h:800px, $c:lighten($primary,20%));}
+#footBox{@include baseLayout($h:150px, $c:$primary);}

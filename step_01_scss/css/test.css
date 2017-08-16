@@ -1,0 +1,12 @@
+@charset "UTF-8";
+/* test.scss */
+/*-변수*/
+body {
+  background-color: #ccd;
+  margin: 0;
+  padding: 0; }
+
+h1 {
+  padding: 1em;
+  background-color: #f89;
+  color: #fff; }

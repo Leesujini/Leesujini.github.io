@@ -1,0 +1,28 @@
+// scss
+/* step_03_list.css*/
+
+//list: 목곡
+$width:(100, 200, 150, 30, 15);
+//nth(변수이름,  원하는 변수의 순서번호)
+li:nth-child(1){width:nth($width , 1)+px;}
+li:nth-child(2){width:nth($width , 2)+px;}
+li:nth-child(3){width:nth($width , 3)+px;}
+li:nth-child(4){width:nth($width , 4)+px;}
+li:nth-child(5){width:nth($width , 5)+px;}
+
+//image list
+$url:"../img/test/";
+$imgFile:("hong1.png","soon.png","toon.png","ran.png","ha.png",
+  "xido.png","xixixi.png","lee.png","su.png","jin.png");
+// nth(사용할 변수명, 항목위치 숫자)
+div{list:length($imgFile);}
+li:nth-child(1) > a {background-image: url($url+nth($imgFile, 1));}
+li:nth-child(2) > a {background-image: url($url+nth($imgFile, 2));}
+li:nth-child(3) > a {background-image: url($url+nth($imgFile, 3));}
+li:nth-child(4) > a {background-image: url($url+nth($imgFile, 4));}
+li:nth-child(5) > a {background-image: url($url+nth($imgFile, 5));}
+li:nth-child(6) > a {background-image: url($url+nth($imgFile, 6));}
+li:nth-child(7) > a {background-image: url($url+nth($imgFile, 7));}
+li:nth-child(8) > a {background-image: url($url+nth($imgFile, 8));}
+li:nth-child(9) > a {background-image: url($url+nth($imgFile, 9));}
+li:nth-child(10) > a {background-image: url($url+nth($imgFile, 10));}

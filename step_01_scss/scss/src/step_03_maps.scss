@@ -1,0 +1,26 @@
+//step_03_maps.scss
+/*step_03_maps.css*/
+
+//maps(object) 형태
+// $map:( key : value, key : value, key : value ) ;
+
+// (무엇이: 무엇이다, 선택: 값)
+
+
+$color:(
+  primary:#f6e,
+  basic: #0f7,
+  sub1: #777,
+  sub2: #890
+  );
+$font:(
+  primary:#333,
+  basic:#178,
+  sub1:#9a0,
+  sub2:#6a8
+  );
+
+// map 의 형태를 가져와서 사용할 경우 map-get();
+// map-get (변수 이름, 변수의 내부에 있는 속성명); 
+li{background-color: map-get($color, primary); 
+   color:map-get($font, primary); }
