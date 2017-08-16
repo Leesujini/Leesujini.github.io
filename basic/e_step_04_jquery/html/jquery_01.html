@@ -1,0 +1,93 @@
+<!--jquery_01.html-->
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,">
+  <meta name="keyword" content="html, css , jquery">
+
+  <!--[if lte IE 9]>
+    
+  
+  <script src="../ie/html5shiv/src/html5hiv.js"></script>
+  <script src="../ie/ie7/IE9.js"></script> 
+  <script src="../ie/csspie/PIE_IE9.js"></script>
+  <script src="../ie/Respond/Respond-master/dest/respond.min.js"></script>
+
+  <![endif]-->
+  <link rel="apple-touch-icon" href="#">
+  <link rel="shortcut icon" type="image/x-icon" href="#">
+
+  <link rel="stylesheet" href="../css/base/reset.css">
+  <script src = "../js/jquery/jquery-3.2.1.min.js"></script>
+  <script src = "../js/jquery/jquery-ui.min.js"></script>
+  <script>
+    //$(document).ready(function(){});
+    //$(function(){});
+  </script>
+  <title>선택자 및 css 이해</title>
+  <style>
+    #wrap{width: 960px; height: auto; min-height: 150px; margin: 0 auto;
+         }
+    .head_box{width: 960px; height: 150px; margin: 0 auto; background-color: #cc7;}
+    h1{width: 150px; height: 50px; float: left; margin:1em; background-color: #076;color: #fff;}
+    .gnb{width: 600px; height: 40px; float: right; margin-top: 20px;}
+    .gnb>li{float: left; margin-right: 10px; posit**ion: relative;}
+    .gnb>li:after{content: ""; display: block; width: 2px; height: 80%; background-color: #877; position: absolute; right: -4px; top: 10%;}
+     .gnb>li:last-child{margin-right: 0;}
+     .gnb>li:last-child:after{display: none;}
+    .gnb a{padding: 0.2em; color: #fff;}
+    .gnb a:hover{font-weight: bold;}
+
+  </style>
+</head>
+<body>
+  <div id= "wrap">
+  <div class="head_box"> 
+   <h1>jQuery Test</h1>
+
+   <ul class="gnb">
+     <li><a href="#">list_01</a></li>
+     <li><a href="#">list_02</a></li>
+     <li><a href="#">list_03</a></li>
+     <li><a href="#">list_04</a></li>
+     <li><a href="#">list_05</a></li>
+   </ul>
+
+   </div>
+  </div>
+
+  <script>
+    (function($){
+      //jQuery(작성)
+        $('#wrap').css({'width':100+'%','backgroundColor': '#efc'});
+        $('.head_box').css({'width':900+'px','backgroundColor':'#7cf'});
+        $('h1').css({'textAlign':'center','lineHeight':50+'px','fontSize':1+'em'});
+        //$('.gnb >li').css({'backgroundColor':'#f00'});
+        $('.gnb a').css({'color':'#0a5'});
+
+       $('.gnb >li').eq(0).css({'backgroundColor':'#803'});
+       //$('.gnb > li:first').css({'backgroundColor':'#003'});
+       $('.gnb > li:nth-child(2)').css({'backgroundColor':'#343'});
+       $('.gnb > li:nth-child(3)').css({'backgroundColor':'#600'});
+       $('.gnb > li:nth-child(4)').css({'backgroundColor':'#890'});
+       $('.gnb > li:last').css({'backgroundColor':'#633'});
+       //$('.gnb').children('li').eq(0).css({'backgroundColor':'#003'});)
+       $('.gnb').find('a').css({'fontSize':'1.4em'});
+
+       //이벤트 메서드 .on()
+         var gnb = $('.gnb');
+         gnb.children('li').on('mouseenter',function(){
+          $(this).parent(gnb).css({'backgroundColor':'transparent'});
+          $(this).siblings('li').css({'backgroundColor':'#222','color':'#fa0'});
+         })
+         .on('mouseout', function(){
+
+         });
+
+    })(this.jQuery);
+  </script>
+
+</body>
+</html>

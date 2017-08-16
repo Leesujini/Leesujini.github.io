@@ -1,0 +1,27 @@
+h1{width:100%; height:auto; box-sizing:border-box; 
+  padding:1em; color:#177; background-color:#fc0;}
+#headBox{width: 960px; height: auto; margin: 0 auto; background-color: #09f;}
+#headBox > ul{width: 100%; height:auto;}
+#headBox > ul::after{content:" "; display: block; clear: both;}
+#headBox > ul > li{float: left; margin:0.3em;}
+
+#car>ul{width: 100%; height: auto;}
+#car>ul:after{content:" "; display: block; clear: both;}
+#car>ul>li{width: 100px; height: auto; float: left; margin: 1em;
+          border: 0.5em solid  #ccc;}
+#car>ul img{width: 100%; margin: 0; padding: 0;}
+
+#coffee{
+  width: 600px; height: auto; margin: 0 auto;
+  border-bottom:0.1em dotted #aaa;
+}
+#coffee>ul{width: 100%; height: auto;}
+#coffee>ul:after{content:" "; display: block; clear: both;}
+#coffee>ul>li{width: 280px; float: left; margin-right: 20px; }
+#coffee>ul>li>div{width: 100%; height:300px; border-bottom:2px solid #157;
+                overflow: hidden;}
+#coffee>ul img{width: 100%; height: auto;}
+
+#coffee dl{width: 100%; height: auto; }
+#coffee dl>dt{width: 100%; height: auto; margin-bottom:0.5em; font-size:1.3em; font-weight: bold; color:#157;}
+#coffee dl>dd{width: 100%; height: auto; color:#777; padding-bottom: 0.5em;}

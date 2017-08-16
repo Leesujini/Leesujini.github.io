@@ -1,0 +1,135 @@
+
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../css/base/reset.css">
+  <script src="../js/jquery/jquery-3.2.1.min.js"></script>
+  <script src="../js/jquery/jquery-ui.min.js"></script>
+  <title>Document</title>
+  <style>
+  ul,ol{width: 100%; height: auto; padding: 0;}
+  ul:after, ol:after{content: ""; display: block; clear:both;}
+
+    li{padding: 0.5em; background-color: #eaf; margin: 0.2em; float: left;}
+    li:hover{background-color: #acf; color: #fff;}
+  }
+  }
+
+  </style>
+
+</head>
+<body>
+<h1>순서값 찾아오기</h1>
+<ul class="number">
+  <li>순서_01</li>
+  <li>순서_02</li>
+  <li>순서_03</li>
+  <li>순서_04</li>
+  <li>순서_05</li>
+  <li>순서_06</li>
+  <li>순서_07</li>
+  <li>순서_08</li>
+  <li>순서_09</li>
+  <li>순서_10</li>
+</ul>
+
+<ol class="link_Num">
+  <li><a href="#">링그달린 순서01</a></li>
+  <li><a href="#">링그달린 순서02</a></li>
+  <li><a href="#">링그달린 순서03</a></li>
+  <li><a href="#">링그달린 순서04</a></li>
+  <li><a href="#">링그달린 순서05</a></li>
+  <li><a href="#">링그달린 순서06</a></li>
+  <li><a href="#">링그달린 순서07</a></li>
+  <li><a href="#">링그달린 순서08</a></li>
+  <li><a href="#">링그달린 순서09</a></li>
+  <li><a href="#">링그달린 순서10</a></li>
+</ol>
+
+ <ul class="btn_num">
+   <li><button type="button">버튼의 역할01</button></li>
+   <li><button type="button">버튼의 역할02</button></li>
+   <li><button type="button">버튼의 역할03</button></li>
+   <li><button type="button">버튼의 역할04</button></li>
+   <li><button type="button">버튼의 역할05</button></li>
+   <li><button type="button">버튼의 역할06</button></li>
+   <li><button type="button">버튼의 역할07</button></li>
+   <li><button type="button">버튼의 역할08</button></li>
+   <li><button type="button">버튼의 역할09</button></li>
+   <li><button type="button">버튼의 역할10</button></li>
+ </ul>
+
+  <ol class="select_go">
+    <li><button type="button">선택한 순서의 다른 요소 변경1</button></li>
+    <li><button type="button">선택한 순서의 다른 요소 변경2</button></li>
+    <li><button type="button">선택한 순서의 다른 요소 변경3</button></li>
+    <li><button type="button">선택한 순서의 다른 요소 변경4</button></li>
+    <li><button type="button">선택한 순서의 다른 요소 변경5</button></li>
+    <li><button type="button">선택한 순서의 다른 요소 변경6</button></li>
+    <li><button type="button">선택한 순서의 다른 요소 변경7</button></li>
+    <li><button type="button">선택한 순서의 다른 요소 변경8</button></li>
+    <li><button type="button">선택한 순서의 다른 요소 변경9</button></li>
+    <li><button type="button">선택한 순서의 다른 요소 변경10</button></li>
+  </ol>
+
+  <script>
+    
+    (function($){
+     var numberList = $('.number').children('li');
+     //마우스 클릭 이벤트 ( .on('click',function(){}); )
+     // .number자식 li를 클릭하면 바로뒤에 함수 실행
+
+     numberList.on('click',function(){
+      //이벤트 발생시 그 요인이 되는 요소 ==> $(this)
+      //몇번째 요소를 선택했는지 확인
+       console.log ($(this).index() )
+     }); //numberList.on('click');
+
+  //------------------------------------------------------------
+    //링크태그가 달린리스트 순서 확인 
+    var link_Num = $('.link_Num').children('li');
+    // 마우스 클릭 이벤트 ( .on('click', function(){};)
+    link_Num.on('click',function(evt){
+      //evt 가 무엇일까?
+      //link기능이 존재한다면 해당하는 링크의 속성이 이벤트로 처리됨
+      //링크속성이 가진 이벤트를 삭제
+      evt.preventDefault();
+      console.log(evt);
+       console.log( $(this).index() );
+
+    });
+
+//-----------------------------------------------------------
+    var btn_num = $('.btn_num').children('li');
+    //btnMum을 클릭했을 때 (.on('click',function(){});)
+    btn_num.on('click',function(evt){
+      //button의 이벤트 발생 효과 무효과 처리
+      evt.preventDefault();
+      console.log( $(this).index());
+      //선택한 개체의 배경색을 변경
+      btn_num.css({'backgroundColor':'#ffc'});
+      $(this).css({backgroundColor:'#347'});
+    });
+
+    //---------------------------------------
+     var selGo = $('.select_go').children('li');
+     //selGo 클릭 이벤트
+     selGo.on ('click',function(e){
+      e.preventDefault();
+
+      console.log( $(this).index() );
+      var i = $(this).index();
+      // .number의 자식 li
+      // 자식: children, 자손: find
+      // $('.number').find('')
+      // .number의 자식 li의 내가 선택한 순서와 동일한 순서에 색상 변경하기
+
+     numberList.eq(i).css({backgroundColor:'#ffd',color:'#f37', height: '50px;'});
+     });
+
+    })(this.jQuery);
+
+  </script>
+</body>
+</html>

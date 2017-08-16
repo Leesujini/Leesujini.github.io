@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    div{border: 3px solid #f99;}
+  </style>
+</head>
+<body>
+  <h1>웹에서 video 사용하기</h1>
+  <div>
+  <!-- video 용어 
+   *video 코드로 감싸고 내부에
+   <source src ="[비디오 파일]" type="video/[확장자명]" />
+   *순서에 맞게 호환되는 사용 확장자가 진행 
+
+   *제어를 하는 명령어
+   controls : 재생 , 정지, 볼륨 등을 조절가능 - 단, 브라우저마다 크기/모양이 다르다.
+   *preload : 재생하기 전 미리 로딩처리하여 끊김이 덜하도록 만드는 기능
+   *autopaly: 비디오를 자동으로 재생하게 만드는 기능 
+   *volume : 비디오 재생시 크기 값을 조절하는 기능 (0 ~ 1)
+   *muted : 음소거 -->
+
+  <!--video 코트사용 -->
+    <video preload controls autoplay volume="0.2" muted 
+      src="../multi/mableri.mp4">
+      당신의 브라우저에서는 못써요 바꾸세요 크롬으로
+    </video>
+    <video autoplay controls muted poster=""><!-- 첫화면 -->
+      <source src="../multi/bdt.mp4" type="video/mp4" />
+       <source src="../multi/bdt.mp4" type="video/mp4" />
+       <p>브라우저가 참 좋네요 다른 최신 브라우저로 바꾸세요.</p>
+    </video>
+  </div>
+  <!--<audio src= "">사용가능하지만 실제로는 복수형을 사용</audio> 
+
+   *audio 에서는 poster, width, height 속성을 사용할 수 없다.
+   *controls는 브라우저마다 크기/모양이 다르므로 별도의 디자인 작업 후 자바스크립트로 제어하는 것이 좋다.
+
+   *재생( load() ), 정지(pause () )
+   *mp3 재생기처럼 여러곡을 사용하려면, 자바스크립트 기능으로 사용하는 것이 일반적이다.ㄱ-->
+
+  <audio autoplay preload controls >
+    <source src="[음악재생파일.ogg" type="audio/ogg" />
+    <source src="[음악재생파일.aac" type="audio/aac" />
+    <source src="[음악재생파일.mp3" type="audio/mp3" />
+    <p>현재 브라우저에서는 재생되지 않습니다. 최신 브라우저를 사용하세요.</p>
+  </audio>
+</body>
+</html>

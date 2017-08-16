@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+   <link rel="stylesheet" href="../css/base/reset.css">
+  <script src = "../js/jquery/jquery-3.2.1.min.js"></script>
+  <script src = "../js/jquery/jquery-ui.min.js"></script>
+  <title>jquery show hide</title>
+  <style>
+    #wrap{width: 100%; height: auto;}
+    #headBox{width: 960px; height: auto; background-color: #fda; margin: 0 auto;}
+    h1{width: 500px; height: auto; padding-top: 0.5em; margin-bottom: 1em; text-align: center; margin: 0 auto; border-bottom: 2px solid #f05; }
+    #gnb{width: 80%; height: auto; margin: 0 auto;}
+    #gnb:after{content:""; display: block; clear: both;}
+    #gnb>li{width: calc(100% / 12); height: auto; float: left; box-sizing: border-box; padding: 1em;}
+    #gnb>li>button{width: 100%; height:  auto;}
+    #gnb>li>button:hover{background-color: #fff; font-weight: bold;}
+    #addBanner{width: 100%; height: 500px; background-color: #034; display: none;}
+    #addBanner>h2{color: #fff; font-size: 3em; text-align: center;}
+   
+   /* jquery addClass 용*/
+   .view{display: block;background-color: #fad;
+         transform: rotate(10deg); transition: all 1000ms ease-in;}
+    .view:hover{transform: rotate(720deg);}
+   .view>h2{text-align: center; padding-top: 3em; border-bottom: 1em solid #fff;}
+
+
+  </style>
+</head>
+<body>
+ <div id="wrap"> 
+  <header id="headBox">
+    <h1>jquery test_show &amp; hide</h1>
+    <ul id="gnb">
+      <li><button type="button">show</button></li>
+      <li><button type="button">hide</button></li>
+      <li><button type="button">toggle</button></li>
+
+      <li><button type="button">show</button></li>
+      <li><button type="button">hide</button></li>
+      <li><button type="button">toggle</button></li>
+
+      <li><button type="button">show</button></li>
+      <li><button type="button">hide</button></li>
+      <li><button type="button">toggle</button></li>
+
+      <li><button type="button">show</button></li>
+      <li><button type="button">hide</button></li>
+      <li><button type="button">toggle</button></li>
+    </ul>
+  </header>
+  <section id="addBanner" >
+    <h2>광고 배너 영역</h2>
+  </section>
+ </div>
+ <!--script -->
+  <script>
+    (function($){
+      var gnb = $('#gnb'); 
+      var gnbList = gnb.children('li');
+      var banner = $('#addBanner');
+      //gnbList 클릭 이벤트 (.on () )
+      //버튼 클릭시 banner 나타나게 만들기 (banner 숨김처리 효과시)
+      gnbList.eq(0).on('click',function(e){
+       e.preventDefault();
+
+       banner.show();  
+      });
+
+      // gnbList (2) 클릭시 숨김처리( .on () )
+      gnbList.eq(1).on('click',function(e){
+        e.preventDefault();
+        banner.hide();
+      }); 
+
+      // gnbList(2)클릭시 토글( .on () )
+      gnbList.eq(2).on('click',function(e){
+        e.preventDefault(); //pre(먼저) event (이벤트 효과), default (취소) 
+                            //:버튼 /링크 또는 여러 이벤트 가능 해당하는 이벤트 기능을 무효화
+                            //함수의 말미에 작성되는 return false; 와 같은 기능
+
+        banner.toggle();
+      });
+
+     gnbList.eq(3).on('click', function(e){
+      e.preventDefault();
+      banner.fadeIn('fast');
+     });
+
+
+      gnbList.eq(4).on('click', function(e){
+      e.preventDefault();
+      banner.fadeOut(500); //0.5초 동안 이라는 의미
+     });
+
+
+     gnbList.eq(5).on('click', function(e){
+      e.preventDefault();
+      banner.fadeToggle('slow'); //단어로도 의미도 가능
+     });
+
+      //애니메이션 처리되는 이벤트 효과에서는 마우스든 다른 효과든 중간에 정지 처리되어야 할 필요가 있다.
+      // stop()
+      // 애니메이션 효과를 주는 메소드 (api) 앞에 .stop() 메소드를 연결하기만 하면 간단하게 처리 할 수있다.
+      // stop(): 반복처리 되는 이벤트 기능이 메모리 되어 처리되는 것을 삭제하는 것.
+
+     gnbList.eq(6).on('click', function(e){
+      e.preventDefault();
+      banner.stop().slideDown('slow'); 
+     });
+
+     gnbList.eq(7).on('click', function(e){
+      e.preventDefault();
+      banner.stop().slideUp('slow'); 
+     });
+
+     gnbList.eq(8).on('click', function(e){
+      e.preventDefault();
+      banner.stop().slideToggle('slow'); 
+     });
+
+     //addClass()
+     
+      gnb.addClass('clearfix');
+      //addClass()란 , css (style)에 존재하는 class 이름을 가져와서 html 요소에 삽입
+      gnb.removeClass('clearfix'); 
+      //removeClass()란, 선택된 요소에 담긴 class 이름을 삭제처리
+
+     gnbList.eq(9).on('click', function(e){
+      e.preventDefault();
+      banner.addClass('view'); 
+     });
+
+     gnbList.eq(10).on('click', function(e){
+      e.preventDefault();
+      banner.removeClass('view'); 
+     });
+
+     gnbList.eq(11).on('click', function(e){
+      e.preventDefault();
+      banner.toggleClass('view'); 
+     });
+
+    }) (this.jQuery);
+  </script>
+</body>
+</html>
