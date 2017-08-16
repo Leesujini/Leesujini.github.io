@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!--[if IE]>
+  <script src="../ie/html5shiv/dist/html5shiv.min.js"></script>
+  <script src="../ie/ie7/IE9.js"></script> /선택자
+  <script src="../ie/css3pie/PIE_IE9.js"></script>/css
+  <![endif]-->
+  <link rel="stylesheet" type="text/css" href="../css/base/reset.css" />
+  <link rel="stylesheet" type="text/css" href="../css/base/normalize.css" />
+  <link rel="stylesheet" type="text/css" href="../fontawesome/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="../css/src/join.css"> 
+
+<script src="../js/jquery/jquery-3.2.1.min.js"></script>
+  <script src = "../js/jquery/jquery-ui.min.js"></script>
+
+  <title>baedaltong</title>
+  <style>
+
+  
+ /*
+    #contentBox{width: 100%; height: 1100px; background-color: #fff; margin-top: 15px;}
+
+
+    #articleBox{width: 100%; height: 130px; background-color: #f87; border-bottom: 25px   solid; color: #f60; }
+    #articleBox>h2{width: 300px; height: 120px;background-color: #fff; margin: 0 auto; text-align: center; color: #333; color: #f90;}
+
+
+
+    #articleBox2{width: 100%; height: 700px; background-color: #fff; border-bottom: 25px   solid; color: #f60;}
+    #articleBox2>h2{width: 230px; height: 50px; background-color: #fff; margin: 0 auto; text-align: center; margin-top: 20px; color: #f90;}      
+
+  .user{width: 60%; height: auto; background-color: #fff; margin: 0 auto; margin-top: 30px;}
+  .user>label{width: 30px; height: 30px; background-color: #f90; display: block; float: left;margin:10px; margin-top: 20px;margin-left:155px; }
+
+  input[type="submit"]{width:100px; height:46px; border:0; padding:0.5em; background-color:#f90; cursor:pointer; font-size: 1.2em; color: #fff; 
+     font-weight: bold; border-radius:0.4em;}
+
+  .pwd>{width: 60%; height: auto; background-color: #fff; margin: 0 auto; margin-top: 30px;}
+  .pwd>label{width: 30px; height: 30px; background-color: #f90; display: block; float: left;margin:10px; margin-top: 20px; margin-left: 350px;}
+  .input_box{width:200px; height:50px; border:0; background-color: #ec3;
+    margin: 6px; text-indent: 10px; margin-top: 10px; border-radius:0.4em;}
+  
+     .pegister{font-size: 0.3em; float: left; margin-left: 350px;}
+
+ 
+  #footBox{width: 100%; height: 400px; background-color: #ec3; margin-top: 20px;}
+  #footBox>h2{width:110px; height: 110px; background-color: #a3f; float: left;
+              margin-top: 20px; margin-left: 20px;}
+  #footBox>ul{width: 680px; height: 40px; float: left; padding: }
+  #footBox>ul>li{width:95px; height: 40px; float: left;}
+  #footBox>ul>.bdtong{margin-left: 50px;}
+  #footBox>ul>.bdtong2>li{margin-left: 50px; clear: both; }
+  #footBox>.footBox1-1{width: 120px; height: 120px; float: left; background-color: #f20;
+                       margin-top: 20px; margin-left: 20px;}
+  #footBox>.footBox1-1>li{width: 50px; height: 50px; float: left; background-color: #fff; margin: 5px;}
+  */
+  </style>
+</head>
+<body>
+<div id="wrap">
+   <nav id="unb">
+   <h2></h2>
+     <ul class="unb_1">
+       <li class="login"><a href="#">로그인</a></li>
+       <li><a href="#">회원가입</a></li>
+       <li><a href="#">주문내역</a></li>
+       <li><a href="#">고객센터</a></li>
+       <li><a href="#">이벤트</a></li>
+     </ul>
+   </nav>
+   <header id="headBox">
+      <h1></h1>
+   </header>
+   <nav id="gnb">
+    <h2></h2>
+      <ul>
+        <li class= "ck"><a href="#">치킨</a></li>
+        <li><a href="#">중국음식</a></li>
+        <li><a href="#">피자</a></li>
+        <li><a href="#">족발보쌈</a></li>
+        <li><a href="#">야식</a></li>
+        <li><a href="#">찜탕</a></li>
+        <li><a href="#">한식분식</a></li>
+        <li><a href="#">일식</a></li>
+        <li><a href="#">도시락.죽</a></li>
+        <li><a href="#">꽃배달</a></li>
+      </ul>
+    </nav>
+    <section id="contentBox">
+      <article id="articleBox">
+        <h2 class="hidden">회원가입 페이지</h2>
+      </article>
+      <article id= "articleBox2">
+      <article class="bannerpizza">
+        <h2>회원가입</h2>
+        </article>
+      <div id="joinicon"></div>
+
+      <div id="bdtapp">
+        <ul>
+          <li class="appdown"><a href="#"><span class="hidden">앱스토어</span></a></li>
+          <li class="appdown2"><a href="#"><span class="hidden">구글</span></a></li>
+        </ul>
+      </div>
+
+        <form action="#" method="post">
+        <fieldset>
+          <legend class="hidden">Username</legend> 
+          <div class="user">
+             <label for="useid"><span class="hidden">사용자 아이디를 입력하세요.</span></label>
+             <input type="text"
+             id="useid"
+             name="userName"
+            class="input_box"
+             value=""
+             placeholder="Username">
+             <input type="submit" name="ok" value="중복확인">
+             <p class="pegister">실제 사용중이신 이메일 주소를 등록하셔야 각종 정보를 수신할 수 있습니다.</p>
+         </div>
+         <div class="pwd"> 
+             <label for="Pwd"><span class="hidden">비밀번호 입력</span></label>
+             <input type="password"
+             id="Pwd"
+             name="inputPwd"
+             class="input_box"
+             value=""
+
+             placeholder="Password"/>  
+          </div>
+          
+           <div class="pwd"> 
+             <label for="inputPwd2"><span class="hidden">비밀번호 입력 확인</span></label>
+             <input type="password"
+             id="inputPwd2"
+             name="inputPwd"
+             class="input_box"
+             value=""
+
+             placeholder="Password2"/>  
+       
+        <div class="user">
+             <label for="userName"><span class="hidden">사용자 이름</span></label>
+             <input type="text"
+             id="userName"
+             name="userName"
+            class="input_box"
+             value=""
+             placeholder="Nickname">
+         </div>
+        
+  
+           <div class="user">
+             <label for="phonenumber"><span class="hidden">i</span></label>
+             <input type="text"
+             id="phonenumber"
+             name="userName"
+            class="input_box"
+             value=""
+             placeholder="phonenumber">
+             <input type="submit" name="phone_ok" value="인증">
+             <p class="pegister">핸드폰 인증을 하셔야만 포인트가 적립됩니다.
+인증문자가 오랫동안 수신되지 않을 경우 문자가 스팸 설정 되어 있을 수도 있습니다.</p>
+         </div>
+   
+             <div class="user">
+             <label for="okmembership"><span class="hidden">ok멤버쉽</span></label>
+             <input type="text"
+             id="okmembership"
+             name="userName"
+            class="input_box2"
+             value=""
+             placeholder="OK캐쉬백 카드번호 ( ‘-’없이 입력)">
+             <input type="submit" name="phone_ok" value="확인">
+             <p class="pegister">OK캐쉬백 카드번호 입력 시 OK캐쉬백 포인트를 적립 및 사용을 하실 수 있습니다.</p>
+         </div>
+            <div class="text_p">
+            <p>배달통에 로그인을 하시면 배달통 포인트 적립과 사용이 가능합니다.<br />
+            적립- 회원가입, 모바일 결제 주문, 리뷰 작성<br />
+            사용- 모바일 결제 주문 할인 <br />
+            각종 프로모션 및 할인 이벤트 진행 시 우선적으로 적용됩니다</p>
+          </div>
+        </fieldset>
+        
+        <fieldset class="acceptterms">
+          <legend class="hidden">checkbox</legend>
+          <ul>
+          <li><input type="checkbox" id="acceptterms1" name="acceptterms01"  value="전체약관동의"  checked="checked" />
+          <label for="acceptterms1">전체약관동의</label>
+          </li>
+           
+          <li><input type="checkbox" id="acceptterms2" name="acceptterms02"  value="*이용약관 동의 [내용보기]" />
+          <label for="acceptterms2">*이용약관 동의 [내용보기]</label></li>
+
+          <li><input type="checkbox" id="acceptterms3" name="acceptterms03"  value="*개인정보 수집 및 이용 동의 [내용보기]" />
+          <label for="acceptterms3">*개인정보 수집 및 이용동의 [내용보기]</label></li>
+
+          <li><input type="checkbox" id="acceptterms4" name="acceptterms04"  value= "*위치기반 서비스 이용약관 동의 [내용보기] "/>
+          <label for="acceptterms4">*위치기반 서비스 이용약관동의 [내용보기] </label></li>
+
+         <li><input type="checkbox" id="acceptterms5" name="acceptterms05"  value="배달통 이벤트 정보 수신 동의" />
+          <label for="acceptterms5">배달통 이벤트 정보 수신동의</label></li>
+          
+        </ul>
+
+       <p> 서비스 이용약관
+제1조 (목적)
+이 약관은 ㈜배달통(이하 ”회사”라 함)이 운영하는 배달통 서비스(이하 “서비스”라 함)와 관련하여,회사와 이용고객(비회원 또는 회원)간에 이용조건 및 절차, 회사와 고객간의 권리와 의무, 책임사항 및 기타 필요한 제반사항을 규정함을 목적으로 한다.
+
+본 약관은 PC통신, 스마트폰 앱 (안드로이드, iOS, 및 기타 OS용 앱) 등을 이용하는 전자상거래에 대해서도 그 성질에 반하지 않는 한 이 약관을 준용한다.
+제2조 (용어의 정의)
+이 약관에서 사용하는 용어의 정의는 다음과 같다.
+1. 회사가 운영하는 웹사이트 및 앱 서비스는 아래와 같다.
+① 스마트폰용 OS별 배달통 앱
+② 웹사이트(www.bdtong.co.kr)
+③ 모바일 웹사이트(m.bdtong.co.kr)
+④ 추후 회사에서 공지하고 제공하는 기타 앱 및 웹사이트 포함
+2. 이용자 : 웹사이트에 접속하여 이 약관에 따라 회사가 제공하는 서비스를 받는 회원 및 비회원을 말한다.
+3. 회원 : 회사에 개인정보를 제공하여 회원등록을 한 자로서, 이 약관에 따라 회사와 서비스 이용계약을 체결하고 ID를 부여 받은 자를 말한다.
+4. 비회원 : 회원에 가입하지 않고 회사가 제공하는 서비스를 이용하는 자를 말한다.
+5. 아이디(ID 또는 이메일주소) : 회원의 식별과 서비스 이용을 위하여 회원이 선정하고 회사가 승인한 영문과 숫자의 조합을 말한다.
+6. 비밀번호(Password) : 회원의 동일성 확인과 회원의 권익 및 비밀보호를 위하여 회원 스스로가 설정하여 회사에 등록한 영문과 숫자의 조합을 말한다.
+7. 게시물 : 회원이 서비스를 이용함에 있어 서비스상에 게시한 부호/문자/사진 등의 정보 형태의 글, 사진 및 각종 파일과 링크 등을 말한다.
+8. 배달통 포인트 : 물품 또는 서비스를 구매할 때 또는 회사가 제공하는 서비스를 이용할 때 현금처럼 사용할 수 있는 회사 전용의 사이버 화폐를 말한다.
+9. 제휴업체 : 회사와의 판매/광고대행 계약을 통하여 회사로부터 물품 또는 포인트, 쿠폰을 구매한 이용자에게 구매대상인 재화 및 서비스를 제공하는 업체(개인사업자, 법인 불문)를 말한다.
+10. 본 약관에서 정의되지 않은 용어는 관련 법령이 정하는 바에 따르며, 그 외에는 일반적인 거래관행에 의한다.
+제3조 (약관의 명시와 설명 및 개정)</p>
+
+
+        </fieldset>
+
+
+
+
+
+        <div class="signup">
+        <ul>
+        <li><a href="#"><span class="hidden">가입</span></a></li>
+        </ul>
+        </div>  
+
+
+
+
+
+
+      </form>
+      </article>
+
+    </section>
+ <footer id= "footBox">
+      <h2 class="hidden"></h2>
+        <ul>
+          <li class="bdtong"><a href="#">배달통소개</a></li>
+          <li><a href="#">이용약관</a></li>
+          <li><a href="#">개인정보</a></li>
+          <li><a href="#">사이트맵</a></li> 
+          <ul class="bdtong2">
+          <li>서울시 강남구 체헤란로5길 7KG타워 11층 | 대표자 : 강신봉</li>
+          <li>사업자등록번호:214-88-35862 [사업자정보 확인] | 통신판매업 신고 :2012-서울서초 1541
+              개인정보담당자:help@bdtong.co.kr | <br />호스팅서비스 사업자: 주 시스원 <br />
+              고객센터: 1666-7670 운영시간: 오전 10:30~새벽04:30(식사시간 제외) </li>
+              <li class= "copyright">copyrightⓒ2016배달통.All rights reserved</li>
+    
+         </ul> 
+        </ul>
+        <ul class="footBox1-1">
+          <li class="sns01 hidden"><a href="#"></a></li>
+          <li class="sns02 hidden"><a href="#"></a></li>
+          <li class="sns03 hidden"><a href="#"></a></li>
+          <li class="sns04 hidden"><a href="#"></a></li>
+        </ul>
+    </footer>
+  <script>
+
+  </script>
+</body>
+</html>

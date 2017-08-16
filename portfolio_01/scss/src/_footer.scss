@@ -1,0 +1,26 @@
+//_footer.scss
+
+
+#footBox{width: 100%; height: 380px; margin-top: 1300px; border-top: 3px solid map-get($color,deepGray); }
+  #footBox>h2{width:100px; height: 100px; float: left; background-image: url("../../img/footlogo.jpg");
+              margin-top: 39px; margin-left: 20px;}
+  #footBox>ul{width: 680px; height: 40px; float: left; margin-top: 39px; }
+  #footBox>ul>li{width:95px; height: 40px; float: left;}
+  #footBox>ul>.sns01>a{width: 100%; height: 100%; display: block; 
+                       background-image: url("../../img/facebookicon.jpg");}
+  #footBox>ul>.sns02>a{width: 100%; height: 100%; display: block;
+                      background-image: url("../../img/navericon.jpg");}
+  #footBox>ul>.sns03>a{width: 100%; height: 100%; display: block;
+                       background-image: url("../../img/twitterlogo.jpg"); background-repeat: no-repeat;}
+  #footBox>ul>.sns04>a{width: 100%; height: 100%; display: block;
+                       background-image: url("../../img/google.jpg"); background-repeat: no-repeat;}
+
+ 
+
+  #footBox>ul>.bdtong{margin-left: 50px;}
+  #footBox>ul>.bdtong2>li{margin-left: 50px; clear: both; }
+  #footBox>ul>.bdtong2>.copyright{margin-top: 15px;}
+
+  #footBox>.footBox1-1{width: 107px; height: 107px; float: left; background-color:map-get($color,white);
+                       margin-top: 35px; margin-left: 20px;}
+  #footBox>.footBox1-1>li{width: 40px; height: 40px; float: left; margin: 6px;} 
