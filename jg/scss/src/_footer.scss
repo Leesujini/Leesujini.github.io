@@ -1,0 +1,13 @@
+//_footer.scss
+
+
+#footBox{width: 100%; height: 400px; background-color:map-get($color,yellow); margin-top: 20px; border-top: 3px solid map-get($color,deepGray);}
+  #footBox>h2{width:110px; height: 110px; background-color: map-get($color,primary); float: left;
+              margin-top: 20px; margin-left: 20px;}
+  #footBox>ul{width: 680px; height: 40px; float: left; }
+  #footBox>ul>li{width:95px; height: 40px; float: left;}
+  #footBox>ul>.bdtong{margin-left: 50px;}
+  #footBox>ul>.bdtong2>li{margin-left: 50px; clear: both; }
+  #footBox>.footBox1-1{width: 120px; height: 120px; float: left; background-color:map-get($color,white);
+                       margin-top: 20px; margin-left: 20px;}
+  #footBox>.footBox1-1>li{width: 50px; height: 50px; float: left; background-color:map-get($color,primary); margin: 5px;} 

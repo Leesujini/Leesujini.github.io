@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!--[if IE]>
+  <script src="../ie/html5shiv/dist/html5shiv.min.js"></script>
+  <script src="../ie/ie7/IE9.js"></script> /선택자
+  <script src="../ie/css3pie/PIE_IE9.js"></script>/css
+  <![endif]-->
+  <link rel="stylesheet" type="text/css" href="../css/base/reset.css" />
+  <link rel="stylesheet" type="text/css" href="../css/base/normalize.css" />
+   <link rel="stylesheet" type="text/css" href="../fontawesome/css/font-awesome.min.css" /> 
+   <link rel="stylesheet" type="text/css" href="..">
+   <link rel="stylesheet" type="text/css" href="..">
+
+   <script src="js/jquery/jquery-3.2.1.min.js"></script>
+   <script sre="js/jquery/jquery-ui.min.js"></script>
+  <title>Cheong Kwan Jang</title>
+  <style>
+
+   #wrap{width: 1000px; height: 5059px; margin: 0 auto; }
+   #headerBox{width: 100%; height: 194px; background-color: #f64;}
+   #unb{width: 100%; height: 33px;background-color: #33f;}
+   #headerline{width:100%; height:100px; background-color: #eed; float: left; padding-top: 30px; padding-bottom: 30px; box-sizing: border-box;}
+   h1{width:187px; height: 45px; background-color: #fff;float: left; background-image:url("../img/h1_logo.png"); background-repeat: no-repeat; }
+   #headerline>#search{width: 560px; height: 45px; background-color: #d35;float: left;}
+   #headerline>#event{width: 250px; height: 83px; background-color: #2cc; float: right; margin-top: -20px; background-image: url("../img/ad_btn_11.jpg"); background-size: cover;}
+   #gnb{width: 100%; height:60px; background-color: #f38;clear: both;}
+   #gnb>ul{width: 100%; height: 100%;}
+   #gnb>ul>li{width:142px; height: 100%; background-color: #f44; float: left;}
+   #bannerBox{width: 100%; height: 523px; }
+   #bannerBox>.banner{width: 100%; height: 522px; background-color: #fff;background-image: url("../img/ad_btn_3.png"); background-size: cover; }
+   #articleBox1{width: 100%; height: 185px; background-color: #d67;}
+   #articleBox1>.ten{width: 100%; height: 100%;}
+   #articleBox1>.ten>li{width:33.3333%; height: 100%; background-color: #f33; float: left;}
+
+   #articleBox2{width: 100%; height: 280px; background-color: #ff0; margin-top: 92px;}
+   #articleBox2>#best{width: 100%; height: 57px; background-color: #fdf;}
+   #best>.best_1{width: 114px ; height: 49px; background-color: #390; float: left;}
+   #best>.best_2{width:265px; height: 49px; background-color: #39e; float: left;}
+   #articleBox2>#janglist{width:100%; height: 220px; margin-top: 40px;float: left;}
+   #articleBox2>#janglist>li{width:142.82333px;height: 153px; background-color: #c83; float: left;}
+
+   #articleBox3{width: 100%; height: 830px; background-color: #dd9; padding-top: 27px;padding-bottom: 27px; box-sizing: border-box;}
+   #category{width:100%; height: 712px; background-color: #25c; margin-top: -2px;}
+   #category>li{width: 235px; height: 329px; background-color: #eed;  margin-right: 15px;float: left;  margin-top: 15px;}
+   #category>li>.categoryimg{width: 235px; height: 218px; background-color: #fff; float: left;}
+   #category>li>.categorytext{width: 235px; height: 111px; background-color: #d33;float: left; padding-top: 14px; padding-bottom: 24px; box-sizing: border-box;}
+   #category>li>.categorytext>p{width: 165px; height: 22px; background-color: #2dc; margin: 0 auto;  }
+   #articleBox3>.categorynext{width: 241px; height: 65px; background-color: #043; margin: 12px auto; }
+   #articleBox3>.categorynext>a{display: block; width: 100%; height: 100%; }
+
+   #articlebannerBox1{width: 100%; height: 489px; background-color: #e9f; margin:72px auto;background-image: url("../img/sub_banner_1.png");}
+
+   #articleBox4{width: 100%; height: 775px; background-color: #f37;}
+   #articleBox4>#brand{width: 100%; height: 95px; background-color: #fdf; padding-top:32px; box-sizing: border-box;}
+   #brand>.brand_1{width: 115px ; height: 63px; background-color: #390; float: left;}
+   #brand>.brand_2{width:250px; height: 63px; background-color: #39e; float: left;}
+   #brand>.brand_3{width:60px; height: 21px; background-color: #3de; float: right; margin-top: 25px;}
+   #articleBox4>.brandlist{width: 100%; height: 635px; background-color: #d43;}
+   #articleBox4>.brandlist>li{width:321px; height: 182px; background-color: #fd1; float: left; margin-bottom: 20px; margin-right: 18.55555px;}
+   #articleBox4>.brandlist>.brand3{margin-right: -30px;}
+   #articleBox4>.brandlist>.brandlast{width: 100%; height: 232px; float: left; }
+
+
+   #articleBox5{width: 100%; height: 557px; background-color: #ed8;}
+    #box5{width: 283px; height: 40px; margin: 0 auto; background-color: #3c9;}
+    #articleBox5>.box5__1{width:100%; height: 100%; background-color: #33d; padding-top: 33px; box-sizing: border-box;}
+    #articleBox5>.box5__1>li{width:230px; height: 300px; background-color: #f30; float: left; margin-right: 25px;}
+     #articleBox5>.box5__1>.box5__2{margin-right: -23px;}
+     #articleBox5>.box5__1>li>.boximg{width: 232px; height: 217px; background-color: #f98; }
+      #articleBox5>.box5__1>li>.boxtext{width:232px; height: 85px; background-color: #3cd; padding-top: 23px; box-sizing: border-box;}
+      #articleBox5>.box5__1>li>.boxtext>p{width: 100%;height: 20px; background-color: #3a6;}
+    #articlebannerBox2{width: 100%; height: 460px; background-color: #76e;}
+   #footBox{width: 100%; height: 538px; background-color: #332;}
+   #footBox>.notice{width:100%; height: 70px; background-color: #39e;}
+   #footBox>.notice>dt{width:121px; height:100%; background-color: #3ff; float: left;}
+   #footBox>.notice>dd{width: 439px; height: 100%; background-color: #ed9;float: left;}
+   #footBox>.story{width: 100%; height: 56px; background-color: #930;}
+   #footBox>.story>dt{width: 80px; height: 100%; background-color: #234; float: left;}
+   #footBox>.story>dd{width: 253px; height: 100%; background-color: #ce0;float: left;}
+   #footBox>.imgstory{width: 100%; height: 114px; background-color: #edf; }
+   #footBox>.imgstory>dt{width: 63px; height: 100%; background-color: #c33; float: left;}
+   #footBox>.imgstory>dd{width: 111px;height: 100%; background-color: #ee9;background-color: #3c8; float: left; margin-right: 101px;}
+   #footBox>.imgstory>.imgstory_1{margin-right: -106px;}
+   #footBox>.introduce{width: 100%; height: 50px; background-color: #e99;}
+   #footBox>.introduce>li{width: 120px; height: 100%; background-color: #390; float: left;}
+   #footBox>.introduce>#fm{margin-left:220px; margin-top: 15px; }
+    #footBox>.introduce>.fm_01{width: 50px; height: 30px; float: right;margin-top: 10px;}
+    #footBox>.phone{width:100%;  height: 71px; background-color: #22e; }
+    #footBox>.phone>dt{width:100px;height: 71px; background-color: #933; float: left;}
+    #footBox>.phone>dd{width: 210px; height: 71px; background-color: #f65; float: left;}
+    #footBox>.phone>.phone_01{float:right; width: 80px; height: 71px; background-color: #fff;}
+    #footBox>.safety{width: 100%; height: 62px; background-color: #fe2;}
+    #footBox>.safety>dt{width: 205px; height: 100%; background-color: #e39; float: left;}
+    #footBox>.safety>dd{width: 630px; height: 100%; background-color: #ee9;float: left;}
+    #footBox>.safety>.safety_01{width: 165px; height: 100%; background-color: #98e; float: left;}
+    #footBox>.information{width: 100%; height: 115px;background-color: #cc1; float: left;}
+    #footBox>.information>dd{width:885px; height: 100%; background-color: #d88;float: left;}
+     #footBox>.information>.information_01{width:115px; height: 100%; background-color: #dee; float: left;}
+  </style> 
+</head>
+<body>
+  <div id="wrap">
+  
+  <header id="headerBox">
+    <nav id="unb"></nav>  
+    <div id="headerline">
+      <h1></h1>
+       <div id="search"></div>  
+       <div id="event"></div>
+    </div>
+    <nav id="gnb">
+      <ul>
+        <li><a href="#">전체메뉴</a></li>
+        <li><a href="#">베스트</a></li>
+        <li><a href="#">기획전</a></li>
+        <li><a href="#">맞춤상품</a></li>
+        <li><a href="#">정기배송</a></li>
+        <li><a href="#">우리집대소사</a></li>
+        <li><a href="#">한정패키지</a></li>
+      </ul>
+    </nav>
+  
+  </header>
+
+
+  <article id="content">
+    <h2 class="hidden"></h2>
+    <article id="bannerBox">
+    <h2 class="hidden"></h2>
+      <div class="banner"></div>
+    </article>
+
+    <article id="articleBox1">
+      <ul class="ten">
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </article>
+
+    <article id="articleBox2">
+     <div id="best">
+      <h2 class="best_1">추천상품</h2>
+      <p class="best_2">정관장몰에서 추천</p>
+      </div>
+      <ul id= "janglist">
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a><li>
+       
+      </ul>
+    </article>
+    <article id="articleBox3">
+    <ul id="category">
+      <li>
+      <div class="categoryimg"></div>
+      <div class="categorytext">
+        <p>정관장</p>
+        <p>가격</p>
+        <p>포인트 및 쿠폰</p>
+      </div>
+      </li>
+      <li>
+      <div class="categoryimg"></div>
+      <div class="categorytext">
+        <p>정관장</p>
+        <p>가격</p>
+        <p>포인트 및 쿠폰</p>
+      </div>
+      </li>
+      <li>
+      <div class="categoryimg"></div>
+      <div class="categorytext">
+        <p>정관장</p>
+        <p>가격</p>
+        <p>포인트 및 쿠폰</p>
+      </div>
+      </li>
+      <li>
+      <div class="categoryimg"></div>
+      <div class="categorytext">
+        <p>정관장</p>
+        <p>가격</p>
+        <p>포인트 및 쿠폰</p>
+      </div>
+      </li>
+      <li>
+      <div class="categoryimg"></div>
+      <div class="categorytext">
+        <p>정관장</p>
+        <p>가격</p>
+        <p>포인트 및 쿠폰</p>
+      </div>
+      </li>
+      <li>
+      <div class="categoryimg"></div>
+      <div class="categorytext">
+        <p>정관장</p>
+        <p>가격</p>
+        <p>포인트 및 쿠폰</p>
+      </div>
+      </li>
+      <li>
+      <div class="categoryimg"></div>
+      <div class="categorytext">
+        <p>정관장</p>
+        <p>가격</p>
+        <p>포인트 및 쿠폰</p>
+      </div>
+      </li>
+      <li>
+      <div class="categoryimg"></div>
+      <div class="categorytext">
+        <p>정관장</p>
+        <p>가격</p>
+        <p>포인트 및 쿠폰</p>
+      </div>
+      </li>
+    </ul>
+    <div class="categorynext"><a href="#">카테고리 이동</a></div>
+    </article>
+    <article id="articlebannerBox1">
+      
+    </article>
+    <article id="articleBox4">
+      <div id="brand">
+      <h2 class="brand_1">브랜드관</h2>
+      <p class="brand_2">정관장과 함께하는 건강한 이름들</p>
+      <p class="brand_3"><a href="">더보기</a></p>
+      </div>
+      <ul class="brandlist">
+        <li></li>
+        <li></li>
+        <li class="brand3"></li>
+        <li></li>
+        <li></li>
+        <li class="brand3"></li>
+        <li class="brandlast"></li>
+      </ul>
+    </article>
+    <article id="articleBox5">
+      <div id="box5">고객님을 위한 상품</div>
+      <ul class="box5__1">
+        <li>
+        <div class="boximg"></div>
+        <div class="boxtext">
+        <p>정관장</p>
+        <p>가격</p>
+        <p>포인트 및 구폰</p>
+        </div> 
+        <li>
+        <div class="boximg"></div>
+        <div class="boxtext">
+        <p>정관장</p>
+        <p>가격</p>
+        <p>포인트 및 쿠폰</p>
+        </div>
+        </li>
+        <li>
+          <div class="boximg"></div>
+        <div class="boxtext">
+        <p>정관장</p>
+        <p>가격</p>
+        <p>포인트 및 쿠폰</p>
+        </div>
+        </li>
+        <li class="box5__2">
+        <div class="boximg"></div>
+        <div class="boxtext">
+        <p>정관장</p>
+        <p>가격</p>
+        <p>포인트 및 쿠폰</p>
+        </div>
+        </li>
+      </ul>
+
+    </article>
+    <article id="articlebannerBox2">
+      
+    </article>
+   </article>
+  <footer id= "footBox">
+    <dl class="notice">
+      <dt>공지사항</dt>
+        <dd>등록된 내용이 없습니다.</dd>
+        <dd>등록된 내용이 없습니다.</dd>
+    </dl>
+    <dl class="story">
+      <dt>건강 이야기</dt>
+        <dd>정관장과 함께하는 건강한 세상</dd>
+      <dt>정관장 이야기</dt>
+        <dd>118년 철학이 담긴 정관장</dd>
+      <dt>브랜드관</dt>
+        <dd>118년 철학이 담긴 정관장</dd>
+     </dl>
+     <dl class="imgstory">
+       <dt>이미지</dt>
+       <dd>삼성블로그</dd>
+
+       <dt>이미지</dt>
+       <dd>자연소재 브랜드</dd>
+
+       <dt>이미지</dt>
+       <dd>로얄케어</dd>
+
+       <dt>이미지</dt>
+       <dd class="imgstory_1">프리미엄 건강사료</dd>
+     </dl>
+     <ul class="introduce">
+       <li>한국인삼공사소개</li>
+       <li>이용약관</li>
+       <li>매장검색</li>
+       <li>입점신청</li>
+       <li>개인정보 처리방침</li>
+<label for="fm"></label>
+
+       <select name="" id="fm">
+         <option value="">Fam ily site</option>
+         <option value="">굿베이스</option>
+         <option value="">지니펫</option>
+         <option value="">정관장 스파G</option>
+         <option value="">한국인삼연구원</option>
+       </select>
+       <button class="fm_01">이동</button>
+     </ul>
+
+      <dl class= "phone">
+        <dt>CSCENTER</dt>
+          <dd>상담시간</dd>
+          <dd>고객센터</dd>
+          <dd>이메일</dd>
+          <dd class="phone_01"></dd>
+      </dl>
+      <dl class="safety">
+        <dt>구매안전에스크로</dt>
+          <dd></dd>
+          <dd class="safety_01"></dd>
+        
+      </dl>
+      <dl class="information">
+        <dt></dt>
+          <dd></dd>
+          <dd class="information_01"></dd>
+      </dl>
+  </footer> 
+  </div>
+</body>
+</html>
