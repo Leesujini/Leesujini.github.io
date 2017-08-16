@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <h1>arr 배열의 기초 내용</h1>
+  <script>
+    /*배열이란?
+    array(list):어떠한 목록의 나열
+    var arr = []; 
+    var newArr = new arr []; //만들어진 배열은 복제 (외울필요 없음)  
+
+
+*/
+  // console.log([1, 3, 10, 100, 'string']);
+  //var arr = ['str', 'num', 135, 53, 2];
+  //console.log(arr[1]); //적어논 숫자까지만. 0~4
+  
+
+  //scss {color:nth($arr,2);} 위에와 같은 의미
+
+  /*
+   객체 - object (scss:map)
+    {};
+    var obj = {};
+    var obj2 = new Object(); //실제 사용x
+  */
+
+  console.log({
+    xido:'도형', 
+    iphone: '6plus' , 
+    javascript: '!ease'
+  });
+  var obj = {
+    'xido':'도형', 
+    'iphone': '6plus' , 
+    'javascript':'!ease'
+    };
+
+  console.log(obj.xido);
+
+   var myName = 'my name is do-hyeong';
+   var st = 'hyebin';
+   var twoNum = [1, 100];
+
+   var myobj = {
+    name : myName,
+    student: st,
+    num : twoNum,
+    time:10,
+    next: 'javascript'
+   };
+   
+
+console.log(myobj);      //객체 전체값 확인
+console.log(myobj.name); //객체내의 name 값 확인, 변수 myName 도출
+console.log(myobj.time); //객체 내의 time 값, 숫자 10
+console.log(myobj.num);  // 객체 내의 num값, 배열형태 도출
+console.log(myobj.num[1]); //객체 내의 num의 값인 배열의 두번째 값
+console.log(myobj.num[2]); //객체 내의 num의 값인 배열의 세번째 값
+
+
+
+</script>
+</body>
+</html>
