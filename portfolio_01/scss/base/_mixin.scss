@@ -1,8 +1,8 @@
 
 @mixin miniBox($w:442px, $h:448px, $m: 20px){
   width: $w; height:$h;  float: left; margin-left: $m;}
-@mixin badal($w:280px, $h:96px, $c:primary, $m:10px){
-  width:$w; height:$h; background-color:map-get($color,$c); margin-left: $m;}
+@mixin badal($w:290px, $h:96px, $m:10px, $mt:50px){
+  width:$w; height:$h; margin-left: $m; margin-top: $mt;}
 
 @mixin idpwd($w:550px, $h: auto, $c:white,  $mt:30px){
   width: $w; height: $h; background-color: map-get($color,$c); margin-top: $mt;

@@ -1,21 +1,18 @@
 @import "../base/_variable.scss";
 @import "../base/mixin.scss";
 @import "./header.scss";
-@import "./footer.scss";
-@import "./content_login.scss";
-
-#wrap{width: 980px; height: auto; background-color: map-get($color,white);
+@import "./footer.scss"; 
+@import "./content_login";
+    
+#wrap{width: 100%; height: auto; background-color: map-get($color,white);
       margin: 0 auto; }
 #wrap:after{content: " "; display: block; clear: both;}
  
 
  
-
-
-#unb{width: 100%; height: 50px;}
-  .unb_1{width: 568px;height: 100%; float: right; }
-  .unb_1>li{width: 90px; height: 40px; float: left; background-color: map-get($color,white); text-align: center;
-            padding-top: 10px; box-sizing: border-box;}
+#unb{width: 100%; height: 35px;}
+  .unb_1{width: 568px;height: 30px; float: right; }
+  .unb_1>li{width: 90px; height: 30px; float: left; background-color: map-get($color,white); text-align: center;
+            padding-top: 10px; box-sizing: border-box; font-size: 0.8em}
   .unb_1>.login{margin-left: 115px;}
-
-  
+  .unb_1>li>a:hover{font-weight: bold; color:map-get($color,primary); }

@@ -4,7 +4,7 @@
 @import "./footer";
 @import "./content_join";
 
-#wrap{width: 980px; height: auto; background-color: map-get($color,white);
+#wrap{width: 100%; height: auto; background-color: map-get($color,white);
       margin: 0 auto; }
 #wrap:after{content: " "; display: block; clear: both;}
  

@@ -7,7 +7,7 @@
   #article1{width: 100%; height: 150px;  padding-top: 50px; box-sizing: border-box; }
 
 
-  #article1 form{width: 100%; height:100px; box-sizing:border-box; padding:26px 90px;}
+  #article1 form{width: 960px; height:100px; box-sizing:border-box; padding:26px 90px; margin: 0 auto;}
   #article1 fieldset{width: 50%; height: 100%; box-sizing:border-box; padding:0 10px; float:left;}
   #article1 fieldset:first-of-type{}
   #article1 fieldset:last-of-type{}
@@ -15,28 +15,29 @@
   #article1 label{width:44px; height:46px; display: block; float:left;}
   #article1 label>i{width: 100%; height: 100%; display: block;
                     background-repeat:no-repeat; background-position:center;}
-  #article1 label>i.locationicon{background-image: url("../../img/locationicon.jpg");}
-  #article1 label>i.searchicon{background-image: url("../../img/search.jpg");}
+  #article1 label>i.locationicon{background-image: url("../../img/locationicon.jpg"); background-repeat: no-repeat; background-position: 0 0;}
+  #article1 label>i.searchicon{background-image: url("../../img/search.jpg"); background-repeat: no-repeat; background-position: 0 0;}
   #article1 input[type="text"]{width: 250px; height: 100%; border-bottom:3px solid map-get($color,primary); float:left;
     box-sizing:border-box; margin-left: 0.5em;}
   #article1 input[type="button"]{ width: 50px; height: 46px; float: right; color: map-get($color,deepGray); font-size: 1.4em; font-weight: bold;}
 
 // ---------------------------------------------------------
  // 주문수 순
-  #article2{width: 100%; height: 670px ; background-color:map-get($color,white); 
-    overflow: hidden;}  
-  #article2>.footmenu{width: 300%; height: 450px;}  
+  #article2{width: 960px; height: 670px ; background-color:map-get($color,white); 
+    overflow: hidden; margin: 0 auto;}  
+  #article2>.footmenu{width: 300%; height: 440px;}   
 
   // indicator 
-  #article2 > ol{width: 150px; height: 20px; margin:0 auto; margin-top: 50px;}
-    #article2 > ol>li{float:left; margin-right:40px;}
-    #article2 > ol>li:last-child{margin-right: 0;}
-    #article2 > ol>li>button{width: 100%; height: 100%; font-size: 1.6em;}
-    #article2 > ol>li>button>i{color:#fa0;}
-    #article2 > ol>li.active>button>i{color:#f70;}
+    #article2 >.buttons> ol{width: 150px; height: 20px; margin:0 auto; margin-top: 50px;}
+    #article2 >.buttons> ol>li{float:left; margin-right:40px;}
+    #article2 >.buttons> ol>li:last-child{margin-right: 0;}
+    #article2 >.buttons> ol>li>button{width: 100%; height: 100%; font-size: 1.6em;}
+    #article2 >.buttons> ol>li>button>i{color:#fa0;}
+    #article2 >.buttons> ol>li.active>button>i{color:#f70;}
+  
 
-
-  #article2>.footmenu>h2{@include badal(); background-image: url("../../img/order.jpg"); }
+  #article2>h5{@include badal(); background-image: url("../../img/order.jpg");
+                         background-repeat: no-repeat; }
   #article2>.footmenu>ul{width: 33.333333%; height: 100%; float:left}
   #article2>.footmenu>ul>.chickenleg{@include miniBox(); background-image: url("../../img/chickenlegbdt.jpg");background-repeat: no-repeat; transition:all 500ms; }
   #article2>.footmenu>ul>.chickenleg:hover{ background-image: url("../../img/chickenleg1.jpg"); }
@@ -54,22 +55,32 @@
   #article2>.footmenu>ul>.goobne:hover{ background-image: url("../../img/goobne.jpg"); }
   #article2>.footmenu>ul>.goobne a{width: 100%; height: 100%; display: block;}
 
+  #article2>.footmenu>ul>.pizzamaru{@include miniBox(); background-image: url("../../img/pizzamarubdt.jpg");background-repeat: no-repeat; transition:all 500ms; }
+  #article2>.footmenu>ul>.pizzamaru:hover{ background-image: url("../../img/pizzamaru.jpg"); }
+  #article2>.footmenu>ul>.pizzamaru a{width: 100%; height: 100%; display: block;}
+
   #article2>.footmenu>ul>.gimbap{@include miniBox(); background-image: url("../../img/gimbapbdt.jpg");background-repeat: no-repeat; transition:all 500ms; }
   #article2>.footmenu>ul>.gimbap:hover{ background-image: url("../../img/gimbap.jpg"); }
   #article2>.footmenu>ul>.gimbap a{width: 100%; height: 100%; display: block;}
  
-  #article3{width: 100%; height: 670px; background-color:map-get($color,white); margin-top: 15px; overflow: hidden;}
-  #article3>.footmenu2{width: 300%; height: 450px;}
-  //indicator 2
-  #article3 > ol{width: 150px; height: 20px; margin:0 auto; margin-top: 50px;}
-    #article3 > ol>li{float:left; margin-right:40px;}
-    #article3 > ol>li:last-child{margin-right: 0;}
-    #article3 > ol>li>button{width: 100%; height: 100%; font-size: 1.6em;}
-    #article3 > ol>li>button>i{color:#fa0;}
-    #article3 > ol>li.active>button>i{color:#f70;}
+ 
+  #article3{width: 960px; height: 670px; background-color:map-get($color,white); margin-top: 15px; overflow: hidden; margin: 0 auto;}
+  #article3>.footmenu2{width: 300%; height: 440px;}
+  //indicator 2 
+ 
 
 
-  #article3>.footmenu2>h2{@include badal(); background-image: url("../../img/good.jpg");}
+
+  #article3 >.buttons> ol{width: 150px; height: 20px; margin:0 auto; margin-top: 50px;}
+    #article3 >.buttons> ol>li{float:left; margin-right:40px;}
+    #article3 >.buttons> ol>li:last-child{margin-right: 0;}
+    #article3 >.buttons> ol>li>button{width: 100%; height: 100%; font-size: 1.6em;}
+    #article3 >.buttons> ol>li>button>i{color:#fa0;}
+    #article3 >.buttons> ol>li.active>button>i{color:#f70;}
+
+
+  #article3>h5{@include badal(); background-image: url("../../img/good.jpg");
+              background-repeat: no-repeat;}
   #article3>.footmenu2>ul{width: 33.333333%; height: 100%; float:left}
   #article3>.footmenu2>ul>.hot{@include miniBox();background-image: url("../../img/hotbdtong.jpg");
                                 background-repeat: no-repeat; transition:all 500ms;  }  
@@ -100,11 +111,11 @@
                               background-repeat: no-repeat; transition:all 500ms;  }  
   #article3>.footmenu2>ul>.fish:hover{ background-image: url("../../img/fish.jpg"); }
   #article3>.footmenu2>ul>.fhsh a{width: 100%; height: 100%; display: block;}
+ 
 
-
-  #article4{width: 100%; height: 1230px; background-color: map-get($color,white);}
+  #article4{width: 960px; height: 1230px; background-color: map-get($color,white); margin: 0 auto;}
   #article4>h2{width: 100%; height: 310px; background-image: url("../../img/review.jpg"); 
-     text-align: center; margin-top: 177px;}
+     text-align: center; margin-top: 177px; background-repeat: no-repeat; background-position: 0 0;}
   #article4>.first{width: 100%; height: 500px; }
   #article4>.first>a{width: 100%; height: 100%; display: block; background-image: url("../../img/m1.jpg");  }
   #article4>ul{width: 100%; height:370px;}
@@ -118,30 +129,33 @@
                          background-position: center; transition: all 700ms;}
   #article4>ul>li>.img>a:hover{background-image: url("../../img/food1good.jpg"); }
 
-  #article4>ul>li>.img2{width: 100%; height: 318px; } 
+  #article4>ul>li>.img2{width: 100%; height: 318px; margin-left: 10px;} 
   #article4>ul>li>.img2>a{width: 100%; height: 100%; display: block; background-image: url("../../img/food3.jpg"); 
-                          margin-left: 30px; transition: all 700ms;  } 
+                          transition: all 700ms;  } 
   #article4>ul>li>.img2>a:hover{background-image: url("../../img/food33good.jpg");transition: all 700ms; }      
 
   #article4 .text{float: left; }
   #article4 .text>li{float: left; margin-left: 50px; float: left; }  
   #article4>.more{width: 216px; height: 37px; float: right;  }
   #article4>.more>a{width: 100%; height: 100%; display: block; background-image: url("../../img/reviewmore.png"); background-repeat: no-repeat;}
-  #article5{width: 100%; height: 3031px; }
-  #article5>h2{width: 100%; height: 227px; background-image: url("../../img/eventlogo_1.png"); background-repeat: no-repeat;
-               margin-top: 205px; background-position: right;}
-  #article5>.event{width: 100%; height: 3280px; }
+  
+  #article5{width: 960px; height: 3031px; margin:0 auto;}  
+  #article5>h2{width: 960px; height: 227px; background-image: url("../../img/eventlogo_1.png"); background-repeat: no-repeat;
+               margin-top: 205px; background-position:50% 0;}
+  #article5>.event{width: 100%; height: 3280px; } 
   #article5>.event>.bdfoot1{width: 100%; height: 443px;}
   #article5>.event>.bdfoot1>a{width: 100%; height: 100%; background-image: url("../../img/btfood1.jpg"); display: block; background-repeat: no-repeat; background-size: cover;}
   #article5>.event>.bdfoot2{width: 469px; height: 210px;margin-top: 19px; float: left; margin-bottom: 19px; }
-  #article5>.event>.bdfoot2>a{width:100%; height:100%;display:block; background-image: url("../../img/event8_24.png");}
+  #article5>.event>.bdfoot2>a{width:100%; height:100%;display:block; background-image: url("../../img/event8_24.png");
+                             background-repeat: no-repeat;}
   #article5>.event>.bdfoot2_1{width: 469px; height: 210px; margin-top: 19px; float: left;
-              margin-left:42px; margin-bottom: 19px;}  
+              margin-left:22px; margin-bottom: 19px;}  
   #article5>.event>.bdfoot2_1>a{width: 100%; height:100%; display:block;  
-                       background-image: url("../../img/event2_1.jpg");} 
+                       background-image: url("../../img/event2_1.jpg"); background-repeat: no-repeat; background-position: 0 0;} 
   #article5>.event>.bdfoot3{width: 100%; height: 658px; clear: both;}
   #article5>.event>.bdfoot3>a{width: 100%; height: 100%; display:block; background-image: url("../../img/eating.jpg"); background-repeat: no-repeat; background-size: cover;}
   #article5>.event>.bdfoot4{width: 100%; height: 1447px; margin-top: 19px;}
   #article5>.event>.bdfoot4>a{width: 100%; height: 100%; display: block; background-image: url("../../img/foot4.png"); background-size: cover; background-repeat: no-repeat;}
-  #article5>.event>.bdfoot5{width: 100%; height: 511px; background-color: map-get($color,line); margin-top: 19px; clear: both;}
-  #article5>.event>.bdfoot5>a{width: 100%; height: 100%; display: block; background-image: url("../../img/baltong2.png");}
+  #article5>.event>.bdfoot5{width: 100%; height: 511px; margin-top: 19px; clear: both;}
+  #article5>.event>.bdfoot5>a{width: 960px; height: 100%; display: block; background-image: url("../../img/baltong2.png");
+                              background-repeat: no-repeat; background-position: 0 0; margin: 0 auto;} 

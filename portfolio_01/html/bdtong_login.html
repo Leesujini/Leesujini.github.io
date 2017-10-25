@@ -12,126 +12,88 @@
   <link rel="stylesheet" type="text/css" href="../css/base/normalize.css" />
   <link rel="stylesheet" type="text/css" href="../fontawesome/css/font-awesome.min.css" /> 
   <link rel="stylesheet" href="../css/src/login.css">
+  <script src="../js/jquery/jquery-3.2.1.min.js"></script>
+  <script src = "../js/jquery/jquery-ui.min.js"></script>
+
   <title>baedaltong</title>
-  <style>
-  #wrap{width: 980px; height: auto; background-color: #fff; margin: 0 auto; }
-
-  #unb{width: 490px; height: 35px; float: right; }
-  .unb_1{width: 490px;height: 100%;background-color: #ff4; float: left; }
-  .unb_1>li{width: 90px; height: 30px; float: left; background-color: #fff;}
   
-  /*
-  
-    #contentBox{width: 100%; height: 900px; background-color: #fff; margin-top: 15px;}
-    #articleBox{width: 100%; height: 130px; background-color: #f87; border-bottom: 25px   solid; color: #f60; }
-    #articleBox>h2{width: 300px; height: 120px;background-color: #fff; margin: 0 auto; text-align: center; color: #333; color: #f90;}
-    #articleBox2{width: 50%; height: 500px; background-color: #fff; float: left;border-bottom: 25px   solid; color: #f60;}
- #articleBox2>h2{width: 230px; height: 50px; background-color: #fff; margin: 0 auto; text-align: center; margin-top: 20px; color: #f90;}      
-
-  .user{width: 60%; height: 300px; background-color: #fff; margin: 0 auto; margin-top: 30px;}
-  .user>label{width: 30px; height: 30px; background-color: #f60; display: block; float: left;margin:10px; margin-top: 20px;}
-  .pwd>label{width: 30px; height: 30px; background-color: #f60; display: block; float: left;margin:10px; margin-top: 20px;}
-  .input_box{width:200px; height:50px; border:0; background-color: #ec3;
-    margin: 6px; text-indent: 10px; margin-top: 10px; border-radius:0.4em;}
-   input[type="submit"]{width:200px; height:50px; margin: 8px; border:0; padding:0.5em; background-color:#f90; cursor:pointer; font-size: 1.3em; color: #fff; 
-     font-weight: bold; margin-left: 55px; border-radius:0.4em;}
-     input[type="submit"].bdtjoin{background-color: #333; border-radius:0.4em;}
-
-   input[type="checkbox"]{margin-left: 60px;float: left;}
-     .idremeber{font-size: 0.5em; float: left;}
-     .pegister{font-size: 0.3em; float: left; margin-left: 50px;}
-    #articleBox3{width: 50%; height: 500px; background-color: #fff; float: left;border-bottom: 25px   solid; color: #f60;}
-  
-
-
- #articleBox3>h2{width: 230px; height: 50px; background-color: #fff; margin: 0 auto; text-align: center; margin-top: 20px; color: #f90;}
-#articleBox3>ul{width: 400px; height: 400px;background-color: #fff; margin: 0 auto;}    
-#articleBox3>ul>li>.blue{width: 100px;  height: 50px; background-color: #08f; float: left; margin-top: 40px; margin-left: 70px;border-radius:0.4em;}
-#articleBox3>ul>li>.yellow{width: 100px;  height: 50px; background-color: #f6dc01; float: left; margin-top: 40px; margin-left: 50px;border-radius:0.4em;}
-#articleBox3>ul>li>.green{width: 100px; height: 50px; background-color: #10d119; float: left; margin-left: 70px;border-radius:0.4em;}
-#articleBox3>ul>li>.red{width: 100px; height: 50px; background-color: #f00; float: left; margin-left: 50px;border-radius:0.4em;}
-#articleBox3>ul>li>p{clear: both; font-size: 0.8em; margin-left: 30px; }
-
-
-  #footBox{width: 100%; height: 400px; background-color: #ec3; margin-top: 20px;}
-  #footBox>h2{width:110px; height: 110px; background-color: #a3f; float: left;
-              margin-top: 20px; margin-left: 20px;}
-  #footBox>ul{width: 680px; height: 40px; float: left; padding: }
-  #footBox>ul>li{width:95px; height: 40px; float: left;}
-  #footBox>ul>.bdtong{margin-left: 50px;}
-  #footBox>ul>.bdtong2>li{margin-left: 50px; clear: both; }
-  #footBox>.footBox1-1{width: 120px; height: 120px; float: left; background-color: #f20;
-                       margin-top: 20px; margin-left: 20px;}
-  #footBox>.footBox1-1>li{width: 50px; height: 50px; float: left; background-color: #fff; margin: 5px;}
-  */
-  </style>
 </head>
 <body>
-  <div id="wrap">
+<div id="wrap">
    <nav id="unb">
    <h2></h2>
      <ul class="unb_1">
-       <li>로그인</li>
-       <li>회원가입</li>
-       <li>주문내역</li>
-       <li>고객센터</li>
-       <li>이벤트</li>
+       <li class="login"><a href="file:///D:/tools/1_leesuji__n/beginner/git/Leesujini.github.io/portfolio_01/html/bdtong_login.html">로그인</a></li>
+       <li><a href="file:///D:/tools/1_leesuji__n/beginner/git/Leesujini.github.io/portfolio_01/html/bdtong_join.html">회원가입</a></li>
+       <li><a href="#">주문내역</a></li>
+       <li><a href="#">고객센터</a></li>
+       <li><a href="#">이벤트</a></li>
      </ul>
    </nav>
    <header id="headBox">
-      <h1>배달통</h1>
-    </header>
-    <nav id="gnb">
+      <h1></h1>
+   </header>
+   <nav id="gnb">
     <h2></h2>
       <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
+        <li class= "ck"><a href="#">치킨</a></li>
+        <li><a href="#">중국음식</a></li>
+        <li><a href="#">피자</a></li>
+        <li><a href="#">족발보쌈</a></li>
+        <li><a href="#">야식</a></li>
+        <li><a href="#">찜탕</a></li>
+        <li><a href="#">한식분식</a></li>
+        <li><a href="#">일식</a></li>
+        <li><a href="#">도시락.죽</a></li>
+        <li><a href="#">꽃배달</a></li>
       </ul>
     </nav>
     <section id="contentBox">
       <article id="articleBox">
-        <h2>배달통img</h2>
+        <h2 class="hidden">로그인 페이지</h2>
       </article>
       <article id= "articleBox2">
-        <h2>배달통 계정 로그인</h2> 
-        <form action="#" method="post">
+      <article class="bannerpizza">
+        <h2>로그인</h2>
+        </article>
+        <div id="joinicon"></div>
+
+
+
+      <article id= "articleBox22">
+        <h2 class="hidden">배달통 로그인</h2> 
+
+<form action="#" method="post">
         <fieldset>
-          <legend class="hidden">Username</legend>
+          <legend class="hidden">Username</legend> 
           <div class="user">
-             <label for="userName">i</label>
+             <label for="useid"><span class="hidden">사용자 아이디를 입력하세요.</span></label>
              <input type="text"
-             id="userName"
+             id="useid"
              name="userName"
             class="input_box"
              value=""
-             placeholder="Username"
-         </div>
-         <div class="pwd"> 
-             <label for="inputPwd">i</label>
+             placeholder="Username">
+             <div class="pwd"> 
+             <label for="Pwd"><span class="hidden">비밀번호 입력</span></label>
              <input type="password"
-             id="inputPwd"
+             id="Pwd"
              name="inputPwd"
              class="input_box"
              value=""
-
              placeholder="Password"/>  
+        
+
           <div class="remember">
           <input type="checkbox" name="userRemember" 
                  id="userRemember" value="remember">
           <label for="userRemember" class="idremeber">아이디 저장</label>
           <div class="pegister"><a href="Password11">아이디/비밀번호찾기</a></div>
-      
-           <input type="submit" name="ok" value="로그인">
+           <div class= loginjoin>
+           <input type="submit" name="ok" value="로그인" class="bdtlogin">
            <input type="submit" name="join" value="배달통 회원가입" class="bdtjoin">
-  
+           </div>
+          </div>
         </fieldset>
       </form>
 
@@ -144,29 +106,32 @@
          <li><input type="submit" name="kko" value="카카오톡" class="yellow" ></li> 
          <li><input type="submit" name="naver" value="네이버" class="green"></li>
          <li><input type="submit" name="google" value="구글" class="red"></li>
-         <li><p>SNS 이름에 특수문자는 닉네임에 포함되지 않고 가입됩니다</p></li>
+         <li><p>SNS 이름에 특수문자는 닉네임에 포함되지 않고  가입됩니다</p></li>
         </ul>
     
       </article>
     </section>
     <footer id= "footBox">
-      <h2>footer</h2>
+      <h2 class="hidden"></h2>
         <ul>
-          <li class="bdtong">배달통소개</li>
-          <li>이용약관</li>
-          <li>개인정보</li>
-          <li>사이트맵</li> 
+          <li class="bdtong"><a href="#">배달통소개</a></li>
+          <li><a href="#">이용약관</a></li>
+          <li><a href="#">개인정보</a></li>
+          <li><a href="#">사이트맵</a></li> 
           <ul class="bdtong2">
           <li>서울시 강남구 체헤란로5길 7KG타워 11층 | 대표자 : 강신봉</li>
-          <li>사업자등록번호:214-88-35862 [사업자정보 확인] | 통신판매업 신고 :2012-서울서초</li>
+          <li>사업자등록번호:214-88-35862 [사업자정보 확인] | 통신판매업 신고 :2012-서울서초 1541
+              개인정보담당자:help@bdtong.co.kr | <br />호스팅서비스 사업자: 주 시스원 <br />
+              고객센터: 1666-7670 운영시간: 오전 10:30~새벽04:30(식사시간 제외) </li>
+              <li class= "copyright">copyrightⓒ2016배달통.All rights reserved</li>
     
          </ul> 
         </ul>
         <ul class="footBox1-1">
-          <li>페</li>
-          <li>인</li>
-          <li>트</li>
-          <li>구</li>
+          <li class="sns01 hidden"><a href="#"></a></li>
+          <li class="sns02 hidden"><a href="#"></a></li>
+          <li class="sns03 hidden"><a href="#"></a></li>
+          <li class="sns04 hidden"><a href="#"></a></li>
         </ul>
     </footer>
   
