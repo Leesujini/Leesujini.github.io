@@ -1,0 +1,68 @@
+
+
+#contentBox{width: 100%; height: auto;}
+#loginBox{width:100%; height: 980px; margin: 0 auto; background-image: url("../../img/pb_img/depositphotos.jpg");}
+#loginBox>.login1{width: 100%; height: 560px;}
+#loginBox>.login2{width: 100%; height:430px; background-color: map-get($color,primary); }
+#loginBox>.login3{width: 882px; height: 772px; margin: 0 auto; margin-top: -880px;} 
+
+#loginBox>.login3>.leesujin{width: 50%; height: 770px; background-color:map-get($color,white); float: left;}
+.leesujin>#loginplease{width: 441px; height: 126px;}
+.leesujin>#loginplease>h3{font-weight: bold; font-size: 3.8em; color:map-get($color,primary); text-align: center; margin-top: 30px;}
+.leesujin>#loginplease>p{text-align: center; font-size: 0.8em; color:map-get($color,font);}
+
+#loginchang{width: 275px; height: 316px; margin: 0 auto; margin-top: 102px;}
+form{width: 100%; height: 138px;}
+fieldset{width: 100%; height: 100%;}  
+label{width:40px; height: 40px;}
+fieldset>.icon{float: left; margin-bottom: 26px; background-image: url("../../img/pb_img/usericon.jpg");
+              background-repeat: no-repeat; background-size: cover;}  
+fieldset>.icon2{float: left;background-image: url("../../img/pb_img/pwdicon.jpg");
+              background-repeat: no-repeat; background-position: -3px 0; background-size: cover;}
+
+   
+input{width: 218px; height: 40px; background-color: map-get($color,white);float: left; margin-bottom: 26px;
+    border-bottom: 4px solid #777; margin-left: 12px;}   
+   
+#submitlist{width: 275px; height: 120px;} 
+#submitlist>li{ float: left;}   
+#submitlist>.submit_1{margin-left: 50px;width: 210px; height: 50px; background-color: map-get($color,primary); border-radius: 1.1em; float: left;
+                      margin-top: 15px; transition: all 0.5s ease-in;}
+#submitlist>.submit_1>a{width: 100%; height: 100%; display: block; text-align: center; font-size: 1.8em;
+                       color: map-get($color,white); line-height: 40px;float: left;}
+#submitlist>.submit_1:hover{background-color: map-get($color,deepNam);}                       
+#submitlist>.submit_2{margin-left: 50px; width: 90px; height: 30px; background-color:map-get($color,font);float: left;
+                      border-radius: 0.6em; margin-top: 10px; transition: all 0.5s ease-in;}  
+#submitlist>.submit_2>a{width: 100%; height: 100%; display: block; text-align: center; font-size: 0.9em; 
+                        line-height: 25px;
+                       color: map-get($color,white); float: left;}
+#submitlist>.submit_2:hover{background-color: map-get($color,point);}
+#submitlist>.submit_3{width: 90px; height: 30px; background-color:map-get($color,font); float: left;
+                      border-radius: 0.6em; margin-left: 30px; margin-top: 10px;transition: all 0.5s ease-in;} 
+#submitlist>.submit_3>a{width: 100%; height: 100%; display: block; text-align: center; font-size: 0.9em; 
+                        line-height: 25px; 
+                       color: map-get($color,white); float: left;}
+#submitlist>.submit_3:hover{background-color: map-get($color,point);}
+  
+   
+ 
+
+
+
+#loginBox>.login3>.leesujin1{width:50%; height: 770px; float: left;
+                            background-image: url("../../img/pb_img/bread_img.jpg");
+                            background-repeat: no-repeat; background-position: center;
+                            transition: all 1.5s ease-in; background-color:map-get($color,white);}
+#loginBox>.login3>.leesujin1:hover{background-image: url("../../img/pb_img/bread_im.jpg");
+                            background-repeat: no-repeat; background-position: center; 
+                            background-size: cover;}
+
+
+
+#eg_text{width: 100%; height: 400px; background-image: url("../../img/pb_img/addtext.png");
+        background-repeat: no-repeat; background-position: center; clear: both;
+         margin-top: 30px;}  
+  
+
+
+  

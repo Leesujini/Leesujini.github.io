@@ -1,0 +1,123 @@
+
+
+#contentBox{width:100%; height:auto; margin: 0 auto;background-image: url("../../img/pb_img/depositphotos_1.jpg");
+            background-repeat: no-repeat; background-position: fixed;}
+#articleBox1{width: 960px; height: auto;  margin: 0 auto;}
+#articleBox1>.acceptbox{width: 100%; height:418px; 
+              background-image: url("../../img/pb_img/acceptbox.jpg"); background-repeat: no-repeat;
+              background-position: 0 0; margin-top: 40px;}
+#articleBox1>.acceptbox>h2{color: map-get($color,white); font-size: 2.5em; margin-left: 48px; padding-top: 150px; 
+                           box-sizing: border-box; font-style: italic; }
+
+#join{width: 960px; height: auto; margin: 0 auto;}
+#join>.join__1{width: 960px; height:64px; background-color: #01519a; margin-top: 30px;  }
+#join>.join__1>h3{width: 185px; height: 100%; color: map-get($color,white); font-size: 1.4em; 
+                   line-height: 60px; font-weight: lighter; margin: 0 auto;}
+#join>.join__1>p{margin-top: -35px; margin-left: 800px; font-size: 0.9em; font-weight:bold;}
+#join>.join__1>p>.more{color: map-get($color,white);}
+
+
+form{width: 960px; height: auto;}
+fieldset{width: 100%; height: auto;}
+
+form>fieldset>.ehddml{width:85px; height: 100%; float: right; margin-top: -20px; }
+form>fieldset>.ehddml>.j_o_i_n{width:18px; height: 18px; float: left; color:map-get($color,primary); margin-top: 3px;}
+form>fieldset>.ehddml>.jo_in{width:54px; height: 100%;color: map-get($color,white); font-size: 1.1em; line-height: 20px; 
+                             float: left; margin-left: 10px; }
+
+#join>.p_scroll>p{width: 100%; height: 300px; overflow-y: scroll; font-size: 0.8em; }
+#join>.p_scroll>.p_scroll_1{width: 100%; height: 150px; margin-bottom: 70px; text-align: center;}
+
+
+
+input[type="submit"]{width: 88px; height: 35px; background-color:map-get($color,primary);
+                    border-radius: 0.5rem; color:map-get($color,white);  font-size: 1em;}
+
+
+
+
+
+
+#join>.join__2{width: 960px; height:64px; background-color: map-get($color,primary); margin-top: 30px;  }
+#join>.join__2>h3{width: 185px; height: 100%; color: map-get($color,white); font-size: 1.4em; 
+                   line-height: 60px; font-weight: lighter; margin: 0 auto;}
+#join>.join__2>p{margin-top: -35px; margin-left: 800px; font-size: 0.9em; font-weight:bold;}
+#join>.join__2>p>.more{color: map-get($color,white);}
+
+
+
+
+
+
+
+form>fieldset>.ehddml3{width:85px; height: 100%; float: right; margin-top: -20px; }
+form>fieldset>.ehddml3>.j_o_i_n3{width:18px; height: 18px; float: left; color:map-get($color,primary); margin-top: 3px;}
+form>fieldset>.ehddml3>.jo_in3{width:54px; height: 100%;color: map-get($color,white); font-size: 1.1em; line-height: 20px; 
+                             float: left; margin-left: 10px; }
+#join>.allchang{width: 100%; height: 135px; margin-bottom: 200px;}
+
+#join>.allchang>.all{width:108px; height:46px; background-color: map-get($color,primary); font-size: 1em; 
+                       float: left;margin-left: 435px; margin-top: 110px; font-weight: bold;}
+
+#articleBox2{width: 960px; height: auto; margin: 0 auto; }
+#articleBox2>.joinbox{width: 100%; height:418px; 
+              background-image: url("../../img/pb_img/joinimg.jpg"); background-repeat: no-repeat;
+              background-position: 0 0; }
+#articleBox2>.joinbox>h2{color: map-get($color,white); font-size: 2.5em; margin-left: 52px; padding-top: 150px; 
+                         box-sizing: border-box; font-style: italic;}
+
+
+
+
+#joinchang{width: 280px; height:auto; margin: 0 auto;}
+form{width: 100%; height: 780px;}
+fieldset{width: 100%; height: 100%; padding-top:5px; }
+input{width:220px; height: 48px; float: right; }
+
+.username{width: 271px; height:54px;margin-top: 70px;}
+.username>input{width:220px; height: 48px; border-bottom: 3px solid map-get($color,primary); margin-top:3px; }
+.username>label{width: 38px; height: 38px;  float: left;}
+.username>label.icon{margin-top: 15px; background-image: url("../../img/pb_img/usericon.jpg"); background-repeat: no-repeat;
+         background-position: 0 0; background-size: cover;}
+
+.userid{width: 380px; height:54px;margin-top: 20px;}
+.userid>input{width:220px; height: 48px; border-bottom: 3px solid map-get($color,primary); margin-top:3px; float: left;}
+.userid>label{width: 38px; height: 38px;  float: left; margin-right: 14px;}
+.userid>label.icon1_1{margin-top: 15px; background-image: url("../../img/pb_img/usericon.jpg"); background-repeat: no-repeat;
+         background-position: 0 0; background-size: cover;}
+.userid>input[type="submit"]{width:94px; height: 38px; background-color: map-get($color,primary); margin-left: 10px; margin-top: 11px; font-size: 0.9em;}
+
+.userpwd{width: 369px; height: 78px;margin-top: 20px; }
+.userpwd>input{width:220px; height: 48px; border-bottom: 3px solid map-get($color,primary); margin-top:3px;float: left; }
+.userpwd>label{width: 38px; height: 38px;  float: left; margin-right: 14px;}
+.userpwd>label.icon2{ margin-top: 15px; background-image: url("../../img/pb_img/pwdicon.jpg"); background-repeat: no-repeat;
+                     background-position: 0 0; background-size: cover;}
+.userpwd>p{font-size:0.7em;clear: both; margin-left: 50px; margin-top: 8px; color: map-get($color,primary); font-weight: bold;}
+
+.userpwd1_1{width: 271px; height: 54px;margin-top: 20px; }
+.userpwd1_1>input{width:220px; height: 48px; border-bottom: 3px solid map-get($color,primary); margin-top:3px; }
+.userpwd1_1>label{width: 38px; height: 38px;  float: left;}
+.userpwd1_1>label.icon2_2{ margin-top: 15px; background-image: url("../../img/pb_img/pwdicon.jpg"); background-repeat: no-repeat;
+                     background-position: 0 0; background-size: cover;}
+
+.tel{width: 369px; height: 74px;margin-top: 20px; }
+.tel>input{width:220px; height: 48px; border-bottom: 3px solid map-get($color,primary); margin-top:3px;float: left; }
+.tel>label{width: 38px; height: 38px; float: left; margin-right: 10px;margin-left: 4px;}
+.tel>label.icon3_2{ margin-top: 15px; background-image: url("../../img/pb_img/phoneicon.png"); background-repeat: no-repeat;
+                     background-position: 0 0; background-size: cover;}
+.tel>p{font-size:0.7em; margin-left: 50px; color:map-get($color,primary); margin-top: 30px; clear: both; font-weight: bold;}
+
+
+.email{width: 406px; height: 84px; margin-top: 20px; }
+.email>input{width:220px; height: 48px; border-bottom: 3px solid map-get($color,primary); margin-top:3px;float: left; }
+.email>label{width: 35px; height: 35px; float: left;margin-right: 10px; margin-left: 5px;}
+.email>label.icon4{ margin-top: 15px; background-image: url("../../img/pb_img/email_checkbox.jpg"); background-repeat: no-repeat;
+                     background-position: 0 0; background-size: cover;}
+
+.email_checkbox{width: 406px; height:30px;  clear: both; margin-left: 50px;}
+.email>.email_checkbox>.e_mail{width: 15px; height: 15px;float: left; margin-top:5px;}
+.email>.email_checkbox>.e_mail2{font-size: 0.7em; color:map-get($color,primary); font-weight: bold;}
+
+
+#ok_button{width:132px; height: 54px; margin-top: 100px; margin-left: 100px;}
+#ok_button>.ok{width:132px; height: 54px; background-color: map-get($color,primary); font-size: 1.3em;}
