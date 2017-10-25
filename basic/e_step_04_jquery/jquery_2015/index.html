@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/reset.css">
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/jquery-migrate-1.2.1.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<title>Document</title>
+	<style>
+		#fadeShow { width: 600px; height: 380px; text-align: left; } #fadeShow img { position: absolute; } #fadeShow .active { z-index: 1; }
+	</style>
+	<script type="text/javascript">
+		var showImg, nextImg;
+
+		function fadeInOut() {
+			showImg = $("#fadeShow img:eq(0)");
+			nextImg = $("#fadeShow img:eq(1)");
+			nextImg.addClass("active");
+
+			nextImg.css("opacity", "0").animate({
+				opacity: 1
+			}, 1000, function () {
+
+				$("#fadeShow").append(showImg);
+				showImg.removeClass("active");
+			});
+		}
+		jQuery(document).ready(function (e) {
+			var timer = setInterval("fadeInOut()", 3000);
+
+			$("#fadeShow").hover(
+				function () {
+					clearInterval(timer)
+				},
+				function () {
+					timer = setInterval("fadeInOut()", 2000);
+				}
+			);
+		});
+	</script>
+</head>
+
+<body>
+	<div id="fadeShow">
+		<img src="img/j09.jpg" alt="이미지1" class="active" />
+		<img src="img/j01.jpg" alt="이미지2" />
+		<img src="img/j02.jpg" alt="이미지3" />
+		<img src="img/j03.jpg" alt="이미지4" />
+		<img src="img/j04.jpg" alt="이미지5" />
+	</div>
+</body>
+
+</html>

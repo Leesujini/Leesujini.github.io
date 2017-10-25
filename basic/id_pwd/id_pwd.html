@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Login</title>
+  <style>
+    .hidden{display: block; width:0; height: 0; overflow: hidden;}
+    .fieldset{border-style: solid; }
+  </style>
+</head>
+<body>
+    <h1 class="hidden">로그인</h1>
+      <form action="#" method="post">
+        <fieldset class="fieldset">
+          <legend class="hidden">사용자명</legend>
+          <div class="user">
+             <label for="userName">사용자명</label>
+             <input type="text"
+             id="userName"
+             name="userName"
+             value=""
+             placeholder="사용자명"/>
+         </div>
+         <div class="pwd">
+             <label for="inputPwd">비밀번호</label>
+             <input type="password"
+             id="inputPwd"
+             name="inputPwd"
+             value=""
+             placeholder="비밀번호"/>
+         </div>
+         <br />
+          <input type="checkbox" id="Login" name="Login" value="기억하기" /> 
+          <label for="food1">기억하기</label>
+
+          <br /> <input type="submit" name="ok" value="로그인">
+        </fieldset>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="../css/base/reset.css">
+	<title>Document</title>
+	<style>
+		#wrap{width:450px; height:365px; margin: 50px auto;}
+		#header{width:412px; height:73px; 
+			background:linear-gradient(65deg, #f06 0, #f06 70%,#f7b 70%,#e6a 100%);
+	  		background-color: #f06; padding-left:38px; font-size:1.5em;}
+	  h1{color:#fff; font-weight: bolder; margin-top: 25px; width: 100%;height:20px;
+	  	float: left; }
+		#container{width:412px; height:275px;
+			background:linear-gradient(65deg,#f5f5f5, #fff 100%);
+			background-color: #f1f1f1; padding-left:38px; padding-top:15px;
+			box-shadow: 1px 1px 1px #aaa;}
+		h2{font-size: 1.2em; font-weight:bold;color:#333; margin-left:5px;}
+		p{font-size:.9em; line-height:110%; margin-top:5px; color:#5f5f5f;  margin-left:5px;}
+		
+/*_______________ form_all _______________*/
+	  form{width: 375px; height: 187px; margin-top:13px; }
+	  legend{width:0; height:0; text-indent:-9999em;}
+	  .phone_num{width: 100%; height: 96px; background-color: #f1f1f1; 
+		margin-bottom:5px; box-shadow: 1px 1px 1px #aaa inset;}
+	  .check{width:100%; height: 92px; }
+		
+/*_______________ form1 _______________ */
+	  dl{width:355px; height:20px; padding:0 10px; margin-top:20px;}
+	  dt{float: left; width:80px; height: 20px;font-size:0.8em;
+	  	line-height: 20px; color:#333;}
+	  dd{float: left; height:20px; }
+/*	  dd:last-child{margin-right:0 !important;}*/
+	  .number>dd:last-child{margin-right:0; width:75px;}
+	  .telecom>dd:last-child{margin-right:0; width:65px; font-size:0.9em;}
+
+	  .number>dd{width:95px; }
+	  .telecom>dd{width:55px; margin-right:15px;}
+	  
+		dl.number input{width:75px; height:16px; border:2px solid #777; font-size:0.7em;
+			text-indent:3px;}
+	 input[type="radio"]{margin-top:3px;}
+		label{font-stretch:expanded;}
+/*		#fir{width:70px; height:16px; border:2px solid #777;}
+			#mid{width:70px; height:16px; border:2px solid #777;}
+			#fin{width:70px; height:16px; border:2px solid #777;}
+*/
+
+/*	_______________ form2 _______________  */
+	  input#ok{display:none;}
+	  input#cancel{display:none;}
+		input[type="checkbox"]{margin-top:3px; margin-left:10px;}
+	  hr{border-bottom:1px solid #5f5f5f; margin-top:5px;}
+	  .btn{width:70px; height:40px; float: left; 
+	   text-align: center;  line-height: 40px; 
+		margin-top:14px; margin-left:80px;
+		font-size:1.3em; font-weight:bold; }	  
+	  .ok{background-color: #f06;color:#fff;cursor:pointer;box-shadow:1px 1px 1px #777;}
+		.cancel{background-color: #f1f1f1; cursor:pointer;box-shadow:1px 1px 1px #777;}
+		
+/*	  접근성 고려 추가사항 숨김처리 */
+	  .hidden{width:0; height:0; display:block; overflow: hidden;}
+		input:focus{background:#fff0f0; border:2px solid #f06 !important; color:#111; font-size:1.3em; font-weight: bold;letter-spacing: 2px; word-spacing:-10px;}
+		*:focus{outline:1px solid #f06;}
+		
+	</style>
+</head>
+<body>
+	<section id="wrap">
+		<header id="header">
+			<h1>본인 인증 서비스</h1>
+		</header>
+		<article id="container">
+			<h2>휴대폰 인증</h2>
+			<p>입력하시는 정보는 암호화 되어 처리되며,<br/>
+			 어떠한 비용도 발생하지 않습니다.</p>
+			 <form action="" method="post"> <!--novalidate-->
+			 	<fieldset class="phone_num">
+			 		<legend>휴대폰 정보를 입력하세요.</legend>
+			 		<dl class="number">
+			 			<dt>휴대폰번호</dt>
+			 			<dd class="num_01">			 			
+							<label for="fir" class="hidden">휴대폰번호 앞부분 숫자를 입력하세요</label>
+			 				<input type="tel" name="fir" id="fir" placeholder="3자리 숫자" maxlength="4" required="required" autofocus="on" list="first_num">
+			 				<datalist id="first_num">
+			 					<option value="010">010</option>
+			 					<option value="011">011</option>
+			 					<option value="017">017</option>
+			 					<option value="016">016</option>
+			 					<option value="018">018</option>
+			 					<option value="019">019</option>								
+			 				</datalist>							
+							<span class="dash">-</span>
+			 			</dd>
+			 			<dd class="num_02">
+			 				<label for="mid" class="hidden">휴대폰 번호 3에서 4자리 숫자를 입력하세요.</label>
+				<input type="tel" maxlength="4" required="required"  placeholder="3/4자리 숫자" id="mid">
+			 			<span class="dash">-</span>			 			
+						</dd>
+			 			<dd class="num_03">
+								<label for="fin" class="hidden">휴대폰 끝번호 4자리 숫자를 입력하세요.</label>
+			<input type="tel" maxlength="4" required="required"  placeholder="4자리 숫자" id="fin">
+						  </dd>
+			 		</dl>
+			 		<dl class="telecom">
+			 			<dt>이동통신사</dt>
+			 			<dd class="tel_01">
+			 				<input type="radio" name="telecom" id="sk">
+			 				<label for="sk">sk<span class="hidden">텔레콤을 사용하고있습니다.</span></label>  
+						 </dd>			 			
+						<dd class="tel_02">
+						  <input type="radio" name="telecom" id="kt">
+						  <label for="kt">kt<span class="hidden">텔레콤을 사용하고있습니다.</span></label>  
+					  	</dd>			 			
+					  <dd class="tel_03">
+			 			 <input type="radio" name="telecom" id="lg">
+						 <label for="lg">lgu+<span class="hidden">텔레콤을 사용하고있습니다.</span></label>
+					  </dd>
+			 		<dd class="tel_04">
+			 			<input type="radio" name="telecom" id="save">
+						<label for="save">알뜰폰<span class="hidden">을 사용하고있습니다.</span></label>	  
+			 		</dd>
+			 		</dl>
+			 	</fieldset> <!--.phone_num-->
+			 	<fieldset class="check">
+			 		<legend>위 입력사항에 대한 동의사항</legend>
+			 		<input type="checkbox" name="check" id="check" >
+			 		<label for="check">개인 정보제공 및 활용에 동의 합니다.</label>
+			 		<hr/>			 			
+			 		<input type="submit" name="ok" id="ok" >			 		
+					<label for="ok" class="ok btn">확인</label>	 				 	
+			 		<input type="reset" name="cancel" id="cancel">			 		
+					<label for="cancel" class="cancel btn">취소</label>
+			 	</fieldset>	<!--.check-->		 	
+			 </form><!--form-->
+		</article>		
+	</section>
+</body>
+</html>
+
+
+
+
+
+

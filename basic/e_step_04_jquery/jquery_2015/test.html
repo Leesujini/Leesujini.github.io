@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+	<title>Document</title>
+	<style>
+		*{margin: 0; padding: 0; border: 0; outline: 0; vertical-align: top;}
+		ul,ol,li{list-style:none;}
+		#wrap{width:600px;	height:800px; margin: 0 auto; background-color: #f1f1f1; }
+		header{width: 100%; height:100px; background-color: #faa;}
+		h1{width:80px; height:80px; float: left; margin: 10px; background-color: #fff; 
+			cursor:pointer; text-align:center; line-height: 80px;}
+		button{width:120px; height:40px; float: left; margin:40px 10px 0;}
+		nav{width:100%; height:60px; /* display:none  */}
+		ul{width: 90%; height:50px; margin-left:5%; background-color: #acc;}
+		li{float: left; width:16%; height:40px; background-color: #7f7; margin:5px 2%;
+			line-height:40px; font-weight: bold; text-align: center; overflow: hidden;}
+		article{width: 100%; height:auto; margin:20px 0; margin-left:-15px; 
+			border:15px solid #afa;  background-color: #fff;}
+		img{width: 100%; }
+		
+	</style>
+	<script>
+		$(document).ready(function() {
+		//1번문제: 로고를 클릭하면 nav영역이 나타나도록 만드세요.
+		//1-1번:  나타나거나 사라지게 반복을 주세요.
+			/*	
+			$().on('click', function(){
+					$('nav').show();
+				});
+			*/
+		
+		//2번문제: 보이기 버튼을 누르면 nav가 나타나게 만드세요.	
+			/*	
+			$('.view').on('click', function(){
+					$('nav').//사라지게 만들기
+				});
+			*/
+			
+		//3번문제: 사라지기 버튼을 누르면 nav가 사라지게 만드세요.	
+			/*	
+			$('.view').on('click', function(){
+					// nav 사라지게하기
+				});
+			*/
+			
+		//4번문제: 보이기/숨기기 버튼 을 눌러서 사라지거나 나타나게 만드세요(애니메이션 효과!).	
+		//4-1번: 버튼 클릭이 아닌 마우스를 올려놓거나 빠져나갔을때로 바꿔보세요.	
+			/*	
+			$('    ').on('click', function(){
+					// nav 사라지게하기
+				});
+			*/
+//			________________________________________________________________________________
+		// 5번문제: li	버튼 .yellow 을 css의 효과를 주세요.마우스 올리기/내리기
+		//(글씨색상, 배경이미지변경yellow...)
+			
+				$('.yellow').on('mouseenter', function(){
+						$(this).css({'color':'#fff','backgroundColor': '#fa0'});
+				 });
+
+				$('.yellow').on('mouseleave', function(){
+						$(this).css({'color':'#333','backgroundColor': '#f55'});
+				 });
+			 
+			 
+					
+			// 6번문제: li.red 버튼을 눌러 css의 효과를 처리해주세요(animation기능을 적용)			
+			
+			// 7번문제: 선택한 .blueOut 이미지의 그림을 선택했을경우 
+			// 다른 그림으로 대처해 주세요.(스스로변화)
+				
+			$('.blue_out').on('click', function(){
+						$('article').find('img').attr("src", "img/cai.jpg");
+				 },1000);
+			
+			//8번, 9번문제: 링크의 내용의 이미지를 갤러리에 넣어주세요~
+			
+				$('a').on('click', function(){
+           e.preventDefault();
+           var linkImg = $(this).attr('href');
+           $('article').find('img').attr("src",linkImg);
+					});
+				
+		});
+	</script>
+</head>
+<body>
+	<div id="wrap">
+		<header>
+			<h1>logo</h1>
+			<button id="view">보이기</button>
+			<button id="hidden">숨기기</button>
+			<button id="toggle">보이기/숨기기</button>
+		</header>
+		<nav>
+			<ul>
+				<li class="yellow">nav_01</li>
+				<li class="red">nav_02</li>
+				<li cass="blueOut"><img src="img/j02.jpg" alt=""></li>
+				<li class="link_a"><a href="img/j03_big.jpg"><img src="img/j03.jpg" alt=""></a></li>
+				<li class="link_b"><a href="img/j04_big.jpg"><img src="img/j04.jpg" alt=""></a></li>
+			</ul>
+		</nav>
+		<article>
+			<img src="img/j01_big.jpg" alt="">			
+		</article>		
+	</div>
+</body>
+</html>

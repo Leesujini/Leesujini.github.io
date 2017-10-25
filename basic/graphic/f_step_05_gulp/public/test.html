@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script src="http://code.jquery.com/jquery.min.js"></script>
+</head>
+<body>
+  <h1>test</h1>
+  <script>
+    (function($) {
+    // 유틸리티 메서드:선택자가 먼저 처리하는 것이 아닌, 기능을 먼저 사용하도록 처리 
+       $.getJSON('test.json', function(data){ 
+       var jsonFile = data;
+       console.log(jsonFile);
+    });
+
+    })(this.jQuery);
+  </script>
+</body>
+</html>

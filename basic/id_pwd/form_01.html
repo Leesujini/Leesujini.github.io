@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+   <meta charset="utf-8">
+   <title>form 기초개념 이해하기</title>
+   <style>
+     body{margin:0;}
+     h1{color:#fff; background-color:#0af; padding:0.3em; margin:0;}
+     .user{width:70%; height:auto; background-color:#acf;}
+     .pwd{width:70%; height:auto; background-color:#aca;}
+   </style>
+  </head>
+   <body>
+     <h1>form 기초</h1>
+      <form action="#" method="post">
+        <fieldset>
+          <legend>입력 영역</legend>
+          <div class="user">
+             <label for="userName">사용자 이름을 입력하세용</label>
+             <input type="text"
+             id="userName"
+             name="userName"
+             value=""
+             placeholder="아이디 입력"/>
+         </div>
+         <div class="pwd">
+             <label for="inputPwd">비밀번호</label>
+             <input type="password"
+             id="inputPwd"
+             name="inputPwd"
+             value=""
+             placeholder="비밀번호 입력"/>
+         </div>
+        </fieldset>
+   </body>

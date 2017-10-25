@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>네이버</title>
+    <style>
+    </style>
+  </head>
+  <body>
+     <h1><a href="#">NAVER</a></h1>
+       <form>
+         <fieldset>
+           <legend>회원가입</legend>
+           <div class="user">
+              <input type="text"
+              id="userName"
+              name="userName"
+              value=""
+              placeholder="아이디" />
+              <label for="userName">아이디</label>
+              <button type="reset">삭제</button>
+           </div>
+           <div class="pwd">
+              <input type="password"
+              id="inputpwd"
+              name="inputpwd"
+              value=""
+              placeholder="비밀번호" autocomplete="off" />
+              <label for="inputpwd">비밀번호</label>
+              <button type="reset">삭제</button>
+           </div>
+         <div class="pwd">
+            <input type="password" id="inputpwd2" name="inputpwd2" value="" placeholder="비밀번호 확인" />
+            <label for="inputpwd2">비밀번호 재확인</label>
+            <button type="reset">삭제</button>
+         </div>
+         <div class="user">
+            <input type="text"
+             id="userName3"
+             name="userName3"
+             value=""
+             placeholder="이름" />
+            <label for="userName3">이름</label>
+            <button type="reset">삭제</button>
+         </div>
+          <div>
+              <label for="man">성별</label>
+              <input type="radio" id="man" name="sex" value="남자">
+               <label for="man">남자</label>
+              <input type="radio" id="women" name="sex" value="여자" />
+              <label for="women">여자</label>
+
+          </div>
+          <label for="userName5">생일</label>
+          <div class="user">
+              <input type="text"
+              id="userName5"
+              name="userName5"
+              value=""
+              placeholder="년(4자)" />
+              <label for="userName5">년(4자)</label>
+              <button type="reset">삭제</button>
+          </div>
+             <div>
+                <input type="number" name="월"
+                 value=""
+                 placeholder="월"
+                 min="1" max="12" step="1"
+                 >
+             </div>
+             <div class="user">
+                <input type="text" id="day" name="userName" value="" placeholder="일" />
+                <label for="day">일</label>
+                <button type="reset">삭제</button>
+             </div>
+             <div class="user">
+                <input type="text" id="userMail" name="userName" value="" placeholder="본인확인 이메일(선택)" />
+                <label for="userMail">본인확인 이메일(선택)</label>
+                <button type="reset">삭제</button>
+             </div>
+             <div class="number">
+                <label for="number">+82</label>
+                <input type="number" id="number" name="number" value="" placeholder="대한민국+82" min="1950" max="2017" step="1" />
+                <label for="number"></label>
+                   <input type="text" id="mob" name="userName" value="" placeholder="휴대전화번호" />
+                   <label for="mob">휴대전화번호</label>
+                   <button type="reset">삭제</button>
+                   <a href="#">인증</a>
+             </div>
+             <div class="user">
+                <input type="text"
+                id="ckeckNum"
+                name="ckeckNum"
+                value=""
+                placeholder="인증번호"/>
+                <label for="ckeckNum">인증번호</label>
+                <button type="reset">삭제</button>
+                <a href="#">인증</a>
+             </div>
+
+         </fieldset>
+         <button type="submit" name="join">가입하기</button>
+       </form>
+        <ul>
+        <li><a href="#">이용약관</a></li>
+        <li><a href="#">개인정보처리방침</a></li>
+        <li><a href="#">인증책임의 한계와 법적고치</a></li>
+        <li><a href="#">인증회원정보 고객센터</a></li>
+
+        </ul>
+
+        <fieldset>
+          <legend>선택1 radio</legend>
+          <p>당신의 성별을 선택하세요.</p>
+          <label for="male">남자</label>
+          <input type="radio" id="male" name="sex" value="male"
+          checked="checked">
+          <label for="female">여자</label>
+          <input type="radio" id="female" name="sex" value="female">
+          <label for="female">hibrid</label>
+          <input type="radio" id="hibrid" name="sex" value="hibrid">
+        </fieldset>
+
+        <fieldset>
+          <legend>선택2 checkbox </legend>
+          <p>오늘 저녁에 먹고 싶은 음식을 선택하세요</p>
+          <input type="checkbox" id="food1" name="food" value="치킨"  checked="checked" />
+          <label for="food1">치킨</label>
+
+          <input type="checkbox" id="food2" name="food" value="보쌈" />
+          <label for="food2">보쌈</label>
+
+          <input type="checkbox" id="food3" name="food" value="삼겹살" />
+          <label for="food3">삼겹살</label>
+
+          <input type="checkbox" id="food4" name="food" value="피자" />
+          <label for="food4">피자</label>
+
+
+        </fieldset>
+
+        <fieldset>
+          <legend>버튼영역 설명</legend>
+
+          <input type="submit" name="ok" value="확인">
+          <input type="reset" name="cancle" value="취소">
+          <input type="button" name="btn" value="검색">
+          <input type="image" src="#" alt="#" name="img" />
+          <input type="file" name="data" />
+
+        </fieldset>
+
+        <fieldset>
+          <legend>multi영역</legend>
+            <!--입력-->
+            <textarea id="multiText" value="" name=""
+              cols="10" rows="5" maxlength="50"></textarea>
+               <!--cols 가로 10글자, row 세로 5줄 정도의 크기를만들어라 maxlength 최대한 쓸 수 있는 글자 수 (임시사이즈, 최소크기일 때 적용하는 내용)-->
+               <!--선택-->
+               <label for=""></label>
+               <select name="" id="selectMenu">
+                  <option>선택해</option>
+                  <option value="coffee">커피(+1000)</option>
+                  <option value="iphone">아이폰(3,000,000)</option>
+                  <option value="tumble">텀블러(+100)</option>
+                  <option value="random">랜덤박스(+100,000)</option>
+                <optgroup label="더">
+                   <option value="drink">b</option>
+                   <option value="juice">c</option>
+                   <option value="ade">d</option>
+                   <option value="icecream">e</option>
+                 </optgroup>
+                 </select>
+
+        <button type="submit" name="#">안녕확인</button>
+        <button type="reset" name="#">수진아삭제</button>
+        <button type="button" name="#">반가워검색</button>
+
+      </fieldset>
+
+
+      <em><a href="#">naver</a> copyright ⓒ <a href="#">NAVER corp.</a>
+       All Rights Reserved.
+     </em>
+
+  </body>
+</html>
