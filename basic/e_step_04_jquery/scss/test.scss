@@ -1,0 +1,8 @@
+
+
+// 기본세팅 파일 불러오기 (variable, mixin,reset,normalize)
+@import './bin/setting';
+@import './bin/reset';
+@import './bin/base';
+
+@import './src/check';

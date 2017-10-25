@@ -1,0 +1,34 @@
+#wrap {
+  width: 100%;
+  height: auto;
+  background-color: #ffab9a; }
+
+#headBox {
+  width: 100%;
+  height: 80px;
+  background-color: #ffab9a;
+  border-bottom: 1px solid #777; }
+
+#unb {
+  width: 100%;
+  height: auto; }
+
+#unb > ul {
+  width: 200px;
+  height: auto;
+  float: right; }
+
+#unb > ul > li {
+  width: 100px;
+  height: 80px;
+  float: left;
+  margin-top: 30px;
+  font-weight: bold; }
+
+#unb > ul > li > a:hover {
+  color: #991d1d;
+  font-weight: bold; }
+
+#concentBox {
+  width: 100%;
+  height: auto; }

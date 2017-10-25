@@ -1,0 +1,144 @@
+#wrap {
+  width: 100%;
+  height: auto;
+  background-color: #ffab9a; }
+
+#headBox {
+  width: 100%;
+  height: 80px;
+  background-color: #ffab9a;
+  border-bottom: 1px solid #777; }
+
+#unb {
+  width: 100%;
+  height: auto; }
+
+#unb > ul {
+  width: 200px;
+  height: auto;
+  float: right; }
+
+#unb > ul > li {
+  width: 100px;
+  height: 80px;
+  float: left;
+  margin-top: 30px;
+  font-weight: bold; }
+
+#unb > ul > li > a:hover {
+  color: #991d1d;
+  font-weight: bold; }
+
+#concentBox {
+  width: 100%;
+  height: auto; }
+
+#articleBox {
+  width: 100%;
+  height: 1000px;
+  background-image: url("../../img/ft_img/background.jpg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 100%;
+  position: relative; }
+
+#menu {
+  width: 100%;
+  height: auto;
+  position: relative;
+  position: relative;
+  top: 8rem; }
+
+#menu > div {
+  width: 23.08333333vw;
+  min-width: 200px;
+  height: 12.91875vw;
+  min-height: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  float: left;
+  margin: 0.5rem; }
+
+#menu > div > a {
+  width: 100%;
+  height: 100%;
+  display: block; }
+
+#menu > .aboutme {
+  background-image: url("../../img/ft_img/aboutme.png");
+  margin-left: 13vw;
+  transition: all 400ms; }
+
+#menu > .aboutme:hover {
+  background-image: url("../../img/ft_img/aboutme_1.png");
+  margin-left: 13vw; }
+
+#menu > .portfolio {
+  height: 15.91875vw;
+  background-image: url("../../img/ft_img/portfolio.png");
+  background-size: 100%;
+  margin-top: -4.022vw;
+  transition: all 400ms; }
+
+#menu > .portfolio:hover {
+  background-image: url("../../img/ft_img/portfolio_1.png"); }
+
+#menu > .gallery {
+  background-image: url("../../img/ft_img/gallery.png");
+  transition: all 400ms; }
+
+#menu > .gallery:hover {
+  background-image: url("../../img/ft_img/gallery_1.png"); }
+
+#articleBox > .ai {
+  width: 100%;
+  height: 600px;
+  position: absolute;
+  bottom: 0;
+  left: 0; }
+
+#articleBox > .ai > .hongsoon2 {
+  width: 19.0625vw;
+  height: 28.0416666667vw;
+  background-image: url("../../img/ft_img/htimg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  background-position: 0 0;
+  bottom: 5%;
+  left: 50%;
+  margin-left: -9.53125vw;
+  animation: hongsoon 1.1s infinite alternate; }
+
+#articleBox > .ai > .book {
+  width: 6.254166666667vw;
+  height: 9.3125vw;
+  background-image: url("../../img/ft_img/hongsoonbook.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  background-position: 0 0;
+  bottom: 10%;
+  left: 85%;
+  margin-top: 11.654166666vw;
+  animation: hongjo 0.5s infinite alternate; }
+
+#articleBox > .ai > .book > a {
+  width: 100%;
+  height: 100%;
+  display: block; }
+
+@keyframes hongjo {
+  0% {
+    transform: rotate(10deg); }
+  100% {
+    transform: rotate(5deg);
+    opacity: 1; } }
+
+@keyframes hongsoon {
+  0% {
+    transform: translateY(-5px, 5px); }
+  100% {
+    transform: translate(-5px, 10px);
+    opacity: 7; } }

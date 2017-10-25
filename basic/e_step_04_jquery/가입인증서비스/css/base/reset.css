@@ -1,0 +1,25 @@
+/*	 reset css	  */
+
+/*
+@import url(../fonts/NanumGothic-Regular.ttf);
+@import url(../fonts/NanumGothic-Bold.ttf);
+@import url(../fonts/NanumGothic-ExtraBold.ttf);
+*/
+@font-face{
+	font-family:my_font;
+	src:url("../fonts/nanumgothic-regular-webfont.ttf") format("ttf");
+	src:url("../fonts/nanumgothic-regular-webfont.woff") format("woff");
+	src:url("../fonts/nanumgothic-regular-webfont.eot") format("woff");
+}
+
+		  *,body,html,h1,h2,h3,h4,h5,h6,p{
+			 margin:0; padding:0; border:0; outline: 0; 
+			 vertical-align: top; color:#777;
+			 font:  100%/120%  my_font,"Nanum Gothic", sans-serif; }
+		  ul,ol,li{list-style: none;}
+		  a{text-decoration:none; color:#333;}
+		  a:hover{text-decoration:underline; color:#f06;}
+		  section,article,aside,footer,nav{display:block;}
+		  table,tr,td,th{broder-collapse:collapse; border-spacing: 0;}
+
+		.last_margin{margin:0 !important;}
