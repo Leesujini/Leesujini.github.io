@@ -1,0 +1,273 @@
+@import "../base/_variable";
+@import "../base/mixin";  
+ 
+ 
+#wrap{width: 100%; height: auto; background-color: map-get($color,primary); }
+#headBox{width: 100%; height: 80px; background-color:map-get($color,primary); 
+         border-bottom:1px solid map-get($color,font);}
+#unb{width: 100%; height: auto; }
+#unb>ul{width:200px; height: auto; float: right; } 
+#unb>ul>li{width: 100px; height: 80px;float: left; margin-top: 30px; font-weight:bold; }  
+#unb>ul>li>a:hover{color:map-get($color,red);font-weight: bold;}   
+#concentBox{width: 100%; height:auto; background-color: map-get($color,primary);}       
+#drawing{width: 100%; height:auto; background-color: map-get($color,primary); 
+        position: relative; background-size: 100%;}  
+#drawing>h4{width: 100%; height: 100px;  background-repeat: no-repeat; background-position: center; 
+            background-image: url("../../img/ft_img/logo.png"); } 
+#drawing>.ej{width: 100%; height:auto; position: relative; margin-top: 150px;}
+#drawing>.ej>.ej_drawing1{width:100%; height:auto; margin-bottom: 10rem;  position: relative;} 
+#drawing>.ej>.ej_drawing1>li{width: 20.78125vw; height: 34.0625vw; float: left; margin-left: 10.5rem; 
+                            background-repeat: no-repeat; background-position: 0 0; position: relative; background-size: 100%;}
+#drawing>.ej>.ej_drawing1>li:first-child{ background-image: url("../../img/ft_img/ej.png");} 
+#drawing>.ej>.ej_drawing1>li:nth-child(2){background-image: url("../../img/ft_img/ej.png");} 
+#drawing>.ej>.ej_drawing1>li:nth-child(3){background-image: url("../../img/ft_img/ej.png");} 
+                                            
+#drawing>.ej>.ej_drawing1>li:first-child>.art{width: 20.875vw; height:16.95208333333vw; 
+                                              background-image: url("../../img/ft_img/20120209dw.jpg");
+                                              margin-top:3.583333333333333vw;
+                                              // margin-top: 4.3rem;
+                                              background-repeat: no-repeat;
+                                              background-size:cover;
+                                             transition: all 300ms;}
+#drawing>.ej>.ej_drawing1>li:first-child>.art:hover{background-image: url("../../img/ft_img/20120209dw_1.jpg");
+                                               background-repeat: no-repeat;   
+                                               background-size:cover;   
+                                              background-position: 0 0;}  
+#drawing>.ej>.ej_drawing1>li>.art>a{width: 100%; height: 100%; display: block;} 
+#drawing>.ej>.ej_drawing1>li:nth-child(2)>.art{width: 20.875vw; height:16.95208333333vw;
+                                               background-image: url("../../img/ft_img/201306dw.jpg");
+                                               background-repeat: no-repeat; 
+                                               background-size:cover;
+                                               margin-top:3.583333333333333vw;
+                                               // margin-top: 4.3rem;
+                                               transition: all 300ms;}
+#drawing>.ej>.ej_drawing1>li:nth-child(2)>.art:hover{background-image: url("../../img/ft_img/201306dw_1.jpg");
+                                               background-repeat: no-repeat;   
+                                               background-size:cover;   
+                                              background-position: 0 0;}
+#drawing>.ej>.ej_drawing1>li:nth-child(3)>.art{width: 20.875vw; height:16.95208333333vw;
+                                              margin-top:3.583333333333333vw;
+                                              // margin-top: 4.3rem;
+                                              background-image: url("../../img/ft_img/2017.04dw.jpg"); 
+                                               background-repeat: no-repeat;  
+                                               background-size:cover;
+                                               transition: all 300ms;}
+#drawing>.ej>.ej_drawing1>li:nth-child(3)>.art:hover{background-image: url("../../img/ft_img/2017.04dw_1.jpg");
+                                               background-repeat: no-repeat;   
+                                               background-size:cover;    
+                                              background-position: 0 0;} 
+ 
+ 
+#drawing>.ej>.ej_drawing2{width:100%; height:auto; margin-bottom: 10rem; position: relative;}
+#drawing>.ej>.ej_drawing2>li{width: 20.78125vw; height: 34.0625vw; float: left; margin-left: 10.5rem; 
+                            background-repeat: no-repeat; background-position: 0 0; position: relative; background-size: 100%;}
+
+#drawing>.ej>.ej_drawing2>li:first-child{background-image: url("../../img/ft_img/ej.png");} 
+#drawing>.ej>.ej_drawing2>li:nth-child(2){background-image: url("../../img/ft_img/ej.png");} 
+#drawing>.ej>.ej_drawing2>li:nth-child(3){background-image: url("../../img/ft_img/ej.png");} 
+
+#drawing>.ej>.ej_drawing2>li:first-child>.art{width: 20.875vw; height:16.95208333333vw;
+                                              background-image: url("../../img/ft_img/201406dw.jpg");
+                                               background-repeat: no-repeat; 
+                                               background-size:cover;
+                                              background-position: 0 50%;
+                                              margin-top:3.583333333333333vw;
+                                              transition: all 300ms;}
+#drawing>.ej>.ej_drawing2>li:first-child>.art:hover{background-image: url("../../img/ft_img/201406dw_1.jpg");
+                                               background-repeat: no-repeat;   
+                                               background-size:cover;    
+                                              background-position: 0 50%;} 
+#drawing>.ej>.ej_drawing2>li:nth-child(2)>.art{width: 20.875vw; height:16.95208333333vw;
+                                              background-image: url("../../img/ft_img/201510dw.jpg");  
+                                               background-repeat: no-repeat;  
+                                               background-size:cover;
+                                               background-position: 0 50%;  
+                                              margin-top:3.583333333333333vw;
+                                             transition: all 300ms;} 
+#drawing>.ej>.ej_drawing2>li:nth-child(2)>.art:hover{background-image: url("../../img/ft_img/201510dw_1.jpg");
+                                               background-repeat: no-repeat;   
+                                               background-size:cover;   
+                                              background-position: 0 50%;}  
+#drawing>.ej>.ej_drawing2>li:nth-child(3)>.art{width: 20.875vw; height:16.95208333333vw;
+                                              background-image: url("../../img/ft_img/img_1375.JPG");
+                                               background-repeat: no-repeat;   
+                                                background-size:100%; 
+                                              background-position: 0 50%;
+                                                margin-top:3.583333333333333vw;  
+                                              transition: all 300ms;} 
+#drawing>.ej>.ej_drawing2>li:nth-child(3)>.art:hover{background-image: url("../../img/ft_img/img_1375_1.JPG");
+                                               background-repeat: no-repeat;   
+                                               background-size:100%;   
+                                              background-position: 0 50%;}  
+#drawing>.ej>.ej_drawing2>li>.art>a{width: 100%; height: 100%; display: block;} 
+    
+
+#drawing>.ej>.ej_drawing3{width:100%; height:auto; position: relative;} 
+#drawing>.ej>.ej_drawing3>li{width: 20.78125vw; height: 34.0625vw; float: left; margin-left: 10.5rem; 
+                            background-repeat: no-repeat; background-position: 0 0; position: relative; background-size: 100%;}
+
+#drawing>.ej>.ej_drawing3>li:first-child{background-image: url("../../img/ft_img/ej.png");} 
+#drawing>.ej>.ej_drawing3>li:nth-child(2){background-image: url("../../img/ft_img/ej.png");} 
+#drawing>.ej>.ej_drawing3>li:nth-child(3){background-image: url("../../img/ft_img/ej.png");} 
+
+#drawing>.ej>.ej_drawing3>li:first-child>.art{width: 20.875vw; height:16.95208333333vw;
+                                              background-image: url("../../img/ft_img/gyon3.jpg");
+                                               background-repeat: no-repeat; 
+                                               background-size:cover;
+                                               margin-top:3.583333333333333vw; 
+                                               transition: all 300ms;}
+#drawing>.ej>.ej_drawing3>li:first-child>.art:hover{background-image: url("../../img/ft_img/gyon3_1.jpg");
+                                               background-repeat: no-repeat;   
+                                               background-size:cover;    
+                                              background-position: 0 0;}   
+#drawing>.ej>.ej_drawing3>li:nth-child(2)>.art{width: 20.875vw; height:16.95208333333vw;
+                                              background-image: url("../../img/ft_img/201505dw.jpg");  
+                                               background-repeat: no-repeat;  
+                                               background-size:cover; 
+                                               background-position: 0 50%;
+                                               margin-top:3.583333333333333vw; 
+                                              transition: all 300ms;}
+#drawing>.ej>.ej_drawing3>li:nth-child(2)>.art:hover{background-image: url("../../img/ft_img/201505dw_1.jpg");
+                                               background-repeat: no-repeat;   
+                                               background-size:cover;    
+                                              background-position: 0 50%;}      
+#drawing>.ej>.ej_drawing3>li:nth-child(3)>.art{width: 20.875vw; height:16.95208333333vw;
+                                              background-image: url("../../img/ft_img/20131108_172420.jpg");
+                                               background-repeat: no-repeat; 
+                                               background-size:100%;  
+                                               margin-top:3.583333333333333vw; 
+                                             transition: all 300ms;}
+#drawing>.ej>.ej_drawing3>li:nth-child(3)>.art:hover{background-image: url("../../img/ft_img/20131108_172420_1.jpg");
+                                               background-repeat: no-repeat;   
+                                               background-size:100%;   
+                                              background-position: 0 0;} 
+#drawing>.ej>.ej_drawing3>li>.art>a{width: 100%; height: 100%; display: block;}
+
+
+#big{width: 66.875vw; height:46vw; position: fixed; z-index: 1000; top: 50%; left: 50%;
+      margin-top:-23vw; margin-left: -33.4375vw;
+      box-sizing:border-box; border:16px solid #ccbaba; 
+      box-shadow:0.5rem 0.5rem 0.5rem rgba(0,0,0,0.3);
+      border-radius:0.3rem; display: none;}
+#big.active{display: block;}
+#big:before{content: " "; display: block; width: 100%; height: 100%; 
+            position: fixed; top: 0; left: 0; z-index:-200; background-color:rgba(50,50,50,0.5);}
+#big>.drawing_big{width:100%; height: 100%;
+                  box-shadow:0.1rem 0.1rem 0.1rem rgba(30,30,30, 0.5) inset; 
+                  position:relative; z-index:100;
+                  background-repeat: no-repeat; background-position: 0 0; background-size: 100%;
+                  background-color: #fff;} 
+#big>input[type="button"]{width: 60px; height: 60px; position: absolute; top:-30px; right:-30px; z-index: 100;
+                  background-image: url("../../img/ft_img/button_1.png");
+                  background-repeat: no-repeat; background-position:center;  background-size:105%;
+                  transition:all 300ms;
+                  box-shadow:0.2rem 0.2rem 0.2rem rgba(30,30,30,0.5);
+                  border-radius:50%;
+                  border:5px solid #ccbaba; box-sizing:border-box;}
+#big>input[type="button"]:hover, #big>input[type="button"]:focus{transform:rotate(180deg);}
+    
+   
+  
+#tv{width: 100%; height:1200px; background-image: url("../../img/ft_img/gallerytv.jpg");
+    background-repeat: no-repeat;background-position: 0 0;background-position: center; position: relative; margin-top: 200px; }
+#tv>.hongsoontv{width:69.01041666667vw; height:49.1666666667vw; background-image: url("../../img/ft_img/tv.png"); 
+                background-repeat: no-repeat; background-position: 0 0; margin:0 auto; 
+               background-size: 100%;position: relative;}    
+#tv>.hongsoontv>.videochang{width:66.19791666667vw; height:36.3083333333vw; position: relative;
+                           left: 1.5vw; top:8.4vw; background-color: #333; }     
+video{width: 100%; height: 100%;}            
+ 
+#photo{width: 100%;height: 2800px; background-image: url("../../img/ft_img/galleryphoto.jpg");
+      background-repeat: no-repeat;background-position: center; position: relative;}
+#photo>.photo_00{width: 100%; height: 110.15625vw; position: relative; top:9.16666667vw;}     
+#photo>.photo_00>.photo1{width:100%; height: 33.645833333vw; margin-bottom: 5.8333333vw; position: relative;}   
+#photo>.photo_00>.photo1>li:first-child{width: 26.447916666667vw; height: 31.71875vw; float: left; margin-left:5vw;
+                                         background-image: url("../../img/ft_img/photo.png");
+                                         background-repeat: no-repeat;
+                                         background-position: 0 0;
+                                          background-size: 100%; position: relative; } 
+#photo>.photo_00>.photo1>li:nth-child(2){width: 26.447916666667vw; height: 31.71875vw; float: left; margin-left: 5vw;
+                                         background-image: url("../../img/ft_img/photo.png");
+                                         background-repeat: no-repeat;
+                                         background-position: 0 0; 
+                                         background-size: 100%; position: relative; } 
+#photo>.photo_00>.photo1>li:nth-child(3){width: 26.447916666667vw; height: 31.71875vw; float: left; margin-left: 5vw;
+                                         background-image: url("../../img/ft_img/photo.png");
+                                         background-repeat: no-repeat;
+                                         background-position: 0 0;
+                                         background-size: 100%; position: relative; } 
+#photo>.photo_00>.photo1>li:first-child>.picture{width: 24.775vw; height:23.364583333vw; margin-left: 0.833333333vw;
+                                     margin-top: 2.58333333vw; background-image: url("../../img/ft_img/img1.jpg");
+                                     background-repeat: no-repeat;background-position: 0 0; background-size: 100%; position: relative;}    
+#photo>.photo_00>.photo1>li:nth-child(2)>.picture2{width: 24.775vw; height:23.364583333vw; margin-left: 0.833333333vw;
+                                     margin-top: 2.58333333vw;background-image: url("../../img/ft_img/img2.jpg");
+                                     background-repeat: no-repeat;background-position: center; background-size: 100%; position: relative;}
+#photo>.photo_00>.photo1>li:nth-child(3)>.picture3{width: 24.775vw; height:23.364583333vw; margin-left: 0.833333333vw;
+                                     margin-top: 2.58333333vw; background-image: url("../../img/ft_img/img3.jpg");
+                                     background-repeat: no-repeat;background-position: center; background-size: 100%; position: relative;}  
+#photo>.photo_00>.photo1>li:first-child>.text{font-size: 0.9em; font-weight: bold; float: right;
+                                               margin-top: 1.04166666667vw; color:#777; margin-right: 1vw;}   
+#photo>.photo_00>.photo1>li:nth-child(2)>.text{font-size: 0.9em; font-weight: bold; float: right;
+                                               margin-top: 20px; color:#777; margin-right: 1vw;} 
+#photo>.photo_00>.photo1>li:nth-child(3)>.text{font-size: 0.9em; font-weight: bold; float: right;
+                                               margin-top: 1.04166666667vw; color:#777; margin-right: 1vw;}  
+  
+#photo>.photo_00>.photo2{width:100%; height: 33.645833333vw; margin-bottom: 6.666666666667vw;} 
+#photo>.photo_00>.photo2>li:first-child{width: 26.447916666667vw; height: 31.71875vw; float: left; margin-left:5vw;
+                                         background-image: url("../../img/ft_img/photo.png");
+                                         background-repeat: no-repeat;
+                                         background-position: 0 0; 
+                                         background-size: 100%;} 
+#photo>.photo_00>.photo2>li:nth-child(2){width: 26.447916666667vw; height: 31.71875vw; float: left; margin-left: 5vw;
+                                         background-image: url("../../img/ft_img/photo.png");
+                                         background-repeat: no-repeat;
+                                         background-position: 0 0;
+                                         background-size: 100%;} 
+#photo>.photo_00>.photo2>li:nth-child(3){width: 26.447916666667vw; height: 31.71875vw; float: left; margin-left: 5vw;
+                                         background-image: url("../../img/ft_img/photo.png");
+                                         background-repeat: no-repeat; 
+                                         background-position: 0 0;
+                                         background-size: 100%;} 
+#photo>.photo_00>.photo2>li:first-child>.picture4{width: 24.775vw; height:23.364583333vw; margin-left: 0.833333333vw;
+                                     margin-top: 2.58333333vw; background-image: url("../../img/ft_img/img4.jpg");
+                                     background-repeat: no-repeat;background-position: 0 0; background-size: 100%;} 
+  
+#photo>.photo_00>.photo2>li:nth-child(2)>.picture5{width: 24.775vw; height:23.364583333vw; margin-left: 0.833333333vw;
+                                     margin-top: 2.58333333vw;background-image: url("../../img/ft_img/img5.jpg");
+                                     background-repeat: no-repeat;background-position: center; background-size: 100%;}
+#photo>.photo_00>.photo2>li:nth-child(3)>.picture6{width: 24.775vw; height:23.364583333vw; margin-left: 0.833333333vw;
+                                     margin-top: 2.58333333vw; background-image: url("../../img/ft_img/img6.jpg");
+                                     background-repeat: no-repeat;background-position: center; background-size: 100%;}  
+ 
+#photo>.photo_00>.photo2>li:first-child>.text{font-size: 0.9em; font-weight: bold; float: right;
+                                               margin-top: 1.04166666667vw; color:#777; margin-right: 1vw;} 
+#photo>.photo_00>.photo2>li:nth-child(2)>.text{font-size: 0.9em; font-weight: bold; float: right;
+                                               margin-top: 20px; color:#777; margin-right: 1vw;} 
+#photo>.photo_00>.photo2>li:nth-child(3)>.text{font-size: 0.9em; font-weight: bold; float: right;
+                                               margin-top: 1.04166666667vw; color:#777; margin-right: 1vw;} 
+ 
+
+
+
+#photo>.photo_00>.photo3{width:100%; height: 33.645833333vw; } 
+#photo>.photo_00>.photo3>li:first-child{width: 26.447916666667vw; height: 31.71875vw; float: left; margin-left:25rem;
+                                         background-image: url("../../img/ft_img/photo.png");
+                                         background-repeat: no-repeat;
+                                         background-position: 0 0;
+                                         background-size: 100%;} 
+#photo>.photo_00>.photo3>li:last-child{width: 26.447916666667vw; height: 31.71875vw; float: left; margin-left: 5vw;
+                                         background-image: url("../../img/ft_img/photo.png");
+                                         background-repeat: no-repeat; 
+                                         background-position: 0 0;
+                                         background-size: 100%;} 
+#photo>.photo_00>.photo3>li:first-child>.picture7{width: 24.775vw; height:23.364583333vw; margin-left: 0.833333333vw;
+                                     margin-top: 2.58333333vw; background-image: url("../../img/ft_img/img7.jpg");
+                                     background-repeat: no-repeat;background-position: 0 0; background-size: 100%;}    
+#photo>.photo_00>.photo3>li:last-child>.picture8{width: 24.775vw; height:23.564583333vw; margin-left: 0.833333333vw;
+                                     margin-top: 2.58333333vw; background-image: url("../../img/ft_img/img8.jpg");
+                                     background-repeat: no-repeat;background-position: center;background-size: 100%;}   
+ #photo>.photo_00>.photo3>li:first-child>.text{font-size: 0.9em; font-weight: bold; float: right;
+                                               margin-top: 1.04166666667vw; color:#777; margin-right: 1vw;}
+ #photo>.photo_00>.photo3>li:last-child>.text{font-size: 0.9em; font-weight: bold; float: right;
+                                               margin-top: 1.04166666667vw; color:#777; margin-right: 1vw;} 
+    

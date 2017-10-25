@@ -1,0 +1,8 @@
+
+@mixin border($w:960px, $h:158px, $c:primary){
+  width: $w; height: $h;  background-color:map-get($color,$c);
+}
+@mixin whiteBox($w:378px, $h:83px, $ml:62px , $mt:25px){
+  width: $w; height: $h; margin-left: $ml; margin-top: $mt;
+}
+

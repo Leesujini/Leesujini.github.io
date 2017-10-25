@@ -1,0 +1,85 @@
+@import "../base/_variable";
+@import "../base/mixin"; 
+ 
+#wrap{width: 100%; height: auto; background-color: map-get($color,primary);}
+#headBox{width: 100%; height: 80px; background-color:map-get($color,primary);
+         border-bottom:1px solid map-get($color,font);}
+#unb{width: 100%; height: auto; }
+#unb>ul{width:200px; height: auto; float: right; } 
+#unb>ul>li{width: 100px; height: 80px;float: left; margin-top: 30px; font-weight:bold; }  
+#unb>ul>li>a:hover{color:map-get($color,red);font-weight: bold;}
+#contentBox{width: 100%; height:auto;}  
+#pt{width: 100%; height: 71.541666666667vw; background-image: url("../../img/ft_img/portfolio_background.png");
+   background-repeat: no-repeat; background-position: 0 0;background-size: 100%;}
+#pt>h2{width: 100%; height: 100px;  background-repeat: no-repeat; background-position: center; 
+            background-image: url("../../img/ft_img/portfoliotext.png");
+             } 
+#notebook{width: 93.28125vw; height:47.5vw; background-image: url("../../img/ft_img/notebook.png");
+              background-repeat: no-repeat; background-position:0 0;
+              margin-top: 15vw; margin-left: 3vw; position:relative;}
+#page{width:59.583333333vw; height:auto; float: left; margin-left: 16.5vw; position: relative; overflow: hidden;}  
+#page>.pagewrap{width: 200%; height:36.2041666667vw; float: left; } 
+#pagemenu{width:59.583333333vw; height:34.2041666667vw;  
+                    background-image: url("../../img/ft_img/portfolio/bdt.png");
+                  background-size: 100%; background-position: 0 0;
+                   background-repeat: no-repeat; position:relative; top:3.288vw;
+                   float:left;}     
+#pagemenu>h4{width: 100%; height: 520px;  background-repeat: no-repeat; background-position:center; 
+            background-image: url("../../img/ft_img/portfolio/bdtlogo.png"); 
+             top: 50%; }       
+#pagemenu>p{width:100%; height: 80px; color:#eee; font-size:0.7em;   
+            margin-top: -11.5vw; margin-left: 26.7vw;}         
+#pagemenu>ul{width: 560px; height:74px;  margin: 0 auto;} 
+#pagemenu>ul>li{width: 242px; height: 74px;   float: left; } 
+#pagemenu>ul>li>a{width: 100%; height: 100%; display: block;} 
+#pagemenu>ul>li:first-child{margin-right: 70px; background-image: url("../../img/ft_img/portfolio/work.png");
+                           background-repeat: no-repeat;
+                           transition: all 300ms;} 
+#pagemenu>ul>li:first-child:hover{background-image: url("../../img/ft_img/portfolio/work_1.png");}  
+#pagemenu>ul>li:last-child{background-image: url("../../img/ft_img/portfolio/site.png");
+                           background-repeat: no-repeat;
+                           transition: all 300ms;}
+#pagemenu>ul>li:last-child:hover{background-image: url("../../img/ft_img/portfolio/site_1.png");} 
+
+//....................................................................................................
+
+#page:after{content:" "; display: block; clear: both;}
+.pagewrap:after{content:" "; display: block; clear: both;}
+    
+  
+#pagemenu2{width:59.583333333vw; height:34.2041666667vw;    
+                    background-image: url("../../img/ft_img/portfolio/pb.png");
+                  background-size: 100%; background-position: 0 0;
+                   background-repeat: no-repeat; position:relative; top:3.2588vw;
+                   float:left; }  
+#pagemenu2>h4{width: 100%; height: 520px;  background-repeat:no-repeat; background-position:center; 
+            background-image: url("../../img/ft_img/portfolio/pblogo.png"); 
+             top: 50%; }      
+#pagemenu2>p{width:100%; height: 80px; color:#eee; font-size:0.7em; 
+            margin-top: -11.5vw; margin-left: 26.7vw;}      
+#pagemenu2>ul{width: 560px; height:74px;  margin: 0 auto;}
+#pagemenu2>ul>li{width: 242px; height: 74px;   float: left; }
+#pagemenu2>ul>li>a{width: 100%; height: 100%; display: block;} 
+#pagemenu2>ul>li:first-child{margin-right: 70px; background-image: url("../../img/ft_img/portfolio/work.png");
+                           background-repeat: no-repeat;
+                           transition: all 300ms;} 
+#pagemenu2>ul>li:first-child:hover{background-image: url("../../img/ft_img/portfolio/work_1.png");}  
+#pagemenu2>ul>li:last-child{background-image: url("../../img/ft_img/portfolio/site.png");
+                           background-repeat: no-repeat;
+                           transition: all 300ms;}
+#pagemenu2>ul>li:last-child:hover{background-image: url("../../img/ft_img/portfolio/site_1.png");}  
+
+  
+
+  
+         
+
+#page>.buttons{width:53.583333333vw;  height:3.8541666667vw; position: absolute; bottom: 0.1rem; left: 45%;} 
+#page>.buttons>ol{width: 180px; height: 20px; left: 50%;}  
+#page>.buttons>ol>li{float:left; margin-right:50px;}    
+#page>.buttons>ol>li:last-child{margin-right: 0;}    
+#page>.buttons>ol>li>button{width: 100%; height: 100%; font-size: 2em;}
+#page>.buttons>ol>li>button>i{color:map-get($color,white);}
+#page>.buttons>ol>li.active>button>i{color:map-get($color,primary);} 
+  
+    
