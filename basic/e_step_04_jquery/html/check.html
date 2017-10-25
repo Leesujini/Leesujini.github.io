@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8"> 
+  <title>Document</title>
+   <link rel="stylesheet" href="../css/base/reset.css">
+  <link rel="stylesheet" href="../css/base/normalize.css">
+  <link rel="stylesheet" href="../css/src/test.css">  
+  <link rel="stylesheet" href="../scss/check.scss">
+  
+
+  <script src="../js/jquery/jquery-3.2.1.min.js"></script>
+  <script src = "../js/jquery/jquery-ui.min.js"></script>
+
+</head>
+<body>
+  <div id="wrap">
+    <h2 class="me_hidden">회원가입 내용 확인 및 동의</h2>
+    <form action="" mtehod="post">
+      <fieldset id="joinCheck">
+        <legend class="me_hidden">회원가입 내용 확인 및 동의 확인 영역</legend>
+        <div class="all_check">
+          <h3>이용약관, 개인정보 수집 및 이용, 위치정보 이용약관(선택), 프로모션 안내</h3>
+          <p>
+          <input type="checkbox" id="allCheck" name="allCheck" value="term of use check" class="me_hidden" />
+          <label for="allCheck"><span class="all_icon"></span>메일 수신(선택)에 모두 동의합니다.</label>
+          </p>
+        </div>
+        <div class="term_check each_check">
+          <input type="checkbox" id="termCheck" name="termCheck" value="term of use check" class="me_hidden more_check" />
+          <h4><label for="termCheck"><span class="check_icon"></span> XIDO 이용약관동의(필수)</label> </h4>
+          <div class="content">
+            제 1 조 (목적)
+            이 약관은 시도디자인아카데미(”시도” 또는 “xido”)가 제공하는xido관련 제반 서비스의 이용과 관련하여 회사와 회원과의 권리, 의무 및 책임사항, 기타 필요한 사항을 규정함을 목적으로 합니다.
+            제 2 조 (정의)
+            이 약관에서 사용하는 용어의 정의는 다음과 같습니다.
+            ①"서비스"라 함은 구현되는 단말기(PC, TV, 휴대형단말기 등의 각종 유무선 장치를 포함)와 상관없이 "회원"이 이용할 수 있는 네이버 및 네이버 관련 제반 서비스를 의미합니다.
+            ②"회원"이라 함은 회사의 "서비스"에 접속하여 이 약관에 따라 "회사"와 이용계약을 체결하고 "회사"가 제공하는 "서비스"를 이용하는 고객을 말합니다.
+            ③"아이디(ID)"라 함은 "회원"의 식별과 "서비스" 이용을 위하여 "회원"이 정하고 "회사"가 승인하는 문자와 숫자의 조합을 의미합니다.
+            ④"비밀번호"라 함은 "회원"이 부여 받은 "아이디와 일치되는 "회원"임을 확인하고 비밀보호를 위해 "회원" 자신이 정한 문자 또는 숫자의 조합을 의미합니다.
+            ⑤"유료서비스"라 함은 "회사"가 유료로 제공하는 각종 온라인디지털콘텐츠(각종 정보콘텐츠, VOD, 아이템 기타 유료콘텐츠를 포함) 및 제반 서비스를 의미합니다.
+            ⑥"포인트"라 함은 서비스의 효율적 이용을 위해 회사가 임의로 책정 또는 지급, 조정할 수 있는 재산적 가치가 없는 "서비스" 상의 가상 데이터를 의미합니다.
+            ⑦"게시물"이라 함은 "회원"이 "서비스"를 이용함에 있어 "서비스상"에 게시한 부호ㆍ문자ㆍ음성ㆍ음향ㆍ화상ㆍ동영상 등의 정보 형태의 글, 사진, 동영상 및 각종 파일과 링크 등을 의미합니다.
+            제 3 조 (약관의 게시와 개정)
+            ①"회사"는 이 약관의 내용을 "회원"이 쉽게 알 수 있도록 서비스 초기 화면에 게시합니다.
+            ②"회사"는 "약관의규제에관한법률", "정보통신망이용촉진및정보보호등에관한법률(이하 "정보통신망법")" 등 관련법을 위배하지 않는 범위에서 이 약관을 개정할 수 있습니다.
+            ③"회사"가 약관을 개정할 경우에는 적용일자 및 개정사유를 명시하여 현행약관과 함께 제1항의 방식에 따라 그 개정약관의 적용일자 30일 전부터 적용일자 전일까지 공지합니다. 다만, 회원에게 불리한 약관의 개정의 경우에는 공지 외에 일정기간 서비스내 전자우편, 전자쪽지, 로그인시 동의창 등의 전자적 수단을 통해 따로 명확히 통지하도록 합니다.
+            ④회사가 전항에 따라 개정약관을 공지 또는 통지하면서 회원에게 30일 기간 내에 의사표시를 하지 않으면 의사표시가 표명된 것으로 본다는 뜻을 명확하게 공지 또는 통지하였음에도 회원이 명시적으로 거부의 의사표시를 하지 아니한 경우 회원이 개정약관에 동의한 것으로 봅니다.
+            ⑤회원이 개정약관의 적용에 동의하지 않는 경우 회사는 개정 약관의 내용을 적용할 수 없으며, 이 경우 회원은 이용계약을 해지할 수 있습니다. 다만, 기존 약관을 적용할 수 없는 특별한 사정이 있는 경우에는 회사는 이용계약을 해지할 수 있습니다.
+            제 4 조 (약관의 해석)
+            ①"회사"는 "유료서비스" 및 개별 서비스에 대해서는 별도의 이용약관 및 정책(이하 "유료서비스약관 등")을 둘 수 있으며, 해당 내용이 이 약관과 상충할 경우에는 "유료서비스약관 등"이 우선하여 적용됩니다.
+            ②이 약관에서 정하지 아니한 사항이나 해석에 대해서는 "유료서비스약관 등" 및 관계법령 또는 상관례에 따릅니다.
+            제 5 조 (이용계약 체결)
+            ①이용계약은 "회원"이 되고자 하는 자(이하 "가입신청자")가 약관의 내용에 대하여 동의를 한 다음 회원가입신청을 하고 "회사"가 이러한 신청에 대하여 승낙함으로써 체결됩니다.
+            ②"회사"는 "가입신청자"의 신청에 대하여 "서비스" 이용을 승낙함을 원칙으로 합니다. 다만, "회사"는 다음 각 호에 해당하는 신청에 대하여는 승낙을 하지 않거나 사후에 이용계약을 해지할 수 있습니다.
+            1.  1.가입신청자가 이 약관에 의하여 이전에 회원자격을 상실한 적이 있는 경우, 단 "회사"의 회원 재가입 승낙을 얻은 경우에는 예외로 함.
+            2.  2.실명이 아니거나 타인의 명의를 이용한 경우
+            3.  3.허위의 정보를 기재하거나, "회사"가 제시하는 내용을 기재하지 않은 경우
+            4.  4.14세 미만 아동이 법정대리인(부모 등)의 동의를 얻지 아니한 경우
+            5.  5.이용자의 귀책사유로 인하여 승인이 불가능하거나 기타 규정한 제반 사항을 위반하며 신청하는 경우
+            ③제1항에 따른 신청에 있어 "회사"는 "회원"의 종류에 따라 전문기관을 통한 실명확인 및 본인인증을 요청할 수 있습니다.
+            ④"회사"는 서비스관련설비의 여유가 없거나, 기술상 또는 업무상 문제가 있는 경우에는 승낙을 유보할 수 있습니다.
+            ⑤제2항과 제4항에 따라 회원가입신청의 승낙을 하지 아니하거나 유보한 경우, "회사"는 원칙적으로 이를 가입신청자에게 알리도록 합니다.
+            ⑥이용계약의 성립 시기는 "회사"가 가입완료를 신청절차 상에서 표시한 시점으로 합니다.
+            ⑦"회사"는 "회원"에 대해 회사정책에 따라 등급별로 구분하여 이용시간, 이용횟수, 서비스 메뉴 등을 세분하여 이용에 차등을 둘 수 있습니다.
+            ⑧"회사"는 "회원"에 대하여 "영화및비디오물의진흥에관한법률" 및 "청소년보호법"등에 따른 등급 및 연령 준수를 위해 이용제한이나 등급별 제한을 할 수 있습니다.
+            제 6 조 (회원정보의 변경)
+            ①"회원"은 개인정보관리화면을 통하여 언제든지 본인의 개인정보를 열람하고 수정할 수 있습니다. 다만, 서비스 관리를 위해 필요한 실명, 주민등록번호, 아이디 등은 수정이 불가능합니다.
+            ②"회원"은 회원가입신청 시 기재한 사항이 변경되었을 경우 온라인으로 수정을 하거나 전자우편 기타 방법으로 "회사"에 대하여 그 변경사항을 알려야 합니다.
+            ③제2항의 변경사항을 "회사"에 알리지 않아 발생한 불이익에 대하여 "회사"는 책임지지 않습니다.
+         
+          </div>
+        </div>
+        <div class="person_check each_check">
+          <input type="checkbox" id="personCheck" name="personCheck" value="person check" class="me_hidden more_check" />
+          <h4><label for="personCheck"><span class="check_icon"></span> 개인정보 수집 및  이용에 관한 안내(필수)</label> </h4>
+          <div class="content">
+            <p>정보통신망법 규정에 따라 네이버에 회원가입 신청하시는 분께 수집하는 개인정보의 항목, 개인정보의 수집 및 이용목적, 개인정보의 보유 및 이용기간을 안내 드리오니 자세히 읽은 후 동의하여 주시기 바랍니다.</p>
+            1. 수집하는 개인정보의 항목
+            첫째, 회사는 회원가 입, 원활한 고객상담, 각종 서비스의 제공을 위해 최초 회원가입 당시 아래와 같은 최소한의 개인정보를 필수항목으로 수집하고 있습니다.
+            <회원가입>
+            - 필수항목 : 아이디, 비밀번호, 이름, 생년월일, 성별, 가입인증 휴대폰번호, 만14세 미만 아동의 경우 법정대리인 정보 (법정대리인의 이름, ID, 휴대폰 번호가 수집되며, 아동이 성년이 될 때까지 보관됩니다.)
+            - 선택항목 : 비상 연락용 이메일 주소(선택항목은 입력하지 않아도 회원가입이 가능합니다.)
+            <단체아이디 회원가입>
+            - 필수항목 : 단체아이디, 회사명, 대표자명, 대표 전화번호, 대표 이메일 주소, 단체주소, 관리자 아이디, 관리자 연락처, 관리자 부서/직위
+            - 선택항목 : 대표 홈페이지, 대표 팩스번호
+            둘째, 서비스 이용과정이나 사업처리 과정에서 아래와 같은 정보들이 자동으로 생성되어 수집될 수 있습니다.
+            - IP Address, 쿠키, 방문 일시, 서비스 이용 기록, 불량 이용 기록, 기기정보
+            셋째, 네이버 아이디를 이용한 부가 서비스 및 맞춤식 서비스 이용 또는 이벤트 응모 과정에서 해당 서비스의 이용자에 한해서만 개인정보 추가 수집이 발생할 수 있으며, 이러한 경우 별도의 동의를 받습니다.
+            넷째, 성인컨텐츠, 유료/게임 등 일부 서비스 이용시 관련 법률 준수를 위해 본인인증이 필요한 경우, 아래와 같은 정보들이 수집될 수 있습니다.
+            - 이름, 생년월일, 성별, 중복가입확인정보(DI), 암호화된 동일인 식별정보(CI), 휴대폰 번호(선택), 아이핀 번호(아이핀 이용시), 내/
+            보존 이유 : 전자상거래 등에서의 소비자보호에 관한 법률
+            보존 기간 : 5년
+            - 대금결제 및 재화 등의 공급에 관한 기록
+            보존 이유 : 전자상거래 등에서의 소비자보호에 관한 법률
+            보존 기간 : 5년
+            - 전자금융 거래에 관한 기록
+            보존 이유 : 전자금융거래법
+            보존 기간 : 5년
+            - 소비자의 불만 또는 분쟁처리에 관한 기록
+            보존 이유 : 전자상거래 등에서의 소비자보호에 관한 법률
+            보존 기간 : 3년
+            - 웹사이트 방문기록
+            보존 이유 : 통신비밀보호법
+            보존 기간 : 3개월
+          </div>
+        </div>
+
+        <input type="submit" value="동의함" name="submit" class="send">
+        <input type="reset" value="동의안함" name="reset" class="send">
+
+      </fieldset>
+    </form>
+  </div> <!-- #wrap -->
+  <script>
+    (function($) {
+      // $('#allCheck').on('click',function() {
+      //    $('input[type="checkbox"]').attr('checked',true);
+      // });
+
+// 전체 동의 및 해제
+      $('#allCheck').on('click',function() {
+        var allCheck = $('#allCheck');
+        var allCheckState = allCheck.attr('checked');
+
+        if(!allCheckState == true){
+          $('input[type="checkbox"]').each(function(){
+            $(this).attr('checked',true);
+          }); 
+          $('label>span').each(function(){
+            $(this).addClass('moreIcon');
+          });
+ 
+        }else{
+          $('input[type="checkbox"]').each(function(){
+            $(this).attr('checked',false);
+          });
+          $('label>span').each(function(){
+            $(this).removeClass('moreIcon');
+          });
+        }
+      });
+
+
+// 각각 선택 및 해제
+    var each_ck = $('.each_check').find('input[type="checkbox"]');
+
+      each_ck.on('click',function() {
+        var _this = $(this);
+        var thisId = _this.attr('id');
+        var thisCheck = _this.attr('checked');
+        // console.log(thisId);
+        // console.log(thisCheck);
+        var labelCheck = $('label[for="'+thisId+'"]');
+
+
+
+        if(!thisCheck == true){
+          _this.attr('checked',true);
+          labelCheck.children('span').addClass('moreIcon');
+          eachCheck();
+        }else{
+          _this.attr('checked',false);
+          labelCheck.children('span').removeClass('moreIcon');
+
+          eachCheck();
+        }
+
+      // 각각 체크시 전체 체크되면 전체 동의로 확인처리
+        function eachCheck(){
+        var term = $('#termCheck').attr('checked');
+        var person = $('#personCheck').attr('checked');
+        console.log(term);
+        console.log(person);
+
+        if(term && person){
+          $('#allCheck').attr('checked',true);
+          $('label[for="allCheck"]>span').addClass('moreIcon');
+          // console.log('all checked');
+        }else{
+          $('#allCheck').attr('checked',false);
+          $('label[for="allCheck"]>span').removeClass('moreIcon');
+        }
+      }
+
+      }); 
+
+// 
+
+    })(this.jQuery);
+  </script>
+</body>
+</html>
