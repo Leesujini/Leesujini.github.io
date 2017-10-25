@@ -1,0 +1,34 @@
+
+
+#wrap{width: 960px; height: auto; margin: 0 auto;}
+#headBox{width:100%; height: 100px; background-color: #cc7;}
+#slideBanner{width: 100%; height: 600px;position: relative; }
+.slide_btn{width: 100%; height: 0; position: absolute; left: 0; top: 50%; margin-top: -2.5rem;}
+.slide_btn>div{width: 5rem; height: 5rem; background-color: #054; color: #fff; text-align: center; 
+               line-height: 5rem; font-size: 3rem; font-weight: bold; border-radius: 5rem;
+               cursor: pointer;}
+.slide_btn>div:hover{background-color: #084; box-shadow: 0.3rem 0.3rem 0.3rem rgba(50,50,50,0.5) inset;
+                     text-shadow: 0.2rem 0.2rem 0.2rem rgba(50,50,50,0.7);}    
+.l_btn{float: left;}
+.r_btn{float: right;}
+
+
+
+#bannerBox{width: 400%; height: 100%; }
+#bannerBox>li{width:  25%; height: 100%; float: left; font-size: 4rem; color: #fff;
+              text-align: center; line-height: 600px;}
+
+.slide_01{background-color: #f22;}
+.slide_02{background-color: #f44;}
+.slide_03{background-color: #f66;}
+.slide_04{background-color: #f88;}
+
+.indicator{position: absolute; left: 50%; bottom: 1rem; margin-left:-3.5rem;}
+.indicator>li{width: 1rem; height: 1rem;  float: left; margin-left: 1rem; }
+.indicator>li:first-child{margin-left: 0;}
+.indicator>li>button{background-color: #a93; width: 100%; height: 100%; border-radius: 1rem;}
+.indicator>li.active>button{background-color: #fa9; }
+.indicator button:focus{background-color: #fff;}
+
+#contentBox{width: 960px; height: 1300px; margin: 0 auto; background-color: #344;}
+#footBox{width: 100%; height: 300px; background-color: #777;}

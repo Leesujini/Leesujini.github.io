@@ -1,0 +1,17 @@
+
+
+
+
+#wrap{width: 100%; min-width: 960px; height: auto; background-color: #ddd;}
+#headBox{width: 100%; height: 50px; background-color: #f94;} 
+
+#imgMove{width: 100%; height: 700px; background-color: #f73; padding: 2em; box-sizing: border-box;}
+#imgMove>p{width: 700px; height: 1.4em; background-color: #fff; border: 2px solid #777; margin: 0 auto; margin-bottom: 1em;}
+#imgMove>p>strong{height: 100%; float: left; border-right: 1px solid #777; margin-right: 0.5em;}
+#imgMove>p>span{color: #59f; }
+.my_img{width: 600px; height: 500px; margin: 0 auto; border-radius: 1em; background-color: #fff;
+       box-shadow: 0.5em 0.5em 0.5em, rgba(50,50,50,0.5);}
+
+
+#contentBox{width: 960px; height: 1800px; margin: 0 auto; background-color: #fe8;} 
+#footBox{width: 100%; height: 50px; background-color: #346;}

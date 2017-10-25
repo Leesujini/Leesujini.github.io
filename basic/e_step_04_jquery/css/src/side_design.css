@@ -1,0 +1,28 @@
+
+
+#sideBox{width: 7.625rem; height: auto; min-height: 0.375rem; background-color: #ccc;
+         position: fixed; top: 1rem; left: 50%; z-index: 1000; margin-left: 31.25em;}
+
+
+.top_box{width: 122px; height: auto; position: relative;
+         padding-top: 1rem;
+         background-image: url();
+                           url();
+                           url();
+        background-repeat: no-repeat;
+                           no-repeat;
+                           reqeat-y;
+       background-position: center top;
+                            center bottom,
+                            center;
+/*background반복사용 가능 / 수정이 용이하도록/ 차트/문서 */
+
+
+>h3{width: 3.25rem; height: 1rem; background-image: url("../"); 
+    background-repeat: no-repeat; background-position: 0 0;}
+>p{}
+>ol{}
+}
+.bottom_box{width: 7.625rem; height: 6.725rem; background-color: ##add; margin-top: 0.3125rem;}
+.subject{}
+.subject>li{text-transform: uppercase;}

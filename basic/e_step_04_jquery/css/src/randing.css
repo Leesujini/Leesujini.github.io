@@ -1,0 +1,33 @@
+
+
+
+
+body{padding-top: 80px;}
+body.scroll{padding-top: 60px;}
+
+#wrap{width: 100%; height: auto; }
+#headBox{width: 100%; height: 80px; box-sizing: border-box; padding: 1em; background-color: #47e; position: fixed; top: 0; left: 0; z-index: 500;}
+#headBox.scroll{background-color: #aff; box-shadow: 0,0.3em, 0, #333; height: 60px;}
+
+h1{width: 150px; height: 50px; background-color: #faa; float: left; position: absolute; left: 50%; margin-left: -470px; top: 1em;}
+h1.scroll{height: 30px; background-color: #fff; border-bottom: 2px solid #f07;}
+
+#gnb{width: 600px; height: 50px; background-color: #f69; position: absolute; right: 50%; margin-right: -470px; top:1em;}
+#gnb.scroll{height: 30px; background-color: #fff; border-bottom: 2px solid #f07;}
+
+#adBanner{width: 100%; height:600px; background-color: #f25;}
+#content_01{width: 100%; height: 550px; background-color: #f45;  }
+#content_02{width: 100%; height:650px;  background-color: #f65; position: relative; }
+.one{width: 400px; height: auto; padding: 1em; box-sizing: border-box; background-color: #fff; border-radius: 0 1em 0 0;
+    position: absolute; left: 50%; top: 50%; z-index: 300; margin-top: -150px; margin-left: -300px;
+    overflow-y: auto; transform: translateX(-100px); opacity:0; transition:all 800ms;}
+.one.addView{transform: translate(0); opacity: 1;}
+
+.two{width: 420px; height: 220px; padding: 10px; box-sizing: border-box; background-color: #a23;
+    position: absolute; left: 50%; top: 50%; z-index: 200; margin-top: -100px; margin-top: -110px; margin-left: 20px;
+    transform: translateX(100px); opacity:0; transition:all 800ms;}
+.two.addView{transform: translate(0); opacity: 1;}
+
+#content_03{width: 100%; height: 850px;  background-color: #f85; }
+#content_04{width: 100%; height:1500px;  background-color: #f05; }
+#footBox{width: 100%; height:300px; background-color: #fd5; } 
