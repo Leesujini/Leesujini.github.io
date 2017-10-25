@@ -1,0 +1,6 @@
+# node폴
+node_modules/
+
+#그래픽 파일
+**/*.psd
+**/*.ai
