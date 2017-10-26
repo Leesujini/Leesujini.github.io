@@ -16,6 +16,7 @@
 
 #footBox > .pbfoot > .pbfoot_2 > li:nth-child(4) { width: 133px; height: 29px; }
 
+                          
 #footBox > .pbfoot > .pbfoot_2 > li:nth-child(5) { width: 166px; height: 29px; }
 
 #footBox > .pbfoot > .pbfoot_2 > li:nth-child(6) { width: 69px; height: 29px; }
@@ -86,13 +87,15 @@ video { width: 100%; height: 100%; }
 
 #newBox_1 > .blue_border { width: 960px; height: 158px; background-color: #01519a; }
 
-#newBox_1 > .blue_border > h3 { padding-top: 96px; color: #fff; font-size: 1.6em; margin-left: 62px; }
+#newBox_1 > .blue_border > h3 { padding-top: 96px; color: #fff; font-size: 1.6em; 
+                                margin-left: 62px; }
 
 #whiteBox { width: 960px; height: 242px; }
 
 #whiteBox > .bread1 { width: 482px; height: 242px; }
 
-#whiteBox > .bread1 > div { width: 483px; height: 126px; padding-top: 20px; padding-left: 45px; box-sizing: border-box; }
+#whiteBox > .bread1 > div { width: 483px; height: 126px; padding-top: 20px; padding-left: 45px;
+                           box-sizing: border-box; }
 
 #whiteBox > .bread1 > div > p { font-size: 0.89em; }
 
@@ -100,17 +103,24 @@ video { width: 100%; height: 100%; }
 
 .white_1 > li { width: 59px; height: 83px; float: left; }
 
-.white_1 > li:first-child { width: 60px; height: 81px; float: left; margin-right: 19px; background-image: url("../../img/pb_img/munchen/m_kcal.png"); }
+.white_1 > li:first-child { width: 60px; height: 81px; float: left; margin-right: 19px; 
+                            background-image: url("../../img/pb_img/munchen/m_kcal.png"); }
 
-.white_1 > li:nth-child(2) { width: 60px; height: 81px; float: left; margin-right: 19px; background-image: url("../../img/pb_img/munchen/m_we.png"); }
+.white_1 > li:nth-child(2) { width: 60px; height: 81px; float: left; margin-right: 19px; 
+                            background-image: url("../../img/pb_img/munchen/m_we.png"); }
 
-.white_1 > li:nth-child(3) { width: 60px; height: 81px; float: left; margin-right: 19px; background-image: url("../../img/pb_img/munchen/m_pro.png"); }
+.white_1 > li:nth-child(3) { width: 60px; height: 81px; float: left; margin-right: 19px; 
+                            background-image: url("../../img/pb_img/munchen/m_pro.png"); }
 
-.white_1 > li:nth-child(4) { width: 60px; height: 81px; float: left; margin-right: 19px; background-image: url("../../img/pb_img/munchen/m_na.png"); }
+.white_1 > li:nth-child(4) { width: 60px; height: 81px; float: left; margin-right: 19px; 
+                            background-image: url("../../img/pb_img/munchen/m_na.png"); }
 
-.white_1 > li:nth-child(5) { width: 59px; height: 80px; background-image: url("../../img/pb_img/munchen/m_dang.png"); }
+.white_1 > li:nth-child(5) { width: 59px; height: 80px; 
+                             background-image: url("../../img/pb_img/munchen/m_dang.png"); }
 
-#whiteBox > .bread0 { width: 383px; height: 330px; margin-top: -330px; margin-left: 520px; background-image: url("../../img/pb_img/munchen_1.jpg"); background-repeat: no-repeat; background-position: center; }
+#whiteBox > .bread0 { width: 383px; height: 330px; margin-top: -330px; margin-left: 520px; 
+                      background-image: url("../../img/pb_img/munchen_1.jpg"); 
+                      background-repeat: no-repeat; background-position: center; }
 
 .newBox { width: 960px; height: 395px; float: left; }
 
