@@ -15,12 +15,12 @@
     #articleBox2>.bannerpizza{width: 100%; height: 62px; background-color: map-get($color,primary);}
     #articleBox2>.bannerpizza>h2{width: 230px; height: 62px; background-color:map-get($color,white);
                           text-align: center; font-weight: bold;  color: map-get($color,primary); font-size: 2.3em;}   
-    #joinicon{width:100%; height: 210px; background-image: url("../../img/joinicon.jpg");}
+    #joinicon{width:200px; height: 210px; background-image: url("../../img/joinicon.jpg"); margin:0 auto;}
 
 
-  .user{width: 100%; height: auto; background-color: map-get($color,white); margin-top: 30px; float: left;}
-  
-  form{width: 100%; height: auto; }
+  .user{width: 760px; height: auto; background-color: map-get($color,white); margin-top: 30px; margin-left: 100px; float: left;}
+   
+  form{width: 960px; height: auto; }
   fieldset{ height: 100%;  }
   //.user{@include idpwd(); }
   .user>label{width: 37px; height: 40px;  display: block; float: left; margin-top: 20px; margin-left:45px;
@@ -35,32 +35,32 @@
    input[type="checkbox"]{margin-left: 100px;float: left;}
      .idremeber{font-size: 0.5em; float: left;}
      .pegister{font-size: 0.3em; float: left; margin-left: 50px;}
-    .loginjoin{width: 200px; display: block; float: left; margin-left: 250px; margin-top: -120px;}
+    .loginjoin{width: 200px; display: block; float: left; margin-left: 150px; margin-top: -110px;}
      input[type="submit"].bdtlogin{width: 200px; height: 50px; background-color: map-get($color,primary);
-                                   font-size: 1.2em; color:map-get($color,white); font-weight: bold;}  
+                                   font-size: 1.2em; color:map-get($color,white); font-weight: bold; border-radius: 1em;}  
      input[type="submit"].bdtjoin{width: 200px; height: 50px; background-color: map-get($color,deepGray); font-size: 1.2em; color:map-get($color,white); font-weight: bold; 
-                                  margin-top: 10px; }
+                                  margin-top: 10px; border-radius: 1em; }
 
 
     #articleBox3{width: 100%; height: 500px; background-color: map-get($color,white); float: left;}
   
  
  
-#articleBox3>h2{width: 230px; height: 50px; background-color: map-get($color,white);text-align: center; margin-top: 40px; color: #f90;
-                 margin-left: 20px;}
+#articleBox3>h2{width: 230px; height: 50px; background-color: map-get($color,white);text-align: center; margin-top: 80px; color: #f90;
+                margin-left: 380px;}
 #articleBox3>ul{width: 400px; height: 400px;  margin: 0 auto;}  
-#articleBox3>ul>li>.blue{width: 100px;  height: 50px; background-color: map-get($color,font);  
-                          float: left; margin-top: 40px; margin-left: 50px;border-radius:0.4em;
-                          margin-bottom: 20px;font-weight: bold;}
-#articleBox3>ul>li>.yellow{width: 100px;  height: 50px; background-color: map-get($color,yellow) ; float: left;
+#articleBox3>ul>li>.blue{width: 100px;  height: 50px; background-color:#39c;  
+                          float: left; margin-top: 40px; margin-left: 90px;border-radius:0.4em;
+                          margin-bottom: 20px;font-weight: bold; color: #fff;}
+#articleBox3>ul>li>.yellow{width: 100px;  height: 50px; background-color: #630; float: left;
                          margin-top: 40px; margin-left: 40px;border-radius:0.4em;
-                         margin-bottom: 20px;font-weight: bold;}
+                         margin-bottom: 20px;font-weight: bold; color: #fff;}
 #articleBox3>ul>li>.green{width: 100px; height: 50px; background-color: #10d119; float: left;
-                         margin-left: 50px;border-radius:0.4em;
-                         margin-bottom: 20px;font-weight: bold;}
+                         margin-left: 90px;border-radius:0.4em;
+                         margin-bottom: 20px;font-weight: bold; color: #fff;}
 #articleBox3>ul>li>.red{width: 100px; height: 50px; background-color: #f00; float: left;
                          margin-left: 40px;border-radius:0.4em;
-                         margin-bottom: 20px; font-weight: bold;}
-#articleBox3>ul>li>p{clear: both; font-size: 0.8em; margin-left: 10px; top: 50px; color: #777;
+                         margin-bottom: 20px; font-weight: bold; color: #fff;}
+#articleBox3>ul>li>p{clear: both; font-size: 0.8em; margin-left: 40px; top: 50px; color: #777;
                    } 
        

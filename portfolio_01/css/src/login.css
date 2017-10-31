@@ -161,19 +161,21 @@ h1 {
   font-size: 2.3em; }
 
 #joinicon {
-  width: 100%;
+  width: 200px;
   height: 210px;
-  background-image: url("../../img/joinicon.jpg"); }
+  background-image: url("../../img/joinicon.jpg");
+  margin: 0 auto; }
 
 .user {
-  width: 100%;
+  width: 760px;
   height: auto;
   background-color: #fff;
   margin-top: 30px;
+  margin-left: 100px;
   float: left; }
 
 form {
-  width: 100%;
+  width: 960px;
   height: auto; }
 
 fieldset {
@@ -238,8 +240,8 @@ input[type="checkbox"] {
   width: 200px;
   display: block;
   float: left;
-  margin-left: 250px;
-  margin-top: -120px; }
+  margin-left: 150px;
+  margin-top: -110px; }
 
 input[type="submit"].bdtlogin {
   width: 200px;
@@ -247,7 +249,8 @@ input[type="submit"].bdtlogin {
   background-color: #f90;
   font-size: 1.2em;
   color: #fff;
-  font-weight: bold; }
+  font-weight: bold;
+  border-radius: 1em; }
 
 input[type="submit"].bdtjoin {
   width: 200px;
@@ -256,7 +259,8 @@ input[type="submit"].bdtjoin {
   font-size: 1.2em;
   color: #fff;
   font-weight: bold;
-  margin-top: 10px; }
+  margin-top: 10px;
+  border-radius: 1em; }
 
 #articleBox3 {
   width: 100%;
@@ -269,9 +273,9 @@ input[type="submit"].bdtjoin {
   height: 50px;
   background-color: #fff;
   text-align: center;
-  margin-top: 40px;
+  margin-top: 80px;
   color: #f90;
-  margin-left: 20px; }
+  margin-left: 380px; }
 
 #articleBox3 > ul {
   width: 400px;
@@ -281,34 +285,37 @@ input[type="submit"].bdtjoin {
 #articleBox3 > ul > li > .blue {
   width: 100px;
   height: 50px;
-  background-color: #08f;
+  background-color: #39c;
   float: left;
   margin-top: 40px;
-  margin-left: 50px;
+  margin-left: 90px;
   border-radius: 0.4em;
   margin-bottom: 20px;
-  font-weight: bold; }
+  font-weight: bold;
+  color: #fff; }
 
 #articleBox3 > ul > li > .yellow {
   width: 100px;
   height: 50px;
-  background-color: #ff4;
+  background-color: #630;
   float: left;
   margin-top: 40px;
   margin-left: 40px;
   border-radius: 0.4em;
   margin-bottom: 20px;
-  font-weight: bold; }
+  font-weight: bold;
+  color: #fff; }
 
 #articleBox3 > ul > li > .green {
   width: 100px;
   height: 50px;
   background-color: #10d119;
   float: left;
-  margin-left: 50px;
+  margin-left: 90px;
   border-radius: 0.4em;
   margin-bottom: 20px;
-  font-weight: bold; }
+  font-weight: bold;
+  color: #fff; }
 
 #articleBox3 > ul > li > .red {
   width: 100px;
@@ -318,12 +325,13 @@ input[type="submit"].bdtjoin {
   margin-left: 40px;
   border-radius: 0.4em;
   margin-bottom: 20px;
-  font-weight: bold; }
+  font-weight: bold;
+  color: #fff; }
 
 #articleBox3 > ul > li > p {
   clear: both;
   font-size: 0.8em;
-  margin-left: 10px;
+  margin-left: 40px;
   top: 50px;
   color: #777; }
 

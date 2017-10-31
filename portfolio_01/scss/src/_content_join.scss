@@ -48,19 +48,18 @@
    .text_p{ width:100%; height: 100px; margin-top: 30px;}
     .text_p>p{font-size: 0.6em; color: map-get($color,deepGray); margin-left: 100px;}
 
-   .acceptterms{width: 100%; height: 290px; background-image: url("../../img/acceptterms.jpg"); background-repeat: no-repeat;}
-  .acceptterms label{font-size: 0.9em; font-weight:normal;}
+   .acceptterms{width: 100%; height: 290px; background-image: url("../../img/acceptterms.jpg"); 
+                background-repeat: no-repeat;}
+   .acceptterms label{font-size: 0.9em; font-weight:normal;}
    .acceptterms>ul{width: 750px; height: 105px; margin-left: 90px;  float: left; margin-top: -40px;}
    .acceptterms>ul>li{width: 300px; height: 18px;  float: left; margin-right: 30px;}
    .acceptterms label[for="acceptterms1"]{font-weight: bold;}
-   .acceptterms p{width: 700px; height: 125px; margin-left: 80px; display: block;  overflow: scroll; background-color: #fff; font-size: 0.9em;}
+   .acceptterms p{width: 700px; height: 125px; margin-left: 80px; display: block;  overflow: scroll; 
+                  background-color: #fff; font-size: 0.9em;}
 
-
-
-  
-
-    .signup{width: 100%; height: 100px;;}
+    .signup{width: 100%; height: 100px;}
     .signup>ul{width: 100%; height: 100px;}
-    .signup>ul>li{width: 120px;height: 97px; background-color: #fff; margin-left: 355px; background-image: url("../../img/joinbutton.jpg"); margin-top: 100px;}
-     .signup>ul>li>a{width: 100%; height:100%; display: block; }
+    .signup>ul>li{width: 120px;height: 97px; background-color: #fff; margin-left: 355px; 
+                  background-image: url("../../img/joinbutton.jpg"); margin-top: 100px;}
+    .signup>ul>li>a{width: 100%; height:100%; display: block; }
 
