@@ -1,0 +1,41 @@
+@import "../base/_variable";
+@import "../base/mixin";
+  
+#wrap{width: 100%; height: auto; background-color: map-get($color,primary);}
+#headBox{width: 100%; height: 80px; background-color:map-get($color,primary);
+         border-bottom:1px solid map-get($color,font);}
+#unb{width: 100%; height: auto; }
+#unb>ul{width:200px; height: auto; float: right; } 
+#unb>ul>li{width: 100px; height: 80px;float: left; margin-top: 30px; font-weight:bold; }  
+#unb>ul>li>a:hover{color:map-get($color,red);font-weight: bold;}
+#contentBox{width: 100%; height:auto; background-color: map-get($color,primary);} 
+#contentBox>div{width: 100%; height:1500px;}
+#contentBox>.work_1{background-image: url("../../img/ft_img/work_/1.png");
+                   background-repeat: no-repeat; background-position: 50% 0;
+                   margin-top: 10vw;
+                   background-size:60%;}
+#contentBox>.work_2{background-image: url("../../img/ft_img/work_/1_1.png");
+                   background-repeat: no-repeat; background-position: 50% 0;
+                    margin-top: -18vw;
+                    }
+#contentBox>.work_3{background-image: url("../../img/ft_img/work_/3.png");
+                   background-repeat: no-repeat; background-position: 60% 0;
+                   margin-top: -10vw;}
+#contentBox>.work_4{background-image: url("../../img/ft_img/work_/4.png");
+                   background-repeat: no-repeat; background-position: 60% 0;
+                   }
+#contentBox>.work_5{background-image: url("../../img/ft_img/work_/5.png");
+                   background-repeat: no-repeat; background-position: 60% 0;
+                   background-size: 90%;}
+#contentBox>.work_6{background-image: url("../../img/ft_img/work_/6.png");
+                   background-repeat: no-repeat; background-position: 50% 0;}
+#contentBox>.work_7{background-image: url("../../img/ft_img/work_/7.png");
+                   background-repeat: no-repeat; background-position: 40% 0;
+                   margin-top: 6vw;}
+#contentBox>.work_8{background-image: url("../../img/ft_img/work_/9.png");
+                   background-repeat: no-repeat; background-position: 60% 0;
+                    margin-top: 6vw}
+#contentBox>.work_9{height: 3000px; background-image: url("../../img/ft_img/work_/10.png");
+                   background-repeat: no-repeat; background-position: 50% 0;}
+
+ 
