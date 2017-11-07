@@ -56,7 +56,7 @@
   background-position: 0 0;
   margin-top: 15vw;
   margin-left: 3vw;
-  position: relative; }
+  position: relative; background-size: 100%;}
 
 #page {
   width: 59.583333333vw;
@@ -95,9 +95,10 @@
   height: 4.16666666667vw;
   color: #eee;
   font-size: 0.7em;
-  margin-top: -11.5vw;
+  margin-top: -10.5vw;
   margin-left: 26.7vw; }
 
+#pagemenu > ul{margin-left: 12vw;}
 #pagemenu > ul > li {
   width: 242px;
   height: 74px;
@@ -109,7 +110,7 @@
   display: block; }
 
 #pagemenu > ul > li:first-child {
-  margin-right: 70px;
+  margin-right: 50px;
   background-image: url("../../img/ft_img/portfolio/work.png");
   background-repeat: no-repeat;
   transition: all 300ms; }
@@ -148,7 +149,7 @@
 
 #pagemenu2 > h4 {
   width: 100%;
-  height: 520px;
+  height: 27.0833333333333vw;
   background-repeat: no-repeat;
   background-position: center;
   background-image: url("../../img/ft_img/portfolio/pblogo.png");
@@ -156,10 +157,10 @@
 
 #pagemenu2 > p {
   width: 100%;
-  height: 80px;
+  height: 4.16666666667vw;
   color: #eee;
   font-size: 0.7em;
-  margin-top: -11.5vw;
+  margin-top: -10.5vw;
   margin-left: 26.7vw; }
 
 #pagemenu2 > ul {

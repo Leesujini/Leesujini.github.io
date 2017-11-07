@@ -60,37 +60,40 @@
 #contentBox > .work_4 {
   background-image: url("../../img/ft_img/work_/b4.png");
   background-repeat: no-repeat;
-  background-position: 60% 0; }
+  background-position: 60% 0;
+  background-size: 80%; }
 
 #contentBox > .work_5 {
   background-image: url("../../img/ft_img/work_/b5.png");
   background-repeat: no-repeat;
-  background-position: 60% 0; }
+  background-position: 60% 0;
+  background-size:85%; }
 
 #contentBox > .work_6 {
   background-image: url("../../img/ft_img/work_/b6.png");
   background-repeat: no-repeat;
-  background-position: 40% 0;
-  margin-top: 6vw; }
+  background-position: 30% 0;
+  margin-top: -5vw; }
 
 #contentBox > .work_7 {
   height: 1800px;
   background-image: url("../../img/ft_img/work_/b7.png");
   background-repeat: no-repeat;
   background-position: 60% 0;
-  margin-top: 6vw; }
+  margin-top: 6vw;
+  background-size: 90%; }
 
 #contentBox > .work_8 {
   background-image: url("../../img/ft_img/work_/b8.png");
   background-repeat: no-repeat;
-  background-position: 50% 0;
-  margin-top: 3vw; }
+  background-position: 50% 0; }
 
 #contentBox > .work_9 {
   background-image: url("../../img/ft_img/work_/b9.png");
   background-repeat: no-repeat;
   background-position: 60% 0;
-  margin-top: -5vw; }
+  margin-top: -5vw; 
+  background-size: 80%;}
 
 #contentBox > .work_10 {
   height: 600px;
