@@ -2,7 +2,7 @@
 @import "../base/mixin";
 @import "./footer";    
 @import "./content_main";
-
+ 
          
 #wrap{width: 100%; height: auto; margin: 0 auto;}
 #unb{width: 100%; height:26px; margin: 0 auto;}
@@ -11,13 +11,14 @@
                margin-left: 10px; font-size:0.8em; text-transform:uppercase;}
 #unb>.unb_1>li>a:hover{font-weight: bold; color:map-get($color,primary);}
 #unb>.unb_1>.login{margin-left: -10px;}
-
+ 
 #headBox{width: 100%; height: 112px; }
-#headBox h1{width: 100%; height: 112px; background-image: url("../../img/pb_img/logo_logo.jpg");
-            background-repeat:no-repeat;background-position: 0 0; background-size: cover;}
+#headBox h1 { width: 100%; height: 112px;background-image: url("../../img/pb_img/logo_logo.jpg");
+             background-repeat: no-repeat; background-position: center;}
+
 #headBox h1>a{width: 100%; height: 100%; display: block;}
 
-#contentBox{width: 100%; height: auto;}
+#contentBox{width: 100%; height: auto;} 
 video{width: 100%; height: 100%;}
 
 #gnb{width: 100%; height: 98px; margin-top: -3px; background-color:map-get($color,line);}

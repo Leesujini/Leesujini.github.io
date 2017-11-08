@@ -529,8 +529,7 @@ input {
   height: 112px;
   background-image: url("../../img/pb_img/logo_logo.jpg");
   background-repeat: no-repeat;
-  background-position: 0 0;
-  background-size: cover; }
+  background-position:center; }
 
 #headBox h1 > a {
   width: 100%;

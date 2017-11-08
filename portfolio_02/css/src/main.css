@@ -16,7 +16,6 @@
 
 #footBox > .pbfoot > .pbfoot_2 > li:nth-child(4) { width: 133px; height: 29px; }
 
-                          
 #footBox > .pbfoot > .pbfoot_2 > li:nth-child(5) { width: 166px; height: 29px; }
 
 #footBox > .pbfoot > .pbfoot_2 > li:nth-child(6) { width: 69px; height: 29px; }
@@ -45,8 +44,10 @@
 
 #headBox { width: 100%; height: 112px; }
 
-#headBox h1 { width: 100%; height: 112px; background-image: url("../../img/pb_img/logo_logo.jpg"); background-repeat: no-repeat; background-position: 0 0; background-size: cover; }
+#headBox h1 { width: 100%; height: 112px;background-image: url("../../img/pb_img/logo_logo.jpg");
+             background-repeat: no-repeat; background-position: center;}
 
+            
 #headBox h1 > a { width: 100%; height: 100%; display: block; }
 
 #contentBox { width: 100%; height: auto; }
@@ -87,15 +88,13 @@ video { width: 100%; height: 100%; }
 
 #newBox_1 > .blue_border { width: 960px; height: 158px; background-color: #01519a; }
 
-#newBox_1 > .blue_border > h3 { padding-top: 96px; color: #fff; font-size: 1.6em; 
-                                margin-left: 62px; }
+#newBox_1 > .blue_border > h3 { padding-top: 96px; color: #fff; font-size: 1.6em; margin-left: 62px; }
 
 #whiteBox { width: 960px; height: 242px; }
 
 #whiteBox > .bread1 { width: 482px; height: 242px; }
 
-#whiteBox > .bread1 > div { width: 483px; height: 126px; padding-top: 20px; padding-left: 45px;
-                           box-sizing: border-box; }
+#whiteBox > .bread1 > div { width: 483px; height: 126px; padding-top: 20px; padding-left: 45px; box-sizing: border-box; }
 
 #whiteBox > .bread1 > div > p { font-size: 0.89em; }
 
@@ -103,24 +102,17 @@ video { width: 100%; height: 100%; }
 
 .white_1 > li { width: 59px; height: 83px; float: left; }
 
-.white_1 > li:first-child { width: 60px; height: 81px; float: left; margin-right: 19px; 
-                            background-image: url("../../img/pb_img/munchen/m_kcal.png"); }
+.white_1 > li:first-child { width: 60px; height: 81px; float: left; margin-right: 19px; background-image: url("../../img/pb_img/munchen/m_kcal.png"); }
 
-.white_1 > li:nth-child(2) { width: 60px; height: 81px; float: left; margin-right: 19px; 
-                            background-image: url("../../img/pb_img/munchen/m_we.png"); }
+.white_1 > li:nth-child(2) { width: 60px; height: 81px; float: left; margin-right: 19px; background-image: url("../../img/pb_img/munchen/m_we.png"); }
 
-.white_1 > li:nth-child(3) { width: 60px; height: 81px; float: left; margin-right: 19px; 
-                            background-image: url("../../img/pb_img/munchen/m_pro.png"); }
+.white_1 > li:nth-child(3) { width: 60px; height: 81px; float: left; margin-right: 19px; background-image: url("../../img/pb_img/munchen/m_pro.png"); }
 
-.white_1 > li:nth-child(4) { width: 60px; height: 81px; float: left; margin-right: 19px; 
-                            background-image: url("../../img/pb_img/munchen/m_na.png"); }
+.white_1 > li:nth-child(4) { width: 60px; height: 81px; float: left; margin-right: 19px; background-image: url("../../img/pb_img/munchen/m_na.png"); }
 
-.white_1 > li:nth-child(5) { width: 59px; height: 80px; 
-                             background-image: url("../../img/pb_img/munchen/m_dang.png"); }
+.white_1 > li:nth-child(5) { width: 59px; height: 80px; background-image: url("../../img/pb_img/munchen/m_dang.png"); }
 
-#whiteBox > .bread0 { width: 383px; height: 330px; margin-top: -330px; margin-left: 520px; 
-                      background-image: url("../../img/pb_img/munchen_1.jpg"); 
-                      background-repeat: no-repeat; background-position: center; }
+#whiteBox > .bread0 { width: 383px; height: 330px; margin-top: -330px; margin-left: 520px; background-image: url("../../img/pb_img/munchen_1.jpg"); background-repeat: no-repeat; background-position: center; }
 
 .newBox { width: 960px; height: 395px; float: left; }
 
@@ -272,7 +264,7 @@ video { width: 100%; height: 100%; }
 
 .white_5 > li:nth-child(5) { width: 59px; height: 80px; background-image: url("../../img/pb_img/hodu/h_dang.png"); }
 
-#whiteBox5 > .bread0 { width: 383px; height: 330px; margin-top: -330px; margin-left: 520px; background-image: url("../../img/pb_img/bbb.jpg"); background-repeat: no-repeat; background-position: center; background-size: cover; }
+#whiteBox5 > .bread0 { width: 383px; height: 330px; margin-top: -330px; margin-left: 520px; background-image: url("../../img/pb_img/hodu.png"); background-repeat: no-repeat; background-position: center; background-size: cover; }
 
 .bestBox { width: 960px; height: 395px; float: left; }
 
@@ -332,26 +324,19 @@ video { width: 100%; height: 100%; }
 
 #iphone > .gift { width: 960px; height: 800px; background-color: #fff; margin: 0 auto; }
 
-#iphone > .gift > div:first-child { width: 119px; height: 111px; background-image: url("../../img/pb_img/pr1.png"); background-repeat: no-repeat; 
-                                    background-position: 0 0; position: absolute; margin-left: 20px; animation: gift 0.7s infinite alternate; }
+#iphone > .gift > div:first-child { width: 119px; height: 111px; background-image: url("../../img/pb_img/pr1.png"); background-repeat: no-repeat; background-position: 0 0; position: absolute; margin-left: 20px; animation: gift 0.7s infinite alternate; }
 
-#iphone > .gift > div:nth-child(2) { width: 162px; height: 159px; background-image: url("../../img/pb_img/pr3.png"); background-repeat: no-repeat; 
-                                    background-position: 0 0; position: absolute; margin-left: 750px; margin-top: -70px; animation: gift 1s infinite alternate; }
+#iphone > .gift > div:nth-child(2) { width: 162px; height: 159px; background-image: url("../../img/pb_img/pr3.png"); background-repeat: no-repeat; background-position: 0 0; position: absolute; margin-left: 750px; margin-top: -70px; animation: gift 1s infinite alternate; }
 
-#iphone > .gift > div:nth-child(3) { width: 133px; height: 233px; background-image: url("../../img/pb_img/pr10.png"); background-repeat: no-repeat; 
-                                    background-position: 0 0; position: absolute; margin-left: 760px; margin-top: 590px; animation: gift 0.9s infinite alternate; }
+#iphone > .gift > div:nth-child(3) { width: 133px; height: 233px; background-image: url("../../img/pb_img/pr10.png"); background-repeat: no-repeat; background-position: 0 0; position: absolute; margin-left: 760px; margin-top: 590px; animation: gift 0.9s infinite alternate; }
 
-#iphone > .gift > div:nth-child(4) { width: 144px; height: 137px; background-image: url("../../img/pb_img/pr4.png"); background-repeat: no-repeat; 
-                                    background-position: 0 0; position: absolute; margin-left: 830px; margin-top: 220px; animation: gift 0.7s infinite alternate; }
+#iphone > .gift > div:nth-child(4) { width: 144px; height: 137px; background-image: url("../../img/pb_img/pr4.png"); background-repeat: no-repeat; background-position: 0 0; position: absolute; margin-left: 830px; margin-top: 220px; animation: gift 0.7s infinite alternate; }
 
-#iphone > .gift > div:nth-child(5) { width: 83px; height: 99px; background-image: url("../../img/pb_img/pr8.png"); background-repeat: no-repeat; 
-                                    background-position: 0 0; position: absolute; margin-top: 500px; animation: gift 1s infinite alternate; }
+#iphone > .gift > div:nth-child(5) { width: 83px; height: 99px; background-image: url("../../img/pb_img/pr8.png"); background-repeat: no-repeat; background-position: 0 0; position: absolute; margin-top: 500px; animation: gift 1s infinite alternate; }
 
-#iphone > .gift > div:nth-child(6) { width: 76px; height: 78px; background-image: url("../../img/pb_img/pr5.png"); background-repeat: no-repeat; 
-                                    background-position: 0 0; position: absolute; margin-top: 650px; animation: gift 0.8s infinite alternate; }
+#iphone > .gift > div:nth-child(6) { width: 76px; height: 78px; background-image: url("../../img/pb_img/pr5.png"); background-repeat: no-repeat; background-position: 0 0; position: absolute; margin-top: 650px; animation: gift 0.8s infinite alternate; }
 
-#iphone > .gift > .facebook { width: 350px; height: 715px; background-image: url("../../img/pb_img/iphone6.png"); background-repeat: no-repeat; 
-                             background-position: center; background-size: cover; margin-left: 290px; padding: 5.6rem; box-sizing: border-box; }
+#iphone > .gift > .facebook { width: 350px; height: 715px; background-image: url("../../img/pb_img/iphone6.png"); background-repeat: no-repeat; background-position: center; background-size: cover; margin-left: 290px; padding: 5.6rem; box-sizing: border-box; }
 
 #iphone > .gift > .facebook > .facebook_scroll { width: 304px; height: 535px; margin-left: -65px; }
 
@@ -363,62 +348,24 @@ video { width: 100%; height: 100%; }
 
 #eventBox { width: 100%; height: auto; }
 
-#eventBox > .event_1 { width: 100%; height: 700px; background-image: url("../../img/pb_img/banner_0011.jpg"); background-repeat: no-repeat; background-position: 0 0; transition: all 0.5s ease-out; }
+#eventBox > .event_1 { width: 100%; height: 700px; background-image: url("../../img/pb_img/banner_0011.jpg"); 
+                       background-repeat: no-repeat; background-position:center; transition: all 0.5s ease-out; }
 
 #eventBox > .event_1:hover { background-image: url("../../img/pb_img/banner_0011_1.jpg"); }
 
 #eventBox > .event_1 > a { width: 100%; height: 100%; display: block; }
 
-#eventBox > .event_2 { width: 100%; height: 700px; background-image: url("../../img/pb_img/banner_002.jpg"); background-repeat: no-repeat; background-position: 0 0; transition: all 0.5s ease-out; }
+#eventBox > .event_2 { width: 100%; height: 700px; background-image: url("../../img/pb_img/banner_002.jpg"); 
+                       background-repeat: no-repeat; background-position:center; transition: all 0.5s ease-out; }
 
 #eventBox > .event_2:hover { background-image: url("../../img/pb_img/banner_002_01.jpg"); }
 
 #eventBox > .event_2 > a { width: 100%; height: 100%; display: block; }
 
-#eventBox > .event_3 { width: 100%; height: 700px; background-image: url("../../img/pb_img/banner_003.jpg"); background-repeat: no-repeat; background-position: 0 0; transition: all 0.5s ease-out; }
+#eventBox > .event_3 { width: 100%; height: 700px; background-image: url("../../img/pb_img/banner_003.jpg"); 
+                       background-repeat: no-repeat; background-position:center; transition: all 0.5s ease-out; }
 
 #eventBox > .event_3:hover { background-image: url("../../img/pb_img/banner_003_1.jpg"); }
 
 #eventBox > .event_3 > a { width: 100%; height: 100%; display: block; }
 
-#wrap { width: 100%; height: auto; margin: 0 auto; }
-
-#unb { width: 100%; height: 26px; margin: 0 auto; }
-
-#unb > .unb_1 { width: 218px; height: 100%; float: right; }
-
-#unb > .unb_1 > li { width: 21.2222%; height: 100%; background-color: #fff; float: left; margin-left: 10px; font-size: 0.8em; text-transform: uppercase; }
-
-#unb > .unb_1 > li > a:hover { font-weight: bold; color: #01519a; }
-
-#unb > .unb_1 > .login { margin-left: -10px; }
-
-#headBox { width: 100%; height: 112px; }
-
-#headBox h1 { width: 100%; height: 112px; background-image: url("../../img/pb_img/logo_logo.jpg"); background-repeat: no-repeat; background-position: 0 0; background-size: cover; }
-
-#headBox h1 > a { width: 100%; height: 100%; display: block; }
-
-#contentBox { width: 100%; height: auto; }
-
-video { width: 100%; height: 100%; }
-
-#gnb { width: 100%; height: 98px; margin-top: -3px; background-color: #ccc; }
-
-#gnb > ul { width: 960px; height: 98px; margin: 0 auto; padding-top: 40px; box-sizing: border-box; }
-
-#gnb > ul > li { float: left; font-weight: bold; color: #01519a; font-size: 1.2em; text-transform: uppercase; }
-
-#gnb > ul > li > a > span:hover { font-weight: bold; color: #003768; }
-
-#gnb > ul > li:first-child { width: 106px; height: 27px; margin-left: 32px; margin-right: 10px; border-right: 2px solid #01519a; }
-
-#gnb > ul > li:nth-child(2) { width: 80px; height: 27px; margin-left: 10px; margin-right: 10px; border-right: 2px solid #01519a; }
-
-#gnb > ul > li:nth-child(3) { width: 140px; height: 27px; margin-left: 15px; margin-right: 13px; border-right: 2px solid #01519a; }
-
-#gnb > ul > li:nth-child(4) { width: 160px; height: 27px; margin-left: 15px; margin-right: 10px; border-right: 2px solid #01519a; }
-
-#gnb > ul > li:nth-child(5) { width: 207px; height: 27px; margin-left: 10px; margin-right: 20px; border-right: 2px solid #01519a; }
-
-#gnb > ul > li:nth-child(6) { width: 90px; height: 27px; margin-left: 5px; }
