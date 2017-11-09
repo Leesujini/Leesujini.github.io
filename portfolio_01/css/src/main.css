@@ -556,7 +556,9 @@ h1 {
   transition: all 700ms; }
 
 #article4 > ul > li > .img > a:hover {
-  background-image: url("../../img/food1good.jpg"); }
+  background-image: url("../../img/food1good1.jpg");
+ background-repeat: no-repeat; background-size: 100%;
+ transition: all 700ms;}
 
 #article4 > ul > li > .img2 {
   width: 100%;
@@ -571,8 +573,9 @@ h1 {
   transition: all 700ms; }
 
 #article4 > ul > li > .img2 > a:hover {
-  background-image: url("../../img/food33good.jpg");
-  transition: all 700ms; }
+  background-image: url("../../img/food3good1.jpg");
+  transition: all 700ms; background-size: cover;
+  background-repeat: no-repeat; }
 
 #article4 .text {
   float: left; }
