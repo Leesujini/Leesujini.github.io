@@ -51,23 +51,24 @@
 
 #about_me > .me_2 {
   width: 100%;
-  height: 78.125vw;
-  background-image: url("../../img/ft_img/me2.png");
+  height: 79.125vw;
+  background-image: url("../../img/ft_img/mm22.png");
   background-repeat: no-repeat;
-  background-position: 30% 0;
-  margin-top: 5vw; }
+  background-position:center;
+  margin-top: 5vw;
+  background-size: 80%; }
 
 #about_me > .me_3 {
   width: 100%;
-  height: 78.125vw;
+  height: 88.125vw;
   background-image: url("../../img/ft_img/me3.png");
   background-repeat: no-repeat;
   background-position: 35% 0;
-  margin-top: 10vw; }
+  margin-top: 15vw; }
 
 #about_me > .me_4 {
   width: 100%;
-  height: 78.125vw;
+  height: 92.525vw;
   background-image: url("../../img/ft_img/me4.png");
   background-repeat: no-repeat;
   background-position: 40% 0; }
