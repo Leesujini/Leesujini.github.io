@@ -98,7 +98,12 @@
   margin-top: -10.5vw;
   margin-left: 26.7vw; }
 
-#pagemenu > ul{margin-left: 12vw;}
+
+# pagemenu  >  ul {
+  너비 : 560 픽셀 ;
+  높이 : 74 px ;
+  여백 : 0 자동; }
+
 #pagemenu > ul > li {
   width: 242px;
   height: 74px;
